@@ -1,4 +1,4 @@
-import MySQLdb,time,datetime
+import pymysql,time,datetime
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ def get():
 			res['errno'] = 102
 			raise Exception('not exist user')
 		res['data'] = userinfo
-	except Exception,e:
+	except Exception as e:
 		if res['errno'] == 0:
 			res['errno'] = 999
 		res['errmsg'] = str(e)
@@ -25,7 +25,7 @@ def get():
 
 
 def get_user(uid):
-	conn = MySQLdb.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
+	conn = pymysql.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
 	cursor = conn.cursor(MySQLdb.cursors.DictCursor)
 	sql='select * from user_info where uid=%s' % uid
 	n = cursor.execute(sql)
@@ -65,7 +65,7 @@ def set():
 		if set_user(uid,params) == False:
 			res['errno'] == 102
 			raise Exception('update userinfo fail')
-	except Exception,e:
+	except Exception as e:
 		if res['errno'] == 0:
 			res['errno'] = 999
 		res['errmsg'] = str(e)
@@ -76,7 +76,7 @@ def set():
 def set_user(uid,params):
 	if len(params)==0:
 		return False
-	conn = MySQLdb.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
+	conn = pymysql.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
 	cursor = conn.cursor()
 	sql='update user_info set'
 	for k,v in params.items():

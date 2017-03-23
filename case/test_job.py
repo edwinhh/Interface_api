@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os,sys,unittest,time
-from test_abstract import TestAbstract
+from case.test_abstract import TestAbstract
 
 class TestJob(TestAbstract):
 

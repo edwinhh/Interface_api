@@ -1,4 +1,4 @@
-import MySQLdb,time,datetime
+import pymysql,time,datetime
 
 class UserInfo:
 
@@ -7,8 +7,8 @@ class UserInfo:
 
 	def __init__(self):
 		if self.conn ==None:
-			self.conn = MySQLdb.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
-			self.cursor = self.conn.cursor(MySQLdb.cursors.DictCursor)
+			self.conn = pymysql.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
+			self.cursor = self.conn.cursor(pymysql.cursors.DictCursor)
 
 
 	def __del__(self):
