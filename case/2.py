@@ -4,9 +4,10 @@ import urllib.request, urllib.parse, urllib.error
 # import http.cookiejar
 import unittest, time, re,os,json
 from case.test_abstract import TestAbstract
+import requests
 
 # 引入HTMLTestRunner包
-import HTMLTestRunner
+#import HTMLTestRunner
 
 
 # def ck(url,data,url1):
@@ -68,7 +69,8 @@ if __name__ == "__main__":
 
 
     # ck(k,tmp1,L)
-    cookie=os.path.dirname(__file__)+'/cookie1.txt'
+    #cookie=os.path.dirname(__file__)+'/cookie1.txt'
+    print(os.path.dirname(__file__))
     a = TestAbstract()
     # res1=a.savecookies(URL, data)
     # res2=a.cookiesget(url1)

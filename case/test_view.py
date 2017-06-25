@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os,sys,unittest,time
-from case.test_abstract import TestAbstract
+from Interface_api.lib.test_abstract import TestAbstract
 
 class TestView(TestAbstract):
 

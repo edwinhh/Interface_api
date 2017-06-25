@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import os,sys,unittest,time,json
 import http.cookiejar
+import requests
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from case.test_abstract import TestAbstract
-# from lib.userinfo import UserInfo
+from Interface_api.lib.test_abstract import TestAbstract
+
 
 class TestUserinfo(TestAbstract):
 	global null
@@ -37,9 +38,16 @@ class TestUserinfo(TestAbstract):
 		# self.assertEqual("SUCCESS",res1["status"])
 		# self.assertEqual('not exist user',res['errmsg'])
 		# self.assertEqual([],res['data'])
+
+	def test_1(self):
+		res=self.requestGET("http://www.cnbeta.com")
+		return res
 if __name__ == '__main__':
+	print(os.path.dirname(os.path.dirname(__file__)))
 	a = TestUserinfo()
-	a.test_get_empty()
+	print(a.test_1())
+	# res1=requests.get("http://www.163.com")
+	# print(res1.text)
 	# def test_get_1(self):
     #
 	# 	url1 = 'http://topic.csdn.net/u/20110123/15/F71C5EBB-7704-480B-9379-17A96E920FEE.html'

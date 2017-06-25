@@ -42,8 +42,8 @@ class TestAbstract(unittest.TestCase):
 		if None != auth:
 			req.add_header('Authorization',self.getAuthHeader(auth))
 			# print(req.headers)            查看添加auth之后heads字段对比
-		res = urllib.request.urlopen(req).read()
-		return self.formatResult(res)
+		res = urllib.request.urlopen(req).read().decode('utf-8')
+		return res
 
 	def requestPOST(self,url,data={},auth=None,type='html'):
 
@@ -132,26 +132,26 @@ class TestAbstract(unittest.TestCase):
 
 
 
-if __name__ == "__main__":
-	URL = 'http://testent.killerwhale.cn/services/user/login'
-	data = {"ticket": "a7490b80-0f72-11e7-b8fa-ad8cd3c36cdb"}
-	url1 = 'http://testent.killerwhale.cn/services/companyinfo/companyuserinfo'
-	auth = {'username': 'admin008', 'password': '111111'}
-	tmp1 = {'j_username': 'hehao', 'j_password': '123456', 'from': '/',
-			'json': '{"j_username": "hehao", "j_password": "123456", "remember_me": false, "from": "/"}',
-			'Submit': '登录'}
-	k = 'http://ci.szzbmy.com/j_acegi_security_check'
-	L = 'http://ci.szzbmy.com'
-
-	# ck(k,tmp1,L)
-	a = TestAbstract()
-	# res1=a.savecookies(URL, data)
-	# res2=a.cookiesget(url1)
-	# print(type(res1))
-	# print(type(res2))
-
-	print(a.requestGET(url1,auth=auth))
-	print(a.cookiesget(url1))
+# if __name__ == "__main__":
+# 	URL = 'http://testent.killerwhale.cn/services/user/login'
+# 	data = {"ticket": "a7490b80-0f72-11e7-b8fa-ad8cd3c36cdb"}
+# 	url1 = 'http://testent.killerwhale.cn/services/companyinfo/companyuserinfo'
+# 	auth = {'username': 'admin008', 'password': '111111'}
+# 	tmp1 = {'j_username': 'hehao', 'j_password': '123456', 'from': '/',
+# 			'json': '{"j_username": "hehao", "j_password": "123456", "remember_me": false, "from": "/"}',
+# 			'Submit': '登录'}
+# 	k = 'http://ci.szzbmy.com/j_acegi_security_check'
+# 	L = 'http://ci.szzbmy.com'
+#
+# 	# ck(k,tmp1,L)
+# 	a = TestAbstract()
+# 	# res1=a.savecookies(URL, data)
+# 	# res2=a.cookiesget(url1)
+# 	# print(type(res1))
+# 	# print(type(res2))
+#
+# 	print(a.requestGET(url1,auth=auth))
+# 	print(a.cookiesget(url1))
 
 
 
