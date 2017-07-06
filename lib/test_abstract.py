@@ -70,8 +70,9 @@ class TestAbstract(unittest.TestCase):
 	# 	return authheader
 
 	def getAuthHeader(self,auth):
-		base64string = base64.encodestring(('%s:%s' % (str(auth['username']), str(auth['password']) )).encode())[:-1]
-		authheader = "Basic %s" % base64string
+		temp_str=str(auth['username'])+':'+str(auth['password'])
+		base64string = base64.b64encode(temp_str.encode(encoding="utf-8"))
+		authheader = "Basic" +base64string
 		return authheader
 
 	def savecookies(self,url, data={},cookie_fiename=os.path.dirname(__file__)+'/cookie.txt'):
@@ -152,6 +153,16 @@ class TestAbstract(unittest.TestCase):
 #
 # 	print(a.requestGET(url1,auth=auth))
 # 	print(a.cookiesget(url1))
+
+	# def get_basic_auth_str(username, password):
+	# 	temp_str = username + ':' + password
+	# 	# 转成bytes string
+	# 	bytesString = temp_str.encode(encoding="utf-8")
+	# 	# base64 编码
+	# 	encodestr = base64.b64encode(bytesString)
+	# 	# 解码
+	# 	decodestr = base64.b64decode(encodestr)
+	# 	return 'Basic ' + encodestr.decode()
 
 
 
