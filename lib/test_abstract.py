@@ -3,12 +3,32 @@
 import unittest
 import urllib
 import urllib.request,urllib.parse, urllib.error
+<<<<<<< d4c1796fe2af615ff7231609b7167ff5870d3a6c
 import os,sys,json,base64
 import http.cookiejar
 import configparser
 
 class TestAbstract(unittest.TestCase):
 	user_agent = "'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0','Accept - Language': 'zh - CN, zh;q = 0.8'"
+=======
+import requests
+import socket
+import os,sys,json,base64
+import time
+import http.cookiejar
+import configparser
+from openpyxl import Workbook
+import openpyxl
+import urllib3
+
+p=[]
+r=[]
+dic={}
+
+
+class TestAbstract(unittest.TestCase):
+	user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+>>>>>>> 添加多线程执行并相同顺序写入文件
 	headers = {'User-Agent': user_agent, 'Connection': 'keep-alive','Accept - Language': 'zh - CN, zh;q = 0.8'}
 
 	config_file=os.path.dirname(os.path.dirname(__file__)) + '/conf/base.conf'
@@ -33,17 +53,44 @@ class TestAbstract(unittest.TestCase):
 		return config.get(section,key)
 
 	def requestGET(self,url,data={},auth=None):
+<<<<<<< d4c1796fe2af615ff7231609b7167ff5870d3a6c
 
 		if None != data and len(data)>0:
 			req = urllib.request.Request(url + "?" + urllib.parse.urlencode(data),headers=self.headers)
 		else:
 			req = urllib.request.Request(url,headers=self.headers)
+=======
+		timeout = 30
+		socket.setdefaulttimeout(timeout)
+
+		if None != data and len(data)>0:
+			req = urllib.request.Request(url + "?" + urllib.parse.urlencode(data),headers=self.headers)
+
+		else:
+			req = urllib.request.Request(url,headers=self.headers)
+			#req = urllib.request.Request(url)
+>>>>>>> 添加多线程执行并相同顺序写入文件
 			# print(req.headers)
 		if None != auth:
 			req.add_header('Authorization',self.getAuthHeader(auth))
 			# print(req.headers)            查看添加auth之后heads字段对比
+<<<<<<< d4c1796fe2af615ff7231609b7167ff5870d3a6c
 		res = urllib.request.urlopen(req).read().decode('utf-8')
 		return res
+=======
+		start=time.time()
+		res = urllib.request.urlopen(req)
+		p.append(data)
+		r.append(res)
+		content=res.read().decode('utf-8')
+		end=time.time()
+		#print(end-start)
+		res.close()
+		#print(self.formatResult(content))
+		return self.formatResult(content)
+
+	#return self.content
+>>>>>>> 添加多线程执行并相同顺序写入文件
 
 	def requestPOST(self,url,data={},auth=None,type='html'):
 
@@ -131,6 +178,21 @@ class TestAbstract(unittest.TestCase):
 		res= get_response.read().decode()
 		return self.formatResult(res)
 
+<<<<<<< d4c1796fe2af615ff7231609b7167ff5870d3a6c
+=======
+	def requestsget(self,url,data={}):
+		urllib3.disable_warnings()
+		start=time.time()
+		res = requests.get(url, params=data, verify=False)
+		end = time.time()
+		print(self.formatResult(res.text))
+		print(end-start)
+		return self.formatResult(res.text)
+
+
+
+
+>>>>>>> 添加多线程执行并相同顺序写入文件
 
 
 # if __name__ == "__main__":

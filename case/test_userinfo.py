@@ -3,7 +3,11 @@ import os,sys,unittest,time,json
 import http.cookiejar
 import requests
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+<<<<<<< d4c1796fe2af615ff7231609b7167ff5870d3a6c
 from Interface_api.lib.test_abstract import TestAbstract
+=======
+from lib.test_abstract import TestAbstract
+>>>>>>> 添加多线程执行并相同顺序写入文件
 
 
 class TestUserinfo(TestAbstract):
@@ -55,7 +59,11 @@ if __name__ == '__main__':
 	# 	url3= 'http://ci.szzbmy.com/view/Tuyoumi/'
 	# 	auth = {'username': 'admin008', 'password': '123456'}
 	# 	data = {'username': 'admin008', 'password': '111112'}
+<<<<<<< d4c1796fe2af615ff7231609b7167ff5870d3a6c
 	# 	res = self.requestPOST(url2,data)
+=======
+	# 	res = self.requestGET(url2,data)
+>>>>>>> 添加多线程执行并相同顺序写入文件
 	# 	print (res.decode('utf8'))
 		#self.assertEqual("SUCCESS", res["status"])
 	# def test_get_success(self):
