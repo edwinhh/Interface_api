@@ -6,6 +6,8 @@ from functools import partial
 from pathos.multiprocessing import ProcessingPool
 import threading
 
+#不做对比，将省市区街道作为city和adress
+
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 # url='http://10.202.52.102:8080/geo'
 # name = os.path.basename(__file__).split('.')[0]
@@ -16,8 +18,12 @@ name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]
 test=1
-
-file="e:/项目/地理编码/数据/new1.txt"
+dic={}
+my=[]
+myp=[]
+myr=[]
+file="e:/项目/地理编码/数据/cms.txt"
+adcode="e:/项目/地理编码/数据/adcode.csv"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -28,20 +34,110 @@ class geo_Mutest(TestAbstract):
     def __init__(self):
         self.num=0
         self.datas=[]
+        self.my=[]
         self.p1 = []
         self.r1 = []
 
-    def readcsv(self,file):
-        with open(file, 'r', encoding='utf_8')as f:
+    def readadcode(self,file):
+        with open(adcode, 'r', encoding='utf_8')as f:
             for line in f.readlines():
                 self.num+=1
                 temp=line.strip().split(",")
+                if self.num==1:
+                    continue
+                else:
+                    dic[temp[1]]=temp[0]
+        
+    def adcode (self,city):
+        temp=city.split("|")
+        if len(temp)==1:
+            s=temp[0]
+        if len(temp)==2:
+            s=temp[1]
+        if len(temp)==3:
+            s=temp[2]
+        if len(temp)==4:
+            s=temp[3]
+        k1=""
+        v1=""
+        for k, v in dic.items():
+            if s in k:
+                k1=k
+                v1=v
+        return k1,v1
+    
+    def reportadcode (self,res):
+        res=json.loads(res)
+        if res["status"]==0:
+            adcode=res["result"]["adcode"]
+            return adcode
+        else:
+            return 0
+    
+    def geocoder(self,my):
+       my = json.loads(my)
+       if len(my["geocoder"]):
+           city=my["geocoder"][0]["city"]
+           district=my["geocoder"][0]["district"]
+           return city,district
+       else:
+           return 0
+           
+    
+    def reportgeocder(self,my,city):
+        # my=self.geocoder(my)
+        if my:
+            temp = city.split("|")
+            if temp[2]==my[1] and temp[1]==my[0]:
+                return 1
+            else:
+                return 0
+            
+    def reportadname(self,my,res):
+        res=json.loads(res)
+        if res["status"]==0:
+            adname=res["result"]["adname"]
+        # if len(adname[2])==0:
+        #     adname2=""
+        # else:
+        #     adname2=adname[2]
+        # if len(adname[1])==0:
+        #     adname1=""
+        # else:
+        #     adname1=adname[1]
+        if adname[2]==my[1] and adname[1]==my[0]:
+            return 1
+        else:
+            return 0
+            
+    
+    
+        
 
-                data = {'address': temp[0], \
+    def readcsv(self, file):
+        with open(file, 'r', encoding='utf_8')as f:
+            for line in f.readlines():
+                my=[]
+                self.num += 1
+                # temp=line.strip().split(",")
+            
+                # address = line.replace('\n', '').replace('\t', '')
+                # city = line.replace('\n', '').replace('\t', '|')
+                address=line.strip().replace(',', '').replace('\t', '')
+                city = line.strip().replace(',', '|').replace('\t', '')
+            
+                data = {'address': address, \
                         'opt': 'sf30', \
-                        'city': "", \
+                        'city': city, \
                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                self.datas.append(data)
+                my.append(data)
+                
+                mydata = {'address': address, \
+                        'opt': 'my0', \
+                        'city': city, \
+                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                my.append(mydata)
+                self.datas.append(my)
 
     def openfile(self):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
@@ -51,7 +147,7 @@ class geo_Mutest(TestAbstract):
         f=open(file2, 'a', encoding='utf_8')
         return f
 
-    def report(self,f, url, data, res):
+    def report(self,f, url, data, res,myr):
             
             #f.write(str(i + 1))
             f.write('\t')
@@ -70,6 +166,37 @@ class geo_Mutest(TestAbstract):
                 # f.write(str(data[i]))
                 # f.write('\n')
                 f.write(str(res[i]))
+                f.write('\n')
+                my=self.geocoder(myr[i])
+                if my:
+                    f.write("geocoder返回city:")
+                    f.write(my[0])
+                    f.write('\n')
+                    f.write("geocoder返回district:")
+                    f.write(my[1])
+                    f.write('\n')
+                    if self.reportgeocder(my,data[i]['city']):
+                        f.write("city:对比相同\n")
+                    else:
+                        f.write("city:不相同\n")
+                    adname=self.reportadname(my,res[i])
+                    if adname:
+                        f.write("adname:对比相同\n")
+                    else:
+                        f.write("adname:不相同\n")
+                f.write('\n')
+                adcode2 = self.reportadcode(res[i])
+                if adcode2:
+                    adcode1 = self.adcode(data[i]['city'])[1]
+                    f.write("adcode:")
+                    f.write(adcode1)
+                    f.write('\n')
+                    f.write("adcode对比:")
+                    if adcode1==adcode2:
+                        f.write("一致")
+                    else:
+                        f.write("不相同")
+                
                 f.write('\n\n')
 
 
@@ -97,9 +224,11 @@ class geo_Mutest(TestAbstract):
     def geo2(self,data,url):
         global test
         for i in data:
-            res = self.requestGET(url, i)
-            p.append(i)
-            r.append(res)
+            res1 = self.requestGET(url, i[0])
+            res2 = self.requestGET(url, i[1])
+            p.append(i[0])
+            r.append(res1)
+            myr.append(res2)
             print(test)
             test=test+1
 
@@ -143,26 +272,44 @@ if __name__ == "__main__":
     x = geo_Mutest()
     x.readcsv(file)
     f = x.openfile()
-    splist=x.splist(x.datas,k)
+    x.readadcode(adcode)
+  
+    # for k, v in dic.items():
+    #     if s1 in k:
+    #         print (k, v)
+
+    # print(x.adcode(s1))
+    
 
 
+    splist1=x.splist(x.datas,k)
+    splist2 = x.splist(x.my, k)
 
     e1 = time.time()
     thread_list = []  # 线程存放列表
     for i in range(k):
-        t = threading.Thread(target=x.geo2, args=(splist[i],url))
+        t = threading.Thread(target=x.geo2, args=(splist1[i],url))
         t.setDaemon(True)
         thread_list.append(t)
 
     for t in thread_list:
         t.start()
 
+
     for t in thread_list:
         t.join()
 
     e2 = time.time()
     print ("并行执行时间：", e2 - e1)
-    x.report(f, url, p, r)
+    # print (p[0])
+
+
+
+    # res = json.loads(r[0])
+    # if res["status"] == 0:
+    #     print(res["result"]["adcode"])
+    #     print (res["result"]["adname"])
+    x.report(f, url, p, r,myr)
 
 
 

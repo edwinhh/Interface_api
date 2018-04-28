@@ -36,12 +36,11 @@ class v_125(TestAbstract):
         p.append(data)
         r.append(res)
         n.append(sys._getframe().f_code.co_name)
-        self.assertEqual('sw-tcp', res['result']['POISrc'])
+        # self.assertEqual('sw-tcp', res['result']['POISrc'])
 
 
     def test_03(self):
-        data = {'q': '深圳福田中心城', \
-                'district': '^&*(', \
+        data = {'q': '山东省青岛市市北区鸿府国际大厦907', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -65,8 +64,8 @@ class v_125(TestAbstract):
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
-        n.append(sys._getframe().f_code.co_name)
-        self.assertEqual('sw-tcp', res['result']['POISrc'])
+        # n.append(sys._getframe().f_code.co_name)
+        # self.assertEqual('sw-tcp', res['result']['POISrc'])
 
     def test_06(self):
         data = {'q': '东山码头', \

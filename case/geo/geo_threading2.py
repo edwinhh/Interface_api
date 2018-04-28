@@ -7,6 +7,10 @@ from pathos.multiprocessing import ProcessingPool
 import threading
 import time
 
+
+#做对比，将文档每行具体地址通过,拆分为参数，然后多线程执行
+
+
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 # url='http://10.202.52.102:8080/geo'
 # name = os.path.basename(__file__).split('.')[0]
@@ -14,6 +18,8 @@ import time
 # r=[]
 url1='http://10.202.52.102:8080/geo'
 url2='http://10.202.52.103:8080/geo'
+# url1='http://10.202.95.115:8899/geo'
+# url2='http://10.202.95.115:9091/geo'
 name = os.path.basename(__file__).split('.')[0]
 p1=[]
 r1=[]
@@ -22,7 +28,7 @@ r2=[]
 
 test=1
 
-file="e:/项目/地理编码/数据/new1.txt"
+file="e:/项目/地理编码/数据/cms.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -39,16 +45,30 @@ class geo_Mutest(TestAbstract):
         with open(file, 'r', encoding='utf_8')as f:
             for line in f.readlines():
                 self.num+=1
-                temp=line.strip().split(",")
+                # temp=line.strip().split(",")
+
 
                 data1 = {'address': temp[0], \
-                        'opt': 'sf30', \
-                        'city': "", \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'opt': "sf30", \
+                        'city': temp[1], \
+                         'span':"1", \
+                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 data2 = {'address': temp[0], \
-                        'opt': 'sf30', \
-                        'city': "", \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'opt': "sf30", \
+                        'city': temp[1], \
+                         'span':"1", \
+                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                
+                # data1 = {'address': temp[0], \
+                #         'opt': '', \
+                #         'city': "香港", \
+                #          'span':"1", \
+                #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                # data2 = {'address': temp[0], \
+                #         'opt': '', \
+                #         'city': "香港", \
+                #          'span':"1", \
+                #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 self.datas1.append(data1)
                 self.datas2.append(data2)
                 
@@ -152,7 +172,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
 
-    k=1
+    k=8
     x = geo_Mutest()
     x.readcsv(file)
     splist=x.splist(x.datas1,k)
