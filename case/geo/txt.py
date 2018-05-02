@@ -6,25 +6,26 @@ from functools import partial
 from pathos.multiprocessing import ProcessingPool
 import threading
 
-#不做对比，将省市区街道作为city和adress
+#不做对比，将省市区街道作为city和adress,循环读入目录下的用例文本执行用例
 
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 # url='http://10.202.52.102:8080/geo'
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url='http://10.202.52.103:8080/geo'
+url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 name = os.path.basename(__file__).split('.')[0]
-p=[]
-r=[]
-test=1
-dic={}
-my=[]
-myp=[]
-myr=[]
-dir="e:/项目/地理编码/数据/cx省市区调整/"
-file="县区撤销.txt"
+# p=[]
+# r=[]
+# test=1
+# dic={}
+# my=[]
+# myp=[]
+# myr=[]
 adcode="e:/项目/地理编码/数据/adcode.csv"
+dir="e:/项目/地理编码/数据/cx省市区调整/"
+filelist=[]
+
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -39,6 +40,12 @@ class geo_Mutest(TestAbstract):
         self.p1 = []
         self.r1 = []
 
+    def file_name(self,file_dir):
+        for root, dirs, files in os.walk(file_dir):
+            # print(root) #当前目录路径
+            # print(dirs) #当前路径下所有子目录
+            # print(files) #当前路径下所有非目录子文件
+            filelist.append(files)
     def readadcode(self,file):
         with open(adcode, 'r', encoding='utf_8')as f:
             for line in f.readlines():
@@ -131,9 +138,12 @@ class geo_Mutest(TestAbstract):
                 # city = line.replace('\n', '').replace('\t', '|')
                 if len(line)==1 or line.startswith('#'):
                     continue
-                address=line.strip().replace('\t', '').replace(',', '')
-                city = line.strip().replace('\t', '').replace(',', '|')
-            
+                address = line.strip().replace('\t', '')
+                city = line.strip().replace(" ", '|').replace('\t', '|')
+                if city.count("|")==3:
+                    city=city[:city.rindex("|")]
+                # address=line.strip().replace('\t', '').replace(',', '')
+                # city = line.strip().replace('\t', '').replace(',', '|')
                 data = {'address': address, \
                         'opt': 'sf30', \
                         'city': city, \
@@ -147,9 +157,32 @@ class geo_Mutest(TestAbstract):
                 my.append(mydata)
                 self.datas.append(my)
 
-    def openfile(self):
+    def readcsv(self, file):
+        f1 = open("cms.txt", 'a', encoding='utf_8')
+        with open(file, 'r', encoding='utf_8')as f:
+            for line in f.readlines():
+                my = []
+                self.num += 1
+                # temp=line.strip().split(",")
+            
+                # address = line.replace('\n', '').replace('\t', '')
+                # city = line.replace('\n', '').replace('\t', '|')
+                if len(line) == 1 or line.startswith('#'):
+                    continue
+                address = line.strip().replace('\t', '')
+                city = line.strip().replace(" ", '|').replace('\t', '|')
+                if city.count("|") == 3:
+                    city = city[:city.rindex("|")]
+                
+                f1.write(address)
+                f1.write(",")
+                f1.write(city)
+                f1.write("\n")
+        f1.close()
+                    
+    def openfile(self,file):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now +file+".txt"
+        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now+"_"+file+".txt"
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         f=open(file2, 'a', encoding='utf_8')
@@ -275,33 +308,45 @@ class geo_Mutest(TestAbstract):
 
 
 if __name__ == "__main__":
-
-    k=8
-    x = geo_Mutest()
-    x.readcsv(dir+file)
-    f = x.openfile()
-    x.readadcode(adcode)
-    splist1=x.splist(x.datas,k)
-
-
-    e1 = time.time()
-    thread_list = []  # 线程存放列表
-    for i in range(k):
-        t = threading.Thread(target=x.geo2, args=(splist1[i],url))
-        t.setDaemon(True)
-        thread_list.append(t)
-
-    for t in thread_list:
-        t.start()
-
-
-    for t in thread_list:
-        t.join()
-
-    e2 = time.time()
-    print ("并行执行时间：", e2 - e1)
-
-    x.report(f, url, p, r,myr)
+    
+    k=6
+    for root, dirs, files in os.walk(dir):
+        filelist.append(files)
+    for fo in filelist[0]:
+        x = geo_Mutest()
+        x.readcsv(dir+fo)
+    # e1 = time.time()
+    # for fo in filelist[0]:
+    #     p = []
+    #     r = []
+    #     dic = {}
+    #     test=1
+    #     my = []
+    #     myp = []
+    #     myr = []
+    #     x = geo_Mutest()
+    #     x.file_name(dir)
+    #     x.readcsv(dir+fo)
+    #     f = x.openfile(fo)
+    #     x.readadcode(adcode)
+    #     splist1=x.splist(x.datas,k)
+    #
+    #     thread_list = []  # 线程存放列表
+    #     for i in range(k):
+    #         t = threading.Thread(target=x.geo2, args=(splist1[i],url))
+    #         t.setDaemon(True)
+    #         thread_list.append(t)
+	#
+    #     for t in thread_list:
+    #         t.start()
+	#
+    #     for t in thread_list:
+    #         t.join()
+	#
+    #     x.report(f, url, p, r,myr)
+    #     f.close()
+    # e2 = time.time()
+    # print ("并行执行时间：", e2 - e1)
 
 
 
