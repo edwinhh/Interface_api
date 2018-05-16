@@ -9,32 +9,25 @@ import time
 import json
 
 
-#做对比，将文档每行具体url链接拆分为参数，然后多线程执行
+#将文档每行具体url链接拆分为参数，然后多线程执行
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 # url='http://10.202.52.102:8080/geo'
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url1='http://10.202.52.102:8080/geo'
-url2='http://10.202.52.103:8080/geo'
-# url1='http://10.202.95.115:8899/geo'
-# url2='http://10.202.95.115:9091/geo'
+url='http://10.203.32.136:8080/geo'
+
 name = os.path.basename(__file__).split('.')[0]
 p1=[]
 r1=[]
-p2=[]
-r2=[]
-
 test=1
 
-file1="e:/项目/地理编码/数据/供应商地址清单2-2.csv"
-errfile="e:/project/Interface_api-master/report/geo_threadinglist_2018-05-04-11_27_08_Error_乡镇撤销.txt"
+file1="e:/项目/输入提示/c++/new1.txt"
+errfile="e:/project/Interface_api-master/report/diff1.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
 class geo_Mutest(TestAbstract):
-
-
 
     def __init__(self):
         self.num=0
@@ -44,26 +37,19 @@ class geo_Mutest(TestAbstract):
     def readcsv(self,file):
         with open(file, 'r', encoding='utf_8')as f:
             for line in f.readlines():
+                self.num+=1
                 if len(line)==1 or line.startswith('#'):
                     continue
-                self.num+=1
-
                 p1=line.strip().split("?")
                 temp=p1[1].split("&")
-                address=temp[0].split("=")
+                q=temp[0].split("=")
                 city=temp[2].split("=")
 
-
-                data1 = {'address': address[1], \
+                data = {'q': q[1], \
                         'opt': 'sf30', \
                         'city': city[1], \
-                         'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                data2 = {'address': temp[0], \
-                        'opt': 'sf30', \
-                        'city': temp[1], \
-                         'span':"1", \
-                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+
                 
                 # data1 = {'address': temp[0], \
                 #         'opt': '', \
@@ -75,8 +61,7 @@ class geo_Mutest(TestAbstract):
                 #         'city': "香港", \
                 #          'span':"1", \
                 #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                self.datas1.append(data1)
-                self.datas2.append(data2)
+                self.datas1.append(data)
         f.close()
                 
 
@@ -111,8 +96,8 @@ class geo_Mutest(TestAbstract):
                 err.write('\n\n')
             # f.write(str(data[i]))
             # f.write('\n')
-                err.write(str(res1))
-                err.write('\n\n')
+            #     err.write(str(res1))
+            #     err.write('\n\n')
             else:
                 temp = []
                 for key in data[i]:
@@ -128,46 +113,29 @@ class geo_Mutest(TestAbstract):
                 f.write(str(res[i]))
                 f.write('\n\n')
 
+
     
-
-    def geo(self,data,p,r):
-        global test
-        for i in data:
-            res = self.requestGET(i)
-            p.append(i)
-            r.append(res)
-            # print(test)
-            test += 1
-
-
-        # try:
-        #     assert 0 == res['status']
-        # except AssertionError as ae:  # 明确抛出此异常
-        #         # 抛出 AssertionError 不含任何信息，所以无法通过 ae.__str__()获取异常描述
-        #     print('[AssertionError]', ae, ae.__str__())
-        #     print('[traceback]')
-        #     traceback.print_exc()
-        #     print('assert except')
-    
-    def geo2(self,data,url1,url2):
+    def geo(self,data,url):
         global test
         
         for i in data:
             tp = []
             tr = []
-            res = self.requestGET(url1, i)
-            tp.append(i)
-            tr.append(res)
-            res = self.requestGET(url2, i)
+            res = self.requestGET(url, i)
             tp.append(i)
             tr.append(res)
             p1.append(tp[0])
             r1.append(tr[0])
-            p2.append(tp[1])
-            r2.append(tr[1])
             print(test)
             test += 1
-            
+            # try:
+            #     assert 0 == res['status']
+            # except AssertionError as ae:  # 明确抛出此异常
+            #         # 抛出 AssertionError 不含任何信息，所以无法通过 ae.__str__()获取异常描述
+            #     print('[AssertionError]', ae, ae.__str__())
+            #     print('[traceback]')
+            #     traceback.print_exc()
+            #     print('assert except')
 
 
 
@@ -198,17 +166,15 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
 
-    k=8
+    k=1
     x = geo_Mutest()
     x.readcsv(errfile)
     splist=x.splist(x.datas1,k)
 
-
-
     e1 = time.time()
     thread_list = []  # 线程存放列表
     for i in range(k):
-        t = threading.Thread(target=x.geo2, args=(splist[i], url1, url2))
+        t = threading.Thread(target=x.geo, args=(splist[i], url))
         t.setDaemon(True)
         thread_list.append(t)
 
@@ -228,11 +194,8 @@ if __name__ == "__main__":
     #     print(i[1])
     f1= x.openfile()
     err1=x.openerror()
-    x.report(f1,err1,url1, p1, r1)
-    time.sleep(1)
-    f2 = x.openfile()
-    err2 = x.openerror()
-    x.report(f2,err2,url2,p2, r2)
+    x.report(f1,err1,url, p1, r1)
+
 
 
 

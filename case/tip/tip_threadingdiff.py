@@ -6,17 +6,19 @@ from functools import partial
 from pathos.multiprocessing import ProcessingPool
 import threading
 import time
-import json
 
 
-#做对比，将文档每行具体url链接拆分为参数，然后多线程执行
+#做新旧对比，将文档每行具体地址通过,拆分为参数，然后多线程执行
+
+
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 # url='http://10.202.52.102:8080/geo'
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url1='http://10.202.52.102:8080/geo'
-url2='http://10.202.52.103:8080/geo'
+
+url1='http://10.202.95.116:9090/tip'
+url2='http://10.203.32.136:8888/tip/api'
 # url1='http://10.202.95.115:8899/geo'
 # url2='http://10.202.95.115:9091/geo'
 name = os.path.basename(__file__).split('.')[0]
@@ -24,11 +26,10 @@ p1=[]
 r1=[]
 p2=[]
 r2=[]
-
+filelist=[]
 test=1
 
-file1="e:/项目/地理编码/数据/供应商地址清单2-2.csv"
-errfile="e:/project/Interface_api-master/report/geo_threadinglist_2018-05-04-11_27_08_Error_乡镇撤销.txt"
+file="e:/项目/输入提示/c++/new5.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -44,82 +45,55 @@ class geo_Mutest(TestAbstract):
     def readcsv(self,file):
         with open(file, 'r', encoding='utf_8')as f:
             for line in f.readlines():
-                if len(line)==1 or line.startswith('#'):
-                    continue
                 self.num+=1
-
-                p1=line.strip().split("?")
-                temp=p1[1].split("&")
-                address=temp[0].split("=")
-                city=temp[2].split("=")
+                temp=line.strip().split(",")
 
 
-                data1 = {'address': address[1], \
-                        'opt': 'sf30', \
-                        'city': city[1], \
-                         'span':"1", \
+                data1 = {'q': temp[0], \
+                        'opt': "sf30", \
+                        'city': "", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 data2 = {'address': temp[0], \
-                        'opt': 'sf30', \
-                        'city': temp[1], \
-                         'span':"1", \
+                        'opt': "sf30", \
+                        'city': "", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 
                 # data1 = {'address': temp[0], \
                 #         'opt': '', \
                 #         'city': "香港", \
-                #          'span':"1", \
+                #          
                 #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 # data2 = {'address': temp[0], \
                 #         'opt': '', \
                 #         'city': "香港", \
-                #          'span':"1", \
+                #          
                 #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 self.datas1.append(data1)
                 self.datas2.append(data2)
-        f.close()
                 
 
     def openfile(self):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
         file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now + ".txt"
+        filelist.append(file2)
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         f=open(file2, 'a', encoding='utf_8')
         return f
 
-    def openerror(self):
-        now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file3 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" +"error_"+now+ ".txt"
-        #os.mknod(rfile)
-        #with open(file2, 'w+', encoding='utf_8')as f
-        err = open(file3, 'a', encoding='utf_8')
-        return err
-    
-    def report(self, f,err, url, data, res):
-
-        for i in range(len(res)):
-            res1=json.loads(res[i])
-            if res1["status"]==1:
+    def report(self,f, url, data, res):
+            
+            #f.write(str(i + 1))
+            f.write('\t')
+            # f.write(n[i])
+            f.write('\n')
+            for i in range(len(data)):
                 temp = []
                 for key in data[i]:
                     temp.append(key + "=" + data[i][key])
                 parameters = "&".join(temp)
                 case = url + "?" + parameters
-                err.write('\n')
-                err.write(case)
-                err.write('\n\n')
-            # f.write(str(data[i]))
-            # f.write('\n')
-                err.write(str(res1))
-                err.write('\n\n')
-            else:
-                temp = []
-                for key in data[i]:
-                    temp.append(key + "=" + data[i][key])
-                parameters = "&".join(temp)
-                case = url + "?" + parameters
-                f.write(str(i + 1))
+                f.write(str(i+1))
                 f.write('\n')
                 f.write(case)
                 f.write('\n\n')
@@ -128,12 +102,36 @@ class geo_Mutest(TestAbstract):
                 f.write(str(res[i]))
                 f.write('\n\n')
 
-    
+    def err(self, url,oldres, newreq,newres):
+        reqnew = []
+        resnew = []
+        resold = []
+        node = {}
+        now = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
+        diff = "e:/project/Interface_api-master/report/" + "diff_" + now + ".txt"
+        p = open(diff, 'w', encoding='utf-8')
+ 
+        for i in range(min(len(oldres), len(newres))):
+            #print (json.loads(newres[i])["status"])
+            # print ("&")
+            #print (type(json.loads(oldres[i])["status"]))
 
-    def geo(self,data,p,r):
+            if json.loads(newres[i])["status"] =="1" and json.loads(oldres[i])["status"] ==0:
+                temp = []
+                for key in newreq[i]:
+                    temp.append(key + "=" + newreq[i][key])
+                parameters = "&".join(temp)
+                case = url + "?" + parameters
+                p.write(case)
+                p.write('\n')
+                p.write(newres[i])
+                p.write('\n\n')
+        
+
+    def geo(self,data,url,p,r):
         global test
         for i in data:
-            res = self.requestGET(i)
+            res = self.requestGET(url, i)
             p.append(i)
             r.append(res)
             # print(test)
@@ -200,7 +198,7 @@ if __name__ == "__main__":
 
     k=8
     x = geo_Mutest()
-    x.readcsv(errfile)
+    x.readcsv(file)
     splist=x.splist(x.datas1,k)
 
 
@@ -208,7 +206,7 @@ if __name__ == "__main__":
     e1 = time.time()
     thread_list = []  # 线程存放列表
     for i in range(k):
-        t = threading.Thread(target=x.geo2, args=(splist[i], url1, url2))
+        t = threading.Thread(target=x.geo2, args=(splist[i],url1,url2))
         t.setDaemon(True)
         thread_list.append(t)
 
@@ -226,13 +224,15 @@ if __name__ == "__main__":
     # for i in p:
     #     print(i[0])
     #     print(i[1])
-    f1= x.openfile()
-    err1=x.openerror()
-    x.report(f1,err1,url1, p1, r1)
+    f1 = x.openfile()
+    x.report(f1, url1, p1, r1)
     time.sleep(1)
     f2 = x.openfile()
-    err2 = x.openerror()
-    x.report(f2,err2,url2,p2, r2)
+    x.report(f2, url2, p2, r2)
+
+    x.err(url2,r1,p2,r2)
+    
+
 
 
 

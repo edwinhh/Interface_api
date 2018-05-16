@@ -6,8 +6,9 @@ sys.path.append('e:/project/Interface_api-master')
 from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
-url = 'http://gis-rss-rgeo.intsit.sfdc.com.cn:1080/rgeo'
+#url = 'http://gis-rss-rgeo.intsit.sfdc.com.cn:1080/rgeo'
 #url='http://10.202.43.106:8080/rgeo'
+url='http://10.203.32.186:8080/rgeo/api'
 name = os.path.basename(__file__).split('.')[0]
 
 p = []

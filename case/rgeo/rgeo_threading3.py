@@ -15,8 +15,8 @@ import json
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url1='http://10.202.52.102:8080/geo'
-url2='http://10.202.52.103:8080/geo'
+url1='http://10.202.43.107:8080/rgeo'
+url2='http://10.203.32.186:8080/rgeo/api'
 # url1='http://10.202.95.115:8899/geo'
 # url2='http://10.202.95.115:9091/geo'
 name = os.path.basename(__file__).split('.')[0]
@@ -27,8 +27,8 @@ r2=[]
 
 test=1
 
-file1="e:/项目/地理编码/数据/供应商地址清单2-2.csv"
-errfile="e:/project/Interface_api-master/report/geo_threadinglist_2018-05-04-11_27_08_Error_乡镇撤销.txt"
+file="e:/项目/逆地理编码/rgeo1.csv"
+#errfile="e:/project/Interface_api-master/report/geo_threadinglist_2018-05-04-11_27_08_Error_乡镇撤销.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -44,25 +44,18 @@ class geo_Mutest(TestAbstract):
     def readcsv(self,file):
         with open(file, 'r', encoding='utf_8')as f:
             for line in f.readlines():
+                self.num+=1
                 if len(line)==1 or line.startswith('#'):
                     continue
-                self.num+=1
+                p=line.strip().split(",")
 
-                p1=line.strip().split("?")
-                temp=p1[1].split("&")
-                address=temp[0].split("=")
-                city=temp[2].split("=")
-
-
-                data1 = {'address': address[1], \
+                data1 = {'x': p[0], \
                         'opt': 'sf30', \
-                        'city': city[1], \
-                         'span':"1", \
+                        'y': p[1], \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                data2 = {'address': temp[0], \
+                data2 = {'x': p[0], \
                         'opt': 'sf30', \
-                        'city': temp[1], \
-                         'span':"1", \
+                        'y': p[1], \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 
                 # data1 = {'address': temp[0], \
@@ -200,7 +193,7 @@ if __name__ == "__main__":
 
     k=8
     x = geo_Mutest()
-    x.readcsv(errfile)
+    x.readcsv(file)
     splist=x.splist(x.datas1,k)
 
 

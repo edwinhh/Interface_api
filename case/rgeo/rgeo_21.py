@@ -4,7 +4,8 @@ from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
 #url = 'http://gis-rss-rgeo.intsit.sfdc.com.cn:1080/rgeo'
-url='http://10.202.43.107:8080/rgeo'
+#url='http://10.202.43.107:8080/rgeo'
+url='http://10.203.32.186:8080/rgeo/api'
 name = os.path.basename(__file__).split('.')[0]
 p = []
 r = []
@@ -67,7 +68,7 @@ class rgeo_2(TestAbstract):
 
     def test_3(self):
         data = {'x': '120.568292', \
-                'y': '31.310205', \
+                'y': '', \
                 'opt': 'gd1', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -81,7 +82,7 @@ class rgeo_2(TestAbstract):
 
 class rgeo_3(TestAbstract):
     def test_1(self):
-        data = {'x': '113.30', \
+        data = {'x': '', \
                 'y': '23.20', \
                 'opt': 'sf1', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}

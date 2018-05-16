@@ -4,8 +4,9 @@ import unittest
 from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
-url = 'http://gis-rss-rgeo.intsit.sfdc.com.cn:1080/rgeo'
+#url = 'http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api'
 #url='http://10.202.43.107:8080/rgeo'
+url='http://10.203.32.186:8080/rgeo/api'
 name = os.path.basename(__file__).split('.')[0]
 p = []
 r = []
@@ -76,7 +77,7 @@ class gis_rgeo(TestAbstract):
     def test_7(self):
         data = {'x': '114.036919', \
                 'y': '22.604069', \
-                'opt': 'bd1', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -88,7 +89,7 @@ class gis_rgeo(TestAbstract):
     def test_8(self):
         data = {'x': '120.568292', \
                 'y': '31.31020', \
-                'opt': 'bd1', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -100,7 +101,7 @@ class gis_rgeo(TestAbstract):
     def test_9(self):
         data = {'x': '22.5410116566', \
                 'y': '113.97655634968', \
-                'opt': 'bd1', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -110,7 +111,7 @@ class gis_rgeo(TestAbstract):
     def test_10(self):
         data = {'x': '1', \
                 'y': '1', \
-                'opt': 'bd1', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -120,7 +121,7 @@ class gis_rgeo(TestAbstract):
     def test_11(self):
         data = {'x': '@#$', \
                 'y': '@#$%^', \
-                'opt': 'bd1', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -130,7 +131,7 @@ class gis_rgeo(TestAbstract):
     def test_12(self):
         data = {'x': '', \
                 'y': '', \
-                'opt': 'bd1', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -274,7 +275,7 @@ class gis_rgeo(TestAbstract):
     def test_25(self):
         data = {'x': '114.036919', \
                 'y': '22.604069', \
-                'opt': 'gd2', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -286,7 +287,7 @@ class gis_rgeo(TestAbstract):
     def test_26(self):
         data = {'x': '120.568292', \
                 'y': '31.31020', \
-                'opt': 'gd2', \
+                'opt': '', \
                     'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -298,7 +299,7 @@ class gis_rgeo(TestAbstract):
     def test_27(self):
         data = {'x': '22.5410116566', \
                 'y': '113.97655634968', \
-                'opt': 'gd2', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -308,7 +309,7 @@ class gis_rgeo(TestAbstract):
     def test_28(self):
         data = {'x': '1', \
                 'y': '1', \
-                'opt': 'gd2', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -318,7 +319,7 @@ class gis_rgeo(TestAbstract):
     def test_29(self):
         data = {'x': '@#$', \
                 'y': '@#$%^', \
-                'opt': 'gd2', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -326,9 +327,9 @@ class gis_rgeo(TestAbstract):
         print('29: ', res)
 
     def test_30(self):
-        data = {'x': '', \
-                'y': '', \
-                'opt': 'gd2', \
+        data = {'x': '&&', \
+                'y': '&', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -336,8 +337,8 @@ class gis_rgeo(TestAbstract):
         print('30: ', res)
 
     def test_30(self):
-        data = {'x': '113.237915', \
-                'y': '22.685233', \
+        data = {'x': '  ', \
+                'y': '   ', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -346,331 +347,331 @@ class gis_rgeo(TestAbstract):
 
 # opt=sf1
 
-#     def test_31(self):
-#         data = {'x': '114.036919', \
-#                 'y': '22.604069', \
-#                 'opt': 'sf1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('31: ', res)
-#
-#                 # self.assertEqual(0,res['status'])
-#
-#     def test_32(self):
-#             data = {'x': '120.568292', \
-#                     'y': '31.31020', \
-#                     'opt': 'sf1', \
-#                     'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#             res = self.requestGET(url, data)
-#             p.append(data)
-#             r.append(res)
-#             print('32: ', res)
-#
-#                 # self.assertEqual(1,res['status'])
-#
-#     def test_33(self):
-#         data = {'x': '22.5410116566', \
-#                 'y': '113.97655634968', \
-#                 'opt': 'sf1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('33: ', res)
-#
-#     def test_34(self):
-#         data = {'x': '1', \
-#                 'y': '1', \
-#                 'opt': 'sf1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('34: ', res)
-#
-#     def test_35(self):
-#         data = {'x': '@#$', \
-#                 'y': '@#$%^', \
-#                 'opt': 'sf1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('35: ', res)
-#
-#     def test_36(self):
-#         data = {'x': '', \
-#                 'y': '', \
-#                 'opt': 'sf1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('36: ', res)
-#
-# #opt=sf2
-#     def test_37(self):
-#         data = {'x': '114.036919', \
-#                 'y': '22.604069', \
-#                 'opt': 'sf2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('37: ', res)
-#
-#                 # self.assertEqual(0,res['status'])
-#
-#     def test_38(self):
-#             data = {'x': '120.568292', \
-#                     'y': '31.31020', \
-#                     'opt': 'sf2', \
-#                     'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#             res = self.requestGET(url, data)
-#             p.append(data)
-#             r.append(res)
-#             print('38: ', res)
-#
-#                 # self.assertEqual(1,res['status'])
-#
-#     def test_39(self):
-#         data = {'x': '22.5410116566', \
-#                 'y': '113.97655634968', \
-#                 'opt': 'sf2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('39: ', res)
-#
-#     def test_40(self):
-#         data = {'x': '1', \
-#                 'y': '1', \
-#                 'opt': 'sf2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('40: ', res)
-#
-#     def test_41(self):
-#         data = {'x': '@#$', \
-#                 'y': '@#$%^', \
-#                 'opt': 'sf2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('41: ', res)
-#
-#     def test_42(self):
-#         data = {'x': '', \
-#                 'y': '', \
-#                 'opt': 'sf2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('42: ', res)
-#
-#
-#
-# #cc=1
-#     def test_43(self):
-#         data = {'x': '114.036919', \
-#                 'y': '22.604069', \
-#                 'opt': 'sf1', \
-#                 'cc':'1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('43: ', res)
-#
-#                 # self.assertEqual(0,res['status'])
-#
-#     def test_44(self):
-#             data = {'x': '120.568292', \
-#                     'y': '31.31020', \
-#                     'opt': 'sf2', \
-#                     'cc': '1', \
-#                     'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#             res = self.requestGET(url, data)
-#             p.append(data)
-#             r.append(res)
-#             print('44: ', res)
-#
-#                 # self.assertEqual(1,res['status'])
-#
-#     def test_45(self):
-#         data = {'x': '22.5410116566', \
-#                 'y': '113.97655634968', \
-#                 'opt': 'gd1', \
-#                 'cc': '1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('45: ', res)
-#
-#     def test_46(self):
-#         data = {'x': '1', \
-#                 'y': '1', \
-#                 'opt': 'gd2', \
-#                 'cc': '1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('46: ', res)
-#
-#     def test_47(self):
-#         data = {'x': '@#$', \
-#                 'y': '@#$%^', \
-#                 'opt': 'bd2', \
-#                 'cc': '1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('47: ', res)
-#
-#     def test_48(self):
-#         data = {'x': '', \
-#                 'y': '', \
-#                 'opt': 'bd1', \
-#                 'cc': '1', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('48: ', res)
-#
-#    #cc=2
-#     def test_49(self):
-#         data = {'x': '114.036919', \
-#                 'y': '22.604069', \
-#                 'opt': 'sf1', \
-#                 'cc':'2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('49: ', res)
-#
-#                 # self.assertEqual(0,res['status'])
-#
-#     def test_50(self):
-#             data = {'x': '120.568292', \
-#                     'y': '31.31020', \
-#                     'opt': 'sf2', \
-#                     'cc': '2', \
-#                     'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#             res = self.requestGET(url, data)
-#             p.append(data)
-#             r.append(res)
-#             print('50: ', res)
-#
-#                 # self.assertEqual(1,res['status'])
-#
-#     def test_51(self):
-#         data = {'x': '22.5410116566', \
-#                 'y': '113.97655634968', \
-#                 'opt': 'gd1', \
-#                 'cc': '2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('51: ', res)
-#
-#     def test_52(self):
-#         data = {'x': '1', \
-#                 'y': '1', \
-#                 'opt': 'gd2', \
-#                 'cc': '2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('52: ', res)
-#
-#     def test_53(self):
-#         data = {'x': '@#$', \
-#                 'y': '@#$%^', \
-#                 'opt': 'bd2', \
-#                 'cc': '2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('53: ', res)
-#
-#     def test_54(self):
-#         data = {'x': '', \
-#                 'y': '', \
-#                 'opt': 'bd1', \
-#                 'cc': '2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('54: ', res)
-#
-# #异常处理
-#     def test_55(self):
-#         data = {'x': '', \
-#                 'y': '', \
-#                 'opt': 'bd1', \
-#                 'cc': '-36', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('55: ', res)
-#
-#     def test_56(self):
-#         data = {
-#                     'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('56: ', res)
-#
-#     def test_57(self):
-#         data = {'x': '', \
-#                 'y': '', \
-#                 'opt': '', \
-#                 'cc': '', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('57: ', res)
-#
-#     def test_58(self):
-#         data = {'x': '22.5410116566', \
-#                 'y': '113.97655634968', \
-#                 'opt': 'sw-1', \
-#                 'cc': '2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('58: ', res)
-#
-#     def test_59(self):
-#         data = {'x': '22.5410116566', \
-#                 'y': '113.97655634968', \
-#                 'opt': '&@!#$', \
-#                 'cc': '2', \
-#                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-#         res = self.requestGET(url, data)
-#         p.append(data)
-#         r.append(res)
-#         print('59: ', res)
+    def test_31(self):
+        data = {'x': '<scrpit>alert("深圳")</scrpit>', \
+                'y': '', \
+                'opt': '', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('31: ', res)
+
+                # self.assertEqual(0,res['status'])
+
+    def test_32(self):
+            data = {'x': '海上世界', \
+                    'y': '深圳市', \
+                    'opt': '', \
+                    'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+            res = self.requestGET(url, data)
+            p.append(data)
+            r.append(res)
+            print('32: ', res)
+
+                # self.assertEqual(1,res['status'])
+
+    def test_33(self):
+        data = {'x': '22.5410116566', \
+                'y': '113.97655634968', \
+                'opt': '', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('33: ', res)
+
+    def test_34(self):
+        data = {'x': '1', \
+                'y': '1', \
+                'opt': '', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('34: ', res)
+
+    def test_35(self):
+        data = {'x': '@#$', \
+                'y': '@#$%^', \
+                'opt': '', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('35: ', res)
+
+    def test_36(self):
+        data = {'x': '', \
+                'y': '', \
+                'opt': '', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('36: ', res)
+
+#opt=sf2
+    def test_37(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'opt': 'sf2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('37: ', res)
+
+                # self.assertEqual(0,res['status'])
+
+    def test_38(self):
+            data = {'x': '120.568292', \
+                    'y': '31.31020', \
+                    'opt': 'sf2', \
+                    'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+            res = self.requestGET(url, data)
+            p.append(data)
+            r.append(res)
+            print('38: ', res)
+
+                # self.assertEqual(1,res['status'])
+
+    def test_39(self):
+        data = {'x': '22.5410116566', \
+                'y': '113.97655634968', \
+                'opt': 'sf2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('39: ', res)
+
+    def test_40(self):
+        data = {'x': '1', \
+                'y': '1', \
+                'opt': 'sf2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('40: ', res)
+
+    def test_41(self):
+        data = {'x': '@#$', \
+                'y': '@#$%^', \
+                'opt': 'sf2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('41: ', res)
+
+    def test_42(self):
+        data = {'x': '', \
+                'y': '', \
+                'opt': 'sf2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('42: ', res)
+
+
+
+#cc=1
+    def test_43(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'opt': '', \
+                'cc':'1', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('43: ', res)
+
+                # self.assertEqual(0,res['status'])
+
+    def test_44(self):
+            data = {'x': '120.568292', \
+                    'y': '31.31020', \
+                    'opt': 'sf2', \
+                    'cc': '1', \
+                    'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+            res = self.requestGET(url, data)
+            p.append(data)
+            r.append(res)
+            print('44: ', res)
+
+                # self.assertEqual(1,res['status'])
+
+    def test_45(self):
+        data = {'x': '22.5410116566', \
+                'y': '113.97655634968', \
+                'opt': 'gd1', \
+                'cc': '1', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('45: ', res)
+
+    def test_46(self):
+        data = {'x': '1', \
+                'y': '1', \
+                'opt': '', \
+                'cc': '1', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('46: ', res)
+
+    def test_47(self):
+        data = {'x': '@#$', \
+                'y': '@#$%^', \
+                'opt': 'bd2', \
+                'cc': '1', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('47: ', res)
+
+    def test_48(self):
+        data = {'x': '', \
+                'y': '', \
+                'opt': '', \
+                'cc': '1', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('48: ', res)
+
+   #cc=2
+    def test_49(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'opt': '', \
+                'cc':'2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('49: ', res)
+
+                # self.assertEqual(0,res['status'])
+
+    def test_50(self):
+            data = {'x': '120.568292', \
+                    'y': '31.31020', \
+                    'opt': 'sf2', \
+                    'cc': '2', \
+                    'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+            res = self.requestGET(url, data)
+            p.append(data)
+            r.append(res)
+            print('50: ', res)
+
+                # self.assertEqual(1,res['status'])
+
+    def test_51(self):
+        data = {'x': '22.5410116566', \
+                'y': '113.97655634968', \
+                'opt': 'gd1', \
+                'cc': '2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('51: ', res)
+
+    def test_52(self):
+        data = {'x': '1', \
+                'y': '1', \
+                'opt': '', \
+                'cc': '2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('52: ', res)
+
+    def test_53(self):
+        data = {'x': '@#$', \
+                'y': '@#$%^', \
+                'opt': 'bd2', \
+                'cc': '2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('53: ', res)
+
+    def test_54(self):
+        data = {'x': '', \
+                'y': '', \
+                'opt': '', \
+                'cc': '2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('54: ', res)
+
+#异常处理
+    def test_55(self):
+        data = {'x': '', \
+                'y': '', \
+                'opt': '', \
+                'cc': '-36', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('55: ', res)
+
+    def test_56(self):
+        data = {
+                    'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('56: ', res)
+
+    def test_57(self):
+        data = {'x': '', \
+                'y': '', \
+                'opt': '', \
+                'cc': '', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('57: ', res)
+
+    def test_58(self):
+        data = {'x': '22.5410116566', \
+                'y': '113.97655634968', \
+                'opt': 'sw-1', \
+                'cc': '2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('58: ', res)
+
+    def test_59(self):
+        data = {'x': '22.5410116566', \
+                'y': '113.97655634968', \
+                'opt': '&@!#$', \
+                'cc': '2', \
+                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('59: ', res)
 #
     def test_60(self):
         data = {'x': '0', \
@@ -687,7 +688,6 @@ class gis_rgeo(TestAbstract):
 
 
 if __name__ == "__main__":
-    #
     suite = unittest.TestSuite()
     suite.addTest(unittest.makeSuite(gis_rgeo))
     runner = unittest.TextTestRunner()
