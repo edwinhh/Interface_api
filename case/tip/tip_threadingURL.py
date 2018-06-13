@@ -15,7 +15,7 @@ import json
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url='http://10.203.32.136:8080/geo'
+url='http://10.203.32.136:8888/geo'
 
 name = os.path.basename(__file__).split('.')[0]
 p1=[]

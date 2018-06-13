@@ -1,0 +1,422 @@
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api
+
+1	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"广东省深圳市宝安区金龙路26","xcoord":114.036919,"ycoord":22.60407,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区","road":"金龙路","street_no":"26","pois":[{"name":"白石龙综合楼","addr":"龙华新城新区大道东侧","x":114.036849,"y":22.604082,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"信兴家私城","addr":"白石龙一区154号","x":114.036975,"y":22.604076,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙老村34栋","addr":"龙华区","x":114.036912,"y":22.6041,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新天天鲜果园","addr":"白石龙村龙樟路24栋","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新兴百货","addr":"白石龙村一区139-11楼","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"2元起精品店","addr":"龙华区","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙一区-36栋","addr":"龙华区白石龙下一区36栋","x":114.037002,"y":22.604152,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"聚湘阁菜馆(深圳北站店)","addr":"民治街道民塘路深圳北站东广场南侧C1栋物业1楼1F011","x":114.036599,"y":22.60432,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"华鹏专业汽车冷气","addr":"民丰路与民塘路交叉口南150米","x":114.036724,"y":22.604739,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"智多星艺术幼儿园","addr":"民治街道白石龙村一区162栋(蓝牌)","x":114.037825,"y":22.604307,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"}]}}
+
+
+2	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","xcoord":1.0,"ycoord":1.0}}
+
+
+3	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x必须为合法的数字"}}
+
+
+4	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+5	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=bd2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': 'bd2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"广东省深圳市宝安区金龙路26","xcoord":114.036919,"ycoord":22.60407,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区","road":"金龙路","street_no":"26","pois":[{"name":"白石龙综合楼","addr":"龙华新城新区大道东侧","x":114.036849,"y":22.604082,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"信兴家私城","addr":"白石龙一区154号","x":114.036975,"y":22.604076,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙老村34栋","addr":"龙华区","x":114.036912,"y":22.6041,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新天天鲜果园","addr":"白石龙村龙樟路24栋","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新兴百货","addr":"白石龙村一区139-11楼","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"2元起精品店","addr":"龙华区","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙一区-36栋","addr":"龙华区白石龙下一区36栋","x":114.037002,"y":22.604152,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"聚湘阁菜馆(深圳北站店)","addr":"民治街道民塘路深圳北站东广场南侧C1栋物业1楼1F011","x":114.036599,"y":22.60432,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"华鹏专业汽车冷气","addr":"民丰路与民塘路交叉口南150米","x":114.036724,"y":22.604739,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"智多星艺术幼儿园","addr":"民治街道白石龙村一区162栋(蓝牌)","x":114.037825,"y":22.604307,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"}]}}
+
+
+6	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=bd2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': 'bd2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"江苏省苏州市姑苏区寒山寺弄24号苏州寒山寺","xcoord":120.568292,"ycoord":31.3102,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"寒山寺弄","street_no":"24号","pois":[{"name":"苏州寒山寺","addr":"寒山寺弄24号苏州寒山寺内","x":120.568406,"y":31.310484,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大雄宝殿","addr":"寒山寺景区内","x":120.568307,"y":31.310185,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟房","addr":"寒山寺景区内","x":120.568244,"y":31.31004,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大悲殿","addr":"寒山寺景区内","x":120.568135,"y":31.31005,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟楼","addr":"","x":120.568523,"y":31.310127,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"听钟石","addr":"寒山寺景区内","x":120.568523,"y":31.310081,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山寺佛教图书馆","addr":"寒山寺景区枫桥路96号","x":120.568514,"y":31.31052,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山书苑","addr":"金阊街道枫桥夜泊大厦枫桥路688号","x":120.567982,"y":31.309852,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"常乐池","addr":"寒山寺景区内","x":120.567838,"y":31.309955,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州和合文化基金会","addr":"寒山寺弄24号","x":120.568008,"y":31.310761,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}]}}
+
+
+7	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=bd2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': 'bd2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"BDAPI has no data"}}
+
+
+8	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=bd2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': 'bd2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"BDAPI has no data"}}
+
+
+9	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=bd2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': 'bd2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y必须为合法的数字"}}
+
+
+10	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=bd2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': 'bd2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+11	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=gd1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': 'gd1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"gd","name":"广东省深圳市龙华区金龙路金龙路２栋","xcoord":114.036561,"ycoord":22.605185,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区","road":"金龙路","street_no":"金龙路２栋","pois":[{"name":"白石龙幼儿园","addr":"白石龙老村2号","x":114.036561,"y":22.605185,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"阳光贝贝幼儿园(宁远路)","addr":"白石龙一区126-23","x":114.038301,"y":22.603278,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"深圳农村商业银行(北站支行)","addr":"民治街道新区大道与白石龙交汇处彩旺大厦首层右侧","x":114.03478,"y":22.605237,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"卡瑞登酒店(北站店)","addr":"新区大道与白龙路交汇处","x":114.034727,"y":22.605541,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"中国文化名人大营救纪念馆(暂停营业)","addr":"白石龙老村1号","x":114.036644,"y":22.605707,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"白石龙1区","addr":"白石龙村民塘路","x":114.038477,"y":22.603779,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"高分得教育","addr":"民治街道白石龙一区147栋","x":114.038473,"y":22.605797,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"深圳市东星学校","addr":"民治白石龙","x":114.039376,"y":22.605392,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"彩旺大厦","addr":"新区大道深圳北站南侧","x":114.034673,"y":22.605402,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"},{"name":"亚洲大药房(白石龙分店)","addr":"白石龙一区127栋201","x":114.038067,"y":22.604278,"adcode":"440309","regcode":"755","province":"广东省","city":"深圳市","district":"龙华区"}],"gd_x":114.036561,"gd_y":22.605185}}
+
+
+12	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"江苏省苏州市姑苏区寒山寺弄24号苏州寒山寺","xcoord":120.568292,"ycoord":31.3102,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"寒山寺弄","street_no":"24号","pois":[{"name":"苏州寒山寺","addr":"寒山寺弄24号苏州寒山寺内","x":120.568406,"y":31.310484,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大雄宝殿","addr":"寒山寺景区内","x":120.568307,"y":31.310185,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟房","addr":"寒山寺景区内","x":120.568244,"y":31.31004,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大悲殿","addr":"寒山寺景区内","x":120.568135,"y":31.31005,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟楼","addr":"","x":120.568523,"y":31.310127,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"听钟石","addr":"寒山寺景区内","x":120.568523,"y":31.310081,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山寺佛教图书馆","addr":"寒山寺景区枫桥路96号","x":120.568514,"y":31.31052,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山书苑","addr":"金阊街道枫桥夜泊大厦枫桥路688号","x":120.567982,"y":31.309852,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"常乐池","addr":"寒山寺景区内","x":120.567838,"y":31.309955,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州和合文化基金会","addr":"寒山寺弄24号","x":120.568008,"y":31.310761,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}]}}
+
+
+13	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=gd1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': 'gd1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"gd","name":"江苏省苏州市姑苏区金阊街道寒山寺苏州市枫桥风景名胜区","xcoord":120.568314,"ycoord":31.309445,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"枫桥路","street_no":"28-10号","pois":[{"name":"苏州市枫桥风景名胜区","addr":"枫桥路底","x":120.568314,"y":31.309445,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州市寒山寺","addr":"枫桥路","x":120.568292,"y":31.310205,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山寺佛教图书馆","addr":"寒山寺景区枫桥路96号","x":120.568675,"y":31.310838,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山寺禅意书画院","addr":"金阊街道寒山寺弄24号","x":120.568009,"y":31.310732,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"漕运展示馆","addr":"枫桥景区内","x":120.566863,"y":31.309902,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州市枫桥风景名胜区-寒山别院","addr":"寒山寺景区内","x":120.568205,"y":31.309623,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州市枫桥风景名胜区-性空世界","addr":"寒山寺景区内","x":120.568184,"y":31.309964,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州市枫桥风景名胜区-钟楼","addr":"枫桥路28-10号附近","x":120.56841,"y":31.310015,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州市枫桥风景名胜区-罗汉堂","addr":"寒山寺景区内","x":120.567859,"y":31.310433,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州市枫桥风景名胜区-藏经楼","addr":"枫桥路寒山寺弄24号","x":120.568294,"y":31.310194,"adcode":"320508","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}],"gd_x":120.568314,"gd_y":31.309445}}
+
+
+14	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=gd1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': 'gd1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"INVALID_PARAMS"}}
+
+
+15	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=gd1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': 'gd1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"gd","xcoord":1.0,"ycoord":1.0,"gd_x":1.0,"gd_y":1.0}}
+
+
+16	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=gd1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': 'gd1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y必须为合法的数字"}}
+
+
+17	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=gd1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': 'gd1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+18	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"广东省深圳市宝安区金龙路26","xcoord":114.036919,"ycoord":22.60407,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区","road":"金龙路","street_no":"26","pois":[{"name":"白石龙综合楼","addr":"龙华新城新区大道东侧","x":114.036849,"y":22.604082,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"信兴家私城","addr":"白石龙一区154号","x":114.036975,"y":22.604076,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙老村34栋","addr":"龙华区","x":114.036912,"y":22.6041,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新天天鲜果园","addr":"白石龙村龙樟路24栋","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新兴百货","addr":"白石龙村一区139-11楼","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"2元起精品店","addr":"龙华区","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙一区-36栋","addr":"龙华区白石龙下一区36栋","x":114.037002,"y":22.604152,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"聚湘阁菜馆(深圳北站店)","addr":"民治街道民塘路深圳北站东广场南侧C1栋物业1楼1F011","x":114.036599,"y":22.60432,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"华鹏专业汽车冷气","addr":"民丰路与民塘路交叉口南150米","x":114.036724,"y":22.604739,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"智多星艺术幼儿园","addr":"民治街道白石龙村一区162栋(蓝牌)","x":114.037825,"y":22.604307,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"}]}}
+
+
+19	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"江苏省苏州市姑苏区寒山寺弄24号苏州寒山寺","xcoord":120.568292,"ycoord":31.3102,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"寒山寺弄","street_no":"24号","pois":[{"name":"苏州寒山寺","addr":"寒山寺弄24号苏州寒山寺内","x":120.568406,"y":31.310484,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大雄宝殿","addr":"寒山寺景区内","x":120.568307,"y":31.310185,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟房","addr":"寒山寺景区内","x":120.568244,"y":31.31004,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大悲殿","addr":"寒山寺景区内","x":120.568135,"y":31.31005,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟楼","addr":"","x":120.568523,"y":31.310127,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"听钟石","addr":"寒山寺景区内","x":120.568523,"y":31.310081,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山寺佛教图书馆","addr":"寒山寺景区枫桥路96号","x":120.568514,"y":31.31052,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山书苑","addr":"金阊街道枫桥夜泊大厦枫桥路688号","x":120.567982,"y":31.309852,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"常乐池","addr":"寒山寺景区内","x":120.567838,"y":31.309955,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州和合文化基金会","addr":"寒山寺弄24号","x":120.568008,"y":31.310761,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}]}}
+
+
+20	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+21	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","xcoord":1.0,"ycoord":1.0}}
+
+
+22	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x必须为合法的数字"}}
+
+
+23	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+24	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=  &y=   &ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '  ', 'y': '   ', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y必须为合法的数字"}}
+
+
+25	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=<scrpit>alert("深圳")</scrpit>&y=&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '<scrpit>alert("深圳")</scrpit>', 'y': '', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x必须为合法的数字"}}
+
+
+26	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=海上世界&y=深圳市&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '海上世界', 'y': '深圳市', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y必须为合法的数字"}}
+
+
+27	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+28	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","xcoord":1.0,"ycoord":1.0}}
+
+
+29	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x必须为合法的数字"}}
+
+
+30	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y不能为空"}}
+
+
+31	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=sf2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': 'sf2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"sf","name":"广东省深圳市新区大道130号中国文化名人大营救纪念馆","xcoord":114.0369,"ycoord":22.6039,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","road":"民治街道","pois":[{"name":"景兴五金","addr":"白石龙一区145-1","x":114.0369,"y":22.6039,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"金龙邮政代办所","addr":"白石龙一区140-1","x":114.0368,"y":22.6039,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"信兴家俬城","addr":"白石龙一区154-1","x":114.0365,"y":22.6042,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"顾家生鲜超市","addr":"白石龙老村25","x":114.0364,"y":22.604,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"智多星艺术幼儿园","addr":"","x":114.0375,"y":22.6037,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"耀南大厦","addr":"","x":114.0367,"y":22.6047,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"深龙傢俬","addr":"白石龙一区169-1","x":114.0367,"y":22.6048,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"羽光家纺","addr":"","x":114.0379,"y":22.6038,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"中国文化名人大营救纪念馆","addr":"白石龙老村1","x":114.0369,"y":22.6053,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""},{"name":"白石龙幼儿园","addr":"白石龙老村2","x":114.0368,"y":22.6053,"adcode":"440300","regcode":"755","province":"广东省","city":"深圳市","district":""}]}}
+
+
+32	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=sf2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': 'sf2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"sf","name":"江苏省苏州市姑苏区金阊街道苏州市枫桥风景名胜区","xcoord":120.5682,"ycoord":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"金阊街道","pois":[{"name":"水月道场","addr":"寒山寺景区内","x":120.5682,"y":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"性空世界","addr":"寒山寺景区内","x":120.5682,"y":31.3101,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒拾泉","addr":"寒山寺景区内","x":120.5684,"y":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大悲殿","addr":"寒山寺景区内","x":120.5681,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"罗汉堂","addr":"寒山寺景区内","x":120.5681,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大雄宝殿","addr":"寒山寺景区内","x":120.5681,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"客堂","addr":"寒山寺景区内","x":120.5685,"y":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟楼","addr":"寒山寺景区内","x":120.5685,"y":31.3101,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"听钟石","addr":"寒山寺景区内","x":120.5685,"y":31.3101,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒拾遗踪","addr":"寒山寺景区内","x":120.568,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}]}}
+
+
+33	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=sf2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': 'sf2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+34	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","xcoord":1.0,"ycoord":1.0}}
+
+
+35	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=sf2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': 'sf2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+36	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=sf2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': 'sf2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x必须为合法的数字"}}
+
+
+37	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=sf2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': 'sf2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y不能为空"}}
+
+
+38	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=&cc=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': '', 'cc': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"广东省深圳市宝安区金龙路26","xcoord":114.036919,"ycoord":22.60407,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区","road":"金龙路","street_no":"26","pois":[{"name":"白石龙综合楼","addr":"龙华新城新区大道东侧","x":114.036849,"y":22.604082,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"信兴家私城","addr":"白石龙一区154号","x":114.036975,"y":22.604076,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙老村34栋","addr":"龙华区","x":114.036912,"y":22.6041,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新天天鲜果园","addr":"白石龙村龙樟路24栋","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新兴百货","addr":"白石龙村一区139-11楼","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"2元起精品店","addr":"龙华区","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙一区-36栋","addr":"龙华区白石龙下一区36栋","x":114.037002,"y":22.604152,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"聚湘阁菜馆(深圳北站店)","addr":"民治街道民塘路深圳北站东广场南侧C1栋物业1楼1F011","x":114.036599,"y":22.60432,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"华鹏专业汽车冷气","addr":"民丰路与民塘路交叉口南150米","x":114.036724,"y":22.604739,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"智多星艺术幼儿园","addr":"民治街道白石龙村一区162栋(蓝牌)","x":114.037825,"y":22.604307,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"}]}}
+
+
+39	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=sf2&cc=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': 'sf2', 'cc': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"sf","name":"江苏省苏州市姑苏区金阊街道苏州市枫桥风景名胜区","xcoord":120.5682,"ycoord":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"金阊街道","pois":[{"name":"水月道场","addr":"寒山寺景区内","x":120.5682,"y":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"性空世界","addr":"寒山寺景区内","x":120.5682,"y":31.3101,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒拾泉","addr":"寒山寺景区内","x":120.5684,"y":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大悲殿","addr":"寒山寺景区内","x":120.5681,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"罗汉堂","addr":"寒山寺景区内","x":120.5681,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大雄宝殿","addr":"寒山寺景区内","x":120.5681,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"客堂","addr":"寒山寺景区内","x":120.5685,"y":31.3103,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟楼","addr":"寒山寺景区内","x":120.5685,"y":31.3101,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"听钟石","addr":"寒山寺景区内","x":120.5685,"y":31.3101,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒拾遗踪","addr":"寒山寺景区内","x":120.568,"y":31.3102,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}]}}
+
+
+40	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=gd1&cc=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': 'gd1', 'cc': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"INVALID_PARAMS"}}
+
+
+41	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=&cc=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': '', 'cc': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","xcoord":1.0,"ycoord":1.0}}
+
+
+42	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=bd2&cc=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': 'bd2', 'cc': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x必须为合法的数字"}}
+
+
+43	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=&cc=1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': '', 'cc': '1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+44	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': '', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"广东省深圳市宝安区玉龙路圣莫丽斯","xcoord":114.03691899999998,"ycoord":22.604069000893006,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区","road":"玉龙路","pois":[{"name":"圣莫丽斯","addr":"玉龙路1号","x":114.03521326847188,"y":22.603808895738844,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"圣莫丽斯-南门","addr":"龙华区","x":114.03764767640311,"y":22.602941409744826,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"逸秀新村220栋","addr":"龙华区","x":114.03552767540026,"y":22.60408415456169,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"逸秀新村175栋","addr":"龙华区","x":114.03555462456555,"y":22.60376718980801,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"圣莫丽斯-三期","addr":"龙华区玉龙立交","x":114.03549174317988,"y":22.604417800873026,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"圣莫丽斯-东门","addr":"玉龙路1","x":114.03777343917447,"y":22.602966433456746,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"逸秀新村189栋","addr":"龙华区龙华新区圣·莫丽斯(玉龙路西180米)","x":114.03550072623497,"y":22.604351071676216,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"深圳菁英时代基金管理股份有限公司","addr":"玉龙路圣莫丽斯A22A号","x":114.03548276012478,"y":22.604342730524316,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"圣莫丽斯幼儿园","addr":"玉龙路圣莫丽斯小区内","x":114.0357073365022,"y":22.60595256336575,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"浩丰酒业","addr":"玉龙路西侧圣莫丽斯花园b20栋1层","x":114.03522225152697,"y":22.606619846005277,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"}]}}
+
+
+45	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y必须为合法的数字"}}
+
+
+46	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=sf2&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': 'sf2', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"sf","name":"江苏省苏州市虎丘区狮山街道苏州科技大学江枫校区","xcoord":120.56713,"ycoord":31.310325,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区","road":"狮山街道","pois":[{"name":"苏州科技大学江枫校区第二教学楼","addr":"滨河路1701苏州科技学院江枫校区","x":120.56713,"y":31.310325,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州城乡一体化改革发展研究院","addr":"","x":120.56713,"y":31.309825,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技学院江枫校区第一教学楼","addr":"滨河路1701苏州科技学院江枫校区","x":120.567131,"y":31.310726,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技学院江枫校区建筑与城市规划学院设计教学中心","addr":"","x":120.567131,"y":31.310726,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技大学江枫校区建筑系馆","addr":"滨河路1701苏州科技学院江枫校区","x":120.567031,"y":31.311124,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技学院苏鑫幕墙设计研究院","addr":"","x":120.567031,"y":31.311124,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技大学江枫校区网络与教育技术中心","addr":"","x":120.567031,"y":31.311124,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技大学江枫校区建筑与城市规划学院","addr":"","x":120.567031,"y":31.311124,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技大学科技园北区","addr":"","x":120.569222,"y":31.312062,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"},{"name":"苏州科技大学设计研究院","addr":"","x":120.569222,"y":31.312062,"adcode":"320500","regcode":"512","province":"江苏省","city":"苏州市","district":"虎丘区"}]}}
+
+
+47	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=gd1&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': 'gd1', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"INVALID_PARAMS"}}
+
+
+48	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=1&y=1&opt=&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '1', 'y': '1', 'opt': '', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","xcoord":1.0,"ycoord":1.0}}
+
+
+49	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=@#$&y=@#$%^&opt=bd2&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '@#$', 'y': '@#$%^', 'opt': 'bd2', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y必须为合法的数字"}}
+
+
+50	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': '', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y不能为空"}}
+
+
+51	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=&cc=-36&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': '', 'cc': '-36', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+52	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"y不能为空"}}
+
+
+53	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&opt=&cc=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'opt': '', 'cc': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+54	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=sw-1&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': 'sw-1', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+55	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=&@!#$&cc=2&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': '&@!#$', 'cc': '2', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+
+56	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=&y=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '', 'y': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-104,"msg":"x不能为空"}}
+
+
+57	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=0&y=0&ak=f3ac165ec3410fff5d2601448134b1b6
+
+{'x': '0', 'y': '0', 'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+{"status":1,"result":{"err":113,"msg":"访问限制,ak未授权"}}
+
+
+58	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=114.036919&y=22.604069&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '114.036919', 'y': '22.604069', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"广东省深圳市宝安区金龙路26","xcoord":114.036919,"ycoord":22.60407,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区","road":"金龙路","street_no":"26","pois":[{"name":"白石龙综合楼","addr":"龙华新城新区大道东侧","x":114.036849,"y":22.604082,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"信兴家私城","addr":"白石龙一区154号","x":114.036975,"y":22.604076,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙老村34栋","addr":"龙华区","x":114.036912,"y":22.6041,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新天天鲜果园","addr":"白石龙村龙樟路24栋","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"新兴百货","addr":"白石龙村一区139-11楼","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"2元起精品店","addr":"龙华区","x":114.036876,"y":22.604083,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"白石龙一区-36栋","addr":"龙华区白石龙下一区36栋","x":114.037002,"y":22.604152,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"聚湘阁菜馆(深圳北站店)","addr":"民治街道民塘路深圳北站东广场南侧C1栋物业1楼1F011","x":114.036599,"y":22.60432,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"华鹏专业汽车冷气","addr":"民丰路与民塘路交叉口南150米","x":114.036724,"y":22.604739,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"},{"name":"智多星艺术幼儿园","addr":"民治街道白石龙村一区162栋(蓝牌)","x":114.037825,"y":22.604307,"adcode":"440306","regcode":"755","province":"广东省","city":"深圳市","district":"宝安区"}]}}
+
+
+59	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=120.568292&y=31.31020&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '120.568292', 'y': '31.31020', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"src":"bd","name":"江苏省苏州市姑苏区寒山寺弄24号苏州寒山寺","xcoord":120.568292,"ycoord":31.3102,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区","road":"寒山寺弄","street_no":"24号","pois":[{"name":"苏州寒山寺","addr":"寒山寺弄24号苏州寒山寺内","x":120.568406,"y":31.310484,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大雄宝殿","addr":"寒山寺景区内","x":120.568307,"y":31.310185,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟房","addr":"寒山寺景区内","x":120.568244,"y":31.31004,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"大悲殿","addr":"寒山寺景区内","x":120.568135,"y":31.31005,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"钟楼","addr":"","x":120.568523,"y":31.310127,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"听钟石","addr":"寒山寺景区内","x":120.568523,"y":31.310081,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山寺佛教图书馆","addr":"寒山寺景区枫桥路96号","x":120.568514,"y":31.31052,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"寒山书苑","addr":"金阊街道枫桥夜泊大厦枫桥路688号","x":120.567982,"y":31.309852,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"常乐池","addr":"寒山寺景区内","x":120.567838,"y":31.309955,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"},{"name":"苏州和合文化基金会","addr":"寒山寺弄24号","x":120.568008,"y":31.310761,"adcode":"320502","regcode":"512","province":"江苏省","city":"苏州市","district":"姑苏区"}]}}
+
+
+60	
+http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api?x=22.5410116566&y=113.97655634968&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'x': '22.5410116566', 'y': '113.97655634968', 'opt': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"MYAPI NO DATA"}}
+
+

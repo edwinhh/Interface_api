@@ -24,6 +24,7 @@ from case.geo.geo_bd import geo_bd
 from case.geo.geo_tc import geo_tc
 from case.geo.v1_22 import v1_22
 from case.geo.v1_23 import v1_23
+from case.geo.v1_8 import v1_8
 from case.geo.yy import yy
 from case.geo.geo_cx1 import geo_cx
 from case.geo.geo_core import geo_core
@@ -31,6 +32,7 @@ from case.geo.geo_core import geo_core
 
 if __name__ == '__main__':
     suite = unittest.TestSuite()
+    suite.addTest(unittest.makeSuite(v1_8))
     suite.addTest(unittest.makeSuite(geo_opt))
     suite.addTest(unittest.makeSuite(geo_sz))
     suite.addTest(unittest.makeSuite(geo_sw))
@@ -44,6 +46,7 @@ if __name__ == '__main__':
     suite.addTest(unittest.makeSuite(yy))
     suite.addTest(unittest.makeSuite(geo_cx))
     suite.addTest(unittest.makeSuite(geo_core))
+    suite.addTest(unittest.makeSuite(gis_geo))
 
 
 

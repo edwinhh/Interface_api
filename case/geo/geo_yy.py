@@ -1,14 +1,13 @@
 import os,sys,unittest,time
 from lib.test_abstract import TestAbstract
+from lib.wxls import geturl
 from lib.wxls import *
-
+url=geturl("geo")
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url='http://10.202.52.102:8080/geo'
 #url='http://10.202.52.103:8080/geo'
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]
-
 
 class geo_yy(TestAbstract):
     def test_1(self):

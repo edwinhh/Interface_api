@@ -4,9 +4,9 @@ from lib.wxls import *
 
 sys.path.append('e:/project/Interface_api-master')
 
-#url = 'http://GIS-RSS-PROXY.intsit.sfdc.com.cn:1080/tip'
-#url='http://10.202.95.115:9090/tip'
-url='http://gis-rss-core-hint.sit.sf-express.com:5580/tip'
+#url=geturl("tip")
+url=geturl("tip")
+#url='http://gis-rss-core-hint.sit.sf-express.com:5580/tip'
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]

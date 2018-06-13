@@ -4,13 +4,14 @@ import random,time
 import threading
 import multiprocessing
 import openpyxl
+import configparser
 from datetime import datetime
 from datetime import timedelta
 from openpyxl import Workbook
 from openpyxl import load_workbook
 import time,os
 
-
+conf_txt="e:/project/Interface_api-master/conf/base.conf"
 
 
 # thread=[]
@@ -172,8 +173,18 @@ def reporttxt(name,url, p, r,n='test'):
             f.write(str(r[i]))
             f.write('\n\n\n')
 
+def geturl(config):
+    config=config
+    #print (config)
+    conf = configparser.ConfigParser()
+    conf.read(conf_txt,encoding="utf-8-sig")
+    # lists_header = conf.sections()
+    # print(lists_header)
+    boolean = conf.has_section(config)
+    # print(config,"is",boolean)
+    if boolean:
+        url=conf[config]['url']
+        return url
 
-
-
-
+#print (geturl("geo"))
 

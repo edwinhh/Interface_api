@@ -2,9 +2,9 @@ import os,sys,unittest,time
 from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
-#url = 'http://GIS-RSS-PROXY.intsit.sfdc.com.cn:1080/tip'
-url='http://10.202.95.116:9090/tip'
-#url='http://10.202.95.116:9090/tip'
+#url=geturl("tip")
+url=geturl("tip")
+#url=geturl("tip")
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]

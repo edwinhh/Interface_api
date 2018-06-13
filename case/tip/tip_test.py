@@ -6,8 +6,8 @@ import time
 
 
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url1='http://10.202.95.115:9090/tip'
-url2='http://10.202.95.116:9090/tip'
+url1='http://10.203.32.136:8888/tip/api'
+url2='http://10.203.32.136:8888/tip/api'
 name = os.path.basename(__file__).split('.')[0]
 p1=[]
 r1=[]

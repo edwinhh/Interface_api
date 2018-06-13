@@ -3,15 +3,16 @@ import time
 import re
 import json
 dir="e:/项目/地理编码/数据/cx省市区调整/"
-dir1="e:/project/Interface_api-master/report"
-file="node-geo-old-out-9.log"
-old="e:/project/Interface_api-master/report/geo_new1.txt"
-new="e:/project/Interface_api-master/report/geo_old1.txt"
+dir1="e:/project/Interface_api-master/testlog/"
+dir2="e:/project/Interface_api-master/"
+file="node-geo-out-1__2018-05-24_16-23-25.log"
+# old="e:/project/Interface_api-master/report/geo_new1.txt"
+# new="e:/project/Interface_api-master/report/geo_old1.txt"
 
 # file1="node-geo2018-05-03-14-46-50.txt"
 # errfile="e:/project/Interface_api-master/report/geo_threadingURL_error_2018-05-03-14_38_14.txt"
 # filediff="diff.txt"
-
+filelist=[]
 def log(file):
     sum=0
     total=0
@@ -40,13 +41,46 @@ def log(file):
                 p.write('\n')
                 # sum+=1
 
+
+def ak(dir1):
+    for root, dirs, files in os.walk(dir1):
+        for file in files:
+            filelist.append(os.path.join(root, file))
+ 
+    sum = 0
+    total = 0
+    ak=[]
+    now = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
+    result = 'ak' + '.txt'
+    p = open(dir + result, 'w+')
+    p.write("#ak")
+    p.write('\n')
+    for fo in filelist:
+        with open(fo, 'r', encoding='utf-8') as f:
+            for line in f.readlines():
+                if "url_s" in line:
+                    total += 1
+                    r = re.findall(",ak=\S+", line)
+
+                    if r:
+                        r1 = r[0].split(',')[1]
+                        r2=r1.split('=')[1]
+                        ak.append(r2)
+            ak=list(set(ak))
+    for i in ak:
+        p.write(str(i))
+        p.write('\n')
+
+
+
+
 def err(old,new):
     reqnew=[]
     resnew=[]
     resold=[]
     node={}
     now = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    diff = "e:/project/Interface_api-master/report/"+"diff_"+now+".txt"
+    diff = "e:/project/Interface_api-master/"+"ak_"+now+".txt"
     p = open(diff, 'w',encoding='utf-8')
     # p.write("#address,node_adcode")
     # p.write("\n")
@@ -96,5 +130,6 @@ def err(old,new):
                 #address = address1.split(',')[0]
             
 
-log(dir+file)
+#log(dir+file)
+ak(dir1)
 #err(old,new)

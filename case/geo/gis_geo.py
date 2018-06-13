@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-import os,sys,unittest,time
+import os,sys,unittest,time,json
 from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
+
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url = 'http://10.202.52.102:8080/geo'
+url=geturl("geo")
 
 name = os.path.basename(__file__).split('.')[0]
 p=[]
@@ -29,7 +30,7 @@ class gis_geo(TestAbstract):
 		p.append(data)
 		r.append(res)
 		print('2: ',res)
-		#self.assertEqual(1,res['status'])
+		self.assertEqual(1,json.loads(res)['status'])
 
 	def test_3(self):
 		data = {'address': '', \
@@ -98,7 +99,7 @@ class gis_geo(TestAbstract):
 		p.append(data)
 		r.append(res)
 		print('10: ',res)
-		self.assertEqual(1,res['status'])
+		self.assertEqual(1,json.loads(res)['status'])
 
 	def test_11(self):
 		data = {'address': '四川省内江市市中区城西街道六段锦英伦别恋B幢2单元随和家宴堂', \

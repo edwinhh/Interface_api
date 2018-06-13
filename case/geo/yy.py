@@ -3,7 +3,7 @@ from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url = 'http://10.202.52.102:8080/geo'
+url=geturl("geo")
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]

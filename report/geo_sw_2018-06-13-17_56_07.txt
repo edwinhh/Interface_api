@@ -1,0 +1,317 @@
+http://10.202.52.102:8080/geo
+
+1	
+http://10.202.52.102:8080/geo?address=广东省深圳市龙岗区南湾街道樟树布新圹东六巷10号英子正骨推拿馆&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广东省深圳市龙岗区南湾街道樟树布新圹东六巷10号英子正骨推拿馆', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":5,"type":"村/社区","precision":0,"xcoord":114.155,"ycoord":22.606,"adcode":"440307","regcode":"755","adname":["广东省","深圳市","龙岗区"],"src_address":"广东省深圳市龙岗区南湾街道樟树布新圹东六巷10号英子正骨推拿馆","src":"sw","other":{"name":"广东省深圳市龙岗区南湾街道樟树布村","prov_city_dist":"广东省|深圳市|龙岗区","adcode":440307,"filter":2,"level":"GL_VILLAGE","score":1,"sflag":0,"dataSrc":1,"mainid":"3843385","id":"","splitResult":"广东省^11,深圳市^12,龙岗区^13,南湾街道^15,樟树布^16,新圹东6巷^29,10号^211,英子正骨推拿馆^213;13","match_address":"广东省深圳市龙岗区南湾街道樟树布村","standardization":"","standard_flag":"0","standard_word":"樟树布","address":"樟树布村"},"addrSplitInfo":[{"match":0,"prop":1,"level":1,"text":"广东省"},{"match":0,"prop":1,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":3,"text":"龙岗区"},{"match":1,"prop":1,"level":5,"text":"南湾街道"},{"match":1,"prop":1,"level":6,"text":"樟树布"},{"match":0,"prop":2,"level":9,"text":"新圹东6巷"},{"match":0,"prop":2,"level":11,"text":"10号"},{"match":0,"prop":2,"level":13,"text":"英子正骨推拿馆"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_VILLAGE","in_index":6,"geo_type":"村/社区","geo_level":5},"is_whole_match":0}}}
+
+
+2	
+http://10.202.52.102:8080/geo?address=深圳万里工业区“万”&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '深圳万里工业区“万”', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":2,"type":"城市","precision":0,"xcoord":114.129,"ycoord":22.574,"adcode":"440303","regcode":"755","adname":["广东省","深圳市","罗湖区"],"src_address":"深圳万里工业区“万","src":"sw","other":{"name":"广东省深圳市","prov_city_dist":"广东省|深圳市|","adcode":440300,"filter":0,"level":"GL_CITY","score":1,"sflag":0,"dataSrc":1,"mainid":"231","id":"","splitResult":"深圳^22,万里工业区^113,万^318;18","match_address":"广东省深圳市","standardization":"","standard_flag":"0","standard_word":"深圳","address":"深圳市"},"addrSplitInfo":[{"match":1,"prop":2,"level":2,"text":"深圳"},{"match":0,"prop":1,"level":13,"text":"万里工业区"},{"match":0,"prop":3,"level":18,"text":"万"}],"matchInfo":{"src":{"in_level":"GL_OTHER","in_index":18,"geo_type":"other","geo_level":-1},"match":{"in_level":"GL_CITY","in_index":2,"geo_type":"城市","geo_level":2},"is_whole_match":0}}}
+
+
+3	
+http://10.202.52.102:8080/geo?address=深圳万安村&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '深圳万安村', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":2,"type":"城市","precision":0,"xcoord":114.129,"ycoord":22.574,"adcode":"440303","regcode":"755","adname":["广东省","深圳市","罗湖区"],"src_address":"深圳万安村","src":"sw","other":{"name":"广东省深圳市","prov_city_dist":"广东省|深圳市|","adcode":440300,"filter":0,"level":"GL_CITY","score":1,"sflag":0,"dataSrc":1,"mainid":"231","id":"","splitResult":"深圳^22,万安村^213;13","match_address":"广东省深圳市","standardization":"","standard_flag":"0","standard_word":"深圳","address":"深圳市"},"addrSplitInfo":[{"match":1,"prop":2,"level":2,"text":"深圳"},{"match":0,"prop":2,"level":13,"text":"万安村"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_CITY","in_index":2,"geo_type":"城市","geo_level":2},"is_whole_match":0}}}
+
+
+4	
+http://10.202.52.102:8080/geo?address=北京紫禁城&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '北京紫禁城', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+5	
+http://10.202.52.102:8080/geo?address=&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"query.address is empty!"}}
+
+
+6	
+http://10.202.52.102:8080/geo?opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"query.address is empty!"}}
+
+
+7	
+http://10.202.52.102:8080/geo?opt=sw1&city=河南省|驻马店市|新蔡县&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'opt': 'sw1', 'city': '河南省|驻马店市|新蔡县', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"query.address is empty!"}}
+
+
+8	
+http://10.202.52.102:8080/geo?address=<scrpit>alert("深圳")</scrpit>&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '<scrpit>alert("深圳")</scrpit>', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+9	
+http://10.202.52.102:8080/geo?address=%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0&opt=sw1&city=%E6%B7%B1%E5%9C%B3&&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0', 'opt': 'sw1', 'city': '%E6%B7%B1%E5%9C%B3&', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"return data.searchresult.status is fail!"}}
+
+
+10	
+http://10.202.52.102:8080/geo?address=！@#￥%……：“&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '！@#￥%……：“', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"query.address is null"}}
+
+
+11	
+http://10.202.52.102:8080/geo?address=深圳万安村&opt=tc1&city=<scrpit>alert(city)</scrpit>&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '深圳万安村', 'opt': 'tc1', 'city': '<scrpit>alert(city)</scrpit>', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":10,"type":"小区、大厦","precision":2,"xcoord":114.054031,"ycoord":22.71899,"adcode":"440309","regcode":"755","adname":["广东省","深圳市","龙华区"],"src_address":"深圳万安村","src":"tc","other":{"level":10}}}
+
+
+12	
+http://10.202.52.102:8080/geo?address=顺丰快递点自提&opt=sw1&city=河南省|驻马店市|新蔡县&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '顺丰快递点自提', 'opt': 'sw1', 'city': '河南省|驻马店市|新蔡县', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+13	
+http://10.202.52.102:8080/geo?address=广东省深圳市南山区a8音乐大厦&opt=sw1&city=深圳市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广东省深圳市南山区a8音乐大厦', 'opt': 'sw1', 'city': '深圳市', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.939,"ycoord":22.523,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"广东省深圳市南山区a8音乐大厦","src":"sw","other":{"name":"广东省深圳市南山区a8音乐大厦","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4375340","id":"","splitResult":"广东省^11,深圳市^12,南山区^13,a8音乐大厦^113;13","match_address":"广东省深圳市南山区a8音乐大厦","standardization":"","standard_flag":"0","standard_word":"a8音乐大厦","address":"a8音乐大厦"},"addrSplitInfo":[{"match":0,"prop":1,"level":1,"text":"广东省"},{"match":1,"prop":1,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":3,"text":"南山区"},{"match":1,"prop":1,"level":13,"text":"a8音乐大厦"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+14	
+http://10.202.52.102:8080/geo?address=潮白河孔雀城英国宫4期春晓园&opt=sw1&city=131028&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '潮白河孔雀城英国宫4期春晓园', 'opt': 'sw1', 'city': '131028', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":116.839,"ycoord":39.886,"adcode":"131028","regcode":"316","adname":["河北省","廊坊市","大厂回族自治县"],"src_address":"潮白河孔雀城英国宫4期春晓园","src":"sw","other":{"name":"河北省廊坊市大厂回族自治县潮白河孔雀城英国宫","prov_city_dist":"河北省|廊坊市|大厂回族自治县","adcode":131028,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"6218339","id":"","splitResult":"潮白河孔雀城^113,英国宫^113,4期^613,春晓园^113;13","match_address":"河北省廊坊市大厂回族自治县潮白河孔雀城英国宫","standardization":"","standard_flag":"0","standard_word":"潮白河孔雀城英国宫","address":"潮白河孔雀城英国宫"},"addrSplitInfo":[{"match":1,"prop":1,"level":13,"text":"潮白河孔雀城"},{"match":1,"prop":1,"level":13,"text":"英国宫"},{"match":0,"prop":6,"level":13,"text":"4期"},{"match":0,"prop":1,"level":13,"text":"春晓园"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":0}}}
+
+
+15	
+http://10.202.52.102:8080/geo?address=燕郊开发区神威北路与燕灵路交汇处鑫乐汇购物广场&opt=sw1&city=131028&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '燕郊开发区神威北路与燕灵路交汇处鑫乐汇购物广场', 'opt': 'sw1', 'city': '131028', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"道路交叉口","precision":0,"xcoord":116.786,"ycoord":39.972,"adcode":"131082","regcode":"316","adname":["河北省","廊坊市","三河市"],"src_address":"燕郊开发区神威北路与燕灵路交汇处鑫乐汇购物广场","src":"sw","other":{"name":"河北省廊坊市三河市神威北路燕灵路","prov_city_dist":"河北省|廊坊市|三河市","adcode":131082,"filter":16,"level":"GL_ROADINTER","score":1,"sflag":0,"dataSrc":1,"mainid":"7694837|7702099","id":"","splitResult":"燕郊开发区^24,神威北路^19,与^118,燕灵路^19,交汇处^118,鑫乐汇购物广场^213;13","match_address":"河北省廊坊市三河市神威北路燕灵路","standardization":"","standard_flag":"0","standard_word":"神威北路燕灵路","address":"神威北路燕灵路"},"addrSplitInfo":[{"match":0,"prop":2,"level":4,"text":"燕郊开发区"},{"match":1,"prop":1,"level":9,"text":"神威北路"},{"match":0,"prop":1,"level":18,"text":"与"},{"match":1,"prop":1,"level":9,"text":"燕灵路"},{"match":0,"prop":1,"level":18,"text":"交汇处"},{"match":0,"prop":2,"level":13,"text":"鑫乐汇购物广场"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_ROADINTER","in_index":13,"geo_type":"道路交叉口","geo_level":9},"is_whole_match":0}}}
+
+
+16	
+http://10.202.52.102:8080/geo?address=广东省深圳市南山区南园村新二坊18栋&opt=sw1&city=广州市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广东省深圳市南山区南园村新二坊18栋', 'opt': 'sw1', 'city': '广州市', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":106,"msg":"city unequal to address"}}
+
+
+17	
+http://10.202.52.102:8080/geo?address=四川省成都市武侯区濯锦路长城半岛城邦2期1栋3003&opt=sw1&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '四川省成都市武侯区濯锦路长城半岛城邦2期1栋3003', 'opt': 'sw1', 'city': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":104.08,"ycoord":30.592,"adcode":"510107","regcode":"028","adname":["四川省","成都市","武侯区"],"src_address":"四川省成都市武侯区濯锦路长城半岛城邦2期1栋3003","src":"sw","other":{"name":"四川省成都市武侯区长城半岛城邦2","prov_city_dist":"四川省|成都市|武侯区","adcode":510107,"filter":8,"level":"GL_POI","score":0.875,"sflag":0,"dataSrc":1,"mainid":"5133816","id":"","splitResult":"四川省^11,成都市^12,武侯区^13,濯锦路^19,长城半岛城邦^213,2期^613,1栋^214,300^217;17","match_address":"四川省成都市武侯区长城半岛城邦2","standardization":"","standard_flag":"0","standard_word":"长城半岛城邦2期","address":"长城半岛城邦2"},"addrSplitInfo":[{"match":0,"prop":1,"level":1,"text":"四川省"},{"match":0,"prop":1,"level":2,"text":"成都市"},{"match":1,"prop":1,"level":3,"text":"武侯区"},{"match":1,"prop":1,"level":9,"text":"濯锦路"},{"match":1,"prop":2,"level":13,"text":"长城半岛城邦"},{"match":1,"prop":6,"level":13,"text":"2期"},{"match":0,"prop":2,"level":14,"text":"1栋"},{"match":0,"prop":2,"level":17,"text":"300"}],"matchInfo":{"src":{"in_level":"GL_BUILDING_ROOM","in_index":17,"geo_type":"单元房间","geo_level":11},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":0}}}
+
+
+18	
+http://10.202.52.102:8080/geo?address=深圳市南山区海德3道3号&opt=sw1&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '深圳市南山区海德3道3号', 'opt': 'sw1', 'city': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":-1,"type":"附近","precision":0,"xcoord":113.939,"ycoord":22.518,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"深圳市南山区海德3道3号","src":"sw","other":{"name":"广东省深圳市南山区海德三道|13号","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":16,"level":"GL_NEARBY","score":0,"sflag":0,"dataSrc":1,"mainid":"3189508","id":"44DB322E645411E8B7DE6C92BF74D4C8","splitResult":"深圳市^12,南山区^13,海德3道^19,3号^211;11","match_address":"广东省深圳市南山区海德3道13号","standardization":"广东省深圳市南山区海德3道13号","standard_flag":"1","standard_word":"海德3道3号","address":"海德三道|13号"},"addrSplitInfo":[{"match":0,"prop":1,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":3,"text":"南山区"},{"match":1,"prop":1,"level":9,"text":"海德3道"},{"match":1,"prop":2,"level":11,"text":"3号"}],"matchInfo":{"src":{"in_level":"GL_STREETNO","in_index":11,"geo_type":"门牌","geo_level":8},"match":{"in_level":"GL_NEARBY","in_index":-1,"geo_type":"附近","geo_level":-1},"is_whole_match":1}}}
+
+
+19	
+http://10.202.52.102:8080/geo?address=广东省广东省广东省深圳市蛇口海上世界&opt=sw1&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广东省广东省广东省深圳市蛇口海上世界', 'opt': 'sw1', 'city': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.915,"ycoord":22.483,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"广东省广东省广东省深圳市蛇口海上世界","src":"sw","other":{"name":"广东省深圳市南山区蛇口街道海上世界","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":1,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4045727","id":"","splitResult":"广东省^11,广东省^01,广东省^01,深圳市^12,蛇口^15,海上世界^113;13","match_address":"广东省深圳市南山区蛇口街道海上世界","standardization":"","standard_flag":"0","standard_word":"海上世界","address":"海上世界"},"addrSplitInfo":[{"match":0,"prop":1,"level":1,"text":"广东省"},{"match":0,"prop":0,"level":1,"text":"广东省"},{"match":0,"prop":0,"level":1,"text":"广东省"},{"match":1,"prop":1,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":5,"text":"蛇口"},{"match":1,"prop":1,"level":13,"text":"海上世界"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+20	
+http://10.202.52.102:8080/geo?address=广东省深圳市深圳市蛇口蛇口海上世界&opt=sw1&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广东省深圳市深圳市蛇口蛇口海上世界', 'opt': 'sw1', 'city': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.915,"ycoord":22.483,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"广东省深圳市深圳市蛇口蛇口海上世界","src":"sw","other":{"name":"广东省深圳市南山区海上世界","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4045727","id":"","splitResult":"广东省^11,深圳市^12,深圳市^02,蛇口^16,蛇口^16,海上世界^113;13","match_address":"广东省深圳市南山区海上世界","standardization":"","standard_flag":"0","standard_word":"海上世界","address":"海上世界"},"addrSplitInfo":[{"match":0,"prop":1,"level":1,"text":"广东省"},{"match":1,"prop":1,"level":2,"text":"深圳市"},{"match":0,"prop":0,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":6,"text":"蛇口"},{"match":1,"prop":1,"level":6,"text":"蛇口"},{"match":1,"prop":1,"level":13,"text":"海上世界"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+21	
+http://10.202.52.102:8080/geo?address=深圳市^蛇口^海上世界^海上世界&opt=sw1&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '深圳市^蛇口^海上世界^海上世界', 'opt': 'sw1', 'city': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.915,"ycoord":22.483,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"深圳市^蛇口^海上世界^海上世界","src":"sw","other":{"name":"广东省深圳市南山区蛇口街道海上世界","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4045727","id":"","splitResult":"深圳市^12,蛇口^15,海上世界^113,海上世界^113;13","match_address":"广东省深圳市南山区蛇口街道海上世界","standardization":"","standard_flag":"0","standard_word":"海上世界","address":"海上世界"},"addrSplitInfo":[{"match":1,"prop":1,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":5,"text":"蛇口"},{"match":1,"prop":1,"level":13,"text":"海上世界"},{"match":1,"prop":1,"level":13,"text":"海上世界"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+22	
+http://10.202.52.102:8080/geo?address= 深圳市 蛇口 海上世界 海上世界 &opt=sw1&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': ' 深圳市 蛇口 海上世界 海上世界 ', 'opt': 'sw1', 'city': '', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.915,"ycoord":22.483,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"深圳市蛇口海上世界海上世界","src":"sw","other":{"name":"广东省深圳市南山区蛇口街道海上世界","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4045727","id":"","splitResult":"深圳市^12,蛇口^15,海上世界^113,海上世界^113;13","match_address":"广东省深圳市南山区蛇口街道海上世界","standardization":"","standard_flag":"0","standard_word":"海上世界","address":"海上世界"},"addrSplitInfo":[{"match":1,"prop":1,"level":2,"text":"深圳市"},{"match":1,"prop":1,"level":5,"text":"蛇口"},{"match":1,"prop":1,"level":13,"text":"海上世界"},{"match":1,"prop":1,"level":13,"text":"海上世界"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+23	
+http://10.202.52.102:8080/geo?address=广东省&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广东省', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"return data.searchresult.status is fail!"}}
+
+
+24	
+http://10.202.52.102:8080/geo?address=海上世界 &opt=sw1&city=755&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '海上世界 ', 'opt': 'sw1', 'city': '755', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.915,"ycoord":22.483,"adcode":"440305","regcode":"755","adname":["广东省","深圳市","南山区"],"src_address":"海上世界 ","src":"sw","other":{"name":"广东省深圳市南山区海上世界","prov_city_dist":"广东省|深圳市|南山区","adcode":440305,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4045727","id":"","splitResult":"海上世界^113;13","match_address":"广东省深圳市南山区海上世界","standardization":"","standard_flag":"0","standard_word":"海上世界","address":"海上世界"},"addrSplitInfo":[{"match":1,"prop":1,"level":13,"text":"海上世界"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+25	
+http://10.202.52.102:8080/geo?address=重庆市解放路&opt=sw1&city=重庆市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '重庆市解放路', 'opt': 'sw1', 'city': '重庆市', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":6,"type":"道路","precision":0,"xcoord":108.78,"ycoord":29.528,"adcode":"500114","regcode":"023","adname":["重庆","重庆市","黔江区"],"src_address":"重庆市解放路","src":"sw","other":{"name":"重庆市黔江区解放路","prov_city_dist":"重庆市||黔江区","adcode":500114,"filter":2,"level":"GL_LINE","score":1,"sflag":0,"dataSrc":1,"mainid":"9000642","id":"","splitResult":"重庆市^11,解放路^19;9","match_address":"重庆市黔江区解放路","standardization":"","standard_flag":"0","standard_word":"解放路","address":"解放路"},"addrSplitInfo":[{"match":1,"prop":1,"level":1,"text":"重庆市"},{"match":1,"prop":1,"level":9,"text":"解放路"}],"matchInfo":{"src":{"in_level":"GL_ROAD","in_index":9,"geo_type":"道路","geo_level":6},"match":{"in_level":"GL_LINE","in_index":9,"geo_type":"道路","geo_level":6},"is_whole_match":1}}}
+
+
+26	
+http://10.202.52.102:8080/geo?address=天津市南开大学&opt=sw1&city=天津&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '天津市南开大学', 'opt': 'sw1', 'city': '天津', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":117.179,"ycoord":39.103,"adcode":"120104","regcode":"022","adname":["天津","天津市","南开区"],"src_address":"天津市南开大学","src":"sw","other":{"name":"天津市南开区南开大学","prov_city_dist":"天津市||南开区","adcode":120104,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"8839575","id":"","splitResult":"天津市^11,南开大学^213;13","match_address":"天津市南开区南开大学","standardization":"","standard_flag":"0","standard_word":"南开大学","address":"南开大学"},"addrSplitInfo":[{"match":1,"prop":1,"level":1,"text":"天津市"},{"match":1,"prop":2,"level":13,"text":"南开大学"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+27	
+http://10.202.52.102:8080/geo?address=北京北京大学&opt=sw1&city=北京&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '北京北京大学', 'opt': 'sw1', 'city': '北京', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+28	
+http://10.202.52.102:8080/geo?address=星都国际总部基地&opt=sw1&city=昆明&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '星都国际总部基地', 'opt': 'sw1', 'city': '昆明', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":102.766,"ycoord":24.952,"adcode":"530111","regcode":"871","adname":["云南省","昆明市","官渡区"],"src_address":"星都国际总部基地","src":"sw","other":{"name":"云南省昆明市官渡区星都国际总部基地","prov_city_dist":"云南省|昆明市|官渡区","adcode":530111,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"5620775","id":"","splitResult":"星都国际总部基地^213;13","match_address":"云南省昆明市官渡区星都国际总部基地","standardization":"","standard_flag":"0","standard_word":"星都国际总部基地","address":"星都国际总部基地"},"addrSplitInfo":[{"match":1,"prop":2,"level":13,"text":"星都国际总部基地"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+29	
+http://10.202.52.102:8080/geo?address=盛世传媒&opt=sw1&city=440305&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '盛世传媒', 'opt': 'sw1', 'city': '440305', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+30	
+http://10.202.52.102:8080/geo?address=盛世传媒&opt=sw1&city=755&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '盛世传媒', 'opt': 'sw1', 'city': '755', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+31	
+http://10.202.52.102:8080/geo?address=盛世传媒&opt=sw1&city= 深圳 &ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '盛世传媒', 'opt': 'sw1', 'city': ' 深圳 ', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+32	
+http://10.202.52.102:8080/geo?address=盛世传媒&opt=sw1&city=深圳&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '盛世传媒', 'opt': 'sw1', 'city': '深圳', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+33	
+http://10.202.52.102:8080/geo?address=&opt=sw1&city=深圳&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '', 'opt': 'sw1', 'city': '深圳', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"query.address is empty!"}}
+
+
+34	
+http://10.202.52.102:8080/geo?address=广州市中山大学&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '广州市中山大学', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":9,"type":"POI","precision":2,"xcoord":113.297,"ycoord":23.091,"adcode":"440105","regcode":"020","adname":["广东省","广州市","海珠区"],"src_address":"广州市中山大学","src":"sw","other":{"name":"广东省广州市海珠区中山大学","prov_city_dist":"广东省|广州市|海珠区","adcode":440105,"filter":2,"level":"GL_POI","score":1,"sflag":0,"dataSrc":1,"mainid":"4205579","id":"","splitResult":"广州市^12,中山大学^113;13","match_address":"广东省广州市海珠区中山大学","standardization":"","standard_flag":"0","standard_word":"中山大学","address":"中山大学"},"addrSplitInfo":[{"match":1,"prop":1,"level":2,"text":"广州市"},{"match":1,"prop":1,"level":13,"text":"中山大学"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"is_whole_match":1}}}
+
+
+35	
+http://10.202.52.102:8080/geo?address=\&opt=sw1&city=深圳&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '\\', 'opt': 'sw1', 'city': '深圳', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"query.address is null"}}
+
+
+36	
+http://10.202.52.102:8080/geo?address=盛世传媒&opt=sw1&city=755aM001&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '盛世传媒', 'opt': 'sw1', 'city': '755aM001', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+37	
+http://10.202.52.102:8080/geo?address="1"="1"&opt=sw1&city=755aM001&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '"1"="1"', 'opt': 'sw1', 'city': '755aM001', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"return data.searchresult.status is fail!"}}
+
+
+38	
+http://10.202.52.102:8080/geo?address=http://gis-rss.intsit.sfdc.com.cn:1080/geo&opt=sw1&city=755aM001&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': 'http://gis-rss.intsit.sfdc.com.cn:1080/geo', 'opt': 'sw1', 'city': '755aM001', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"return data.searchresult.status is fail!"}}
+
+
+39	
+http://10.202.52.102:8080/geo?address=1080&opt=sw1&city=755aM001&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '1080', 'opt': 'sw1', 'city': '755aM001', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":100,"msg":"query.address is null"}}
+
+
+40	
+http://10.202.52.102:8080/geo?address=%E6%B7%B1%E5%9C%B3%E5%B8%82%E7%BD%97%E6%B9%96%E5%8C%BA%E7%AC%8B%E5%B2%97%E8%A1%97%E9%81%93%E5%AE%9D%E5%B2%97%E8%B7%AF%E5%A4%A7%E5%8D%8E%E5%A4%A7%E5%8E%A6&&opt=sw1&city=755&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '%E6%B7%B1%E5%9C%B3%E5%B8%82%E7%BD%97%E6%B9%96%E5%8C%BA%E7%AC%8B%E5%B2%97%E8%A1%97%E9%81%93%E5%AE%9D%E5%B2%97%E8%B7%AF%E5%A4%A7%E5%8D%8E%E5%A4%A7%E5%8E%A6&', 'opt': 'sw1', 'city': '755', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+41	
+http://10.202.52.102:8080/geo?address=杭州西湖&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '杭州西湖', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+42	
+http://10.202.52.102:8080/geo?address=上海外滩&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '上海外滩', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+43	
+http://10.202.52.102:8080/geo?address=新疆曼哈顿&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '新疆曼哈顿', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"match_level":1,"type":"省","precision":0,"xcoord":85.067,"ycoord":41.437,"adcode":"652822","regcode":"996","adname":["新疆维吾尔自治区","巴音郭楞蒙古自治州","轮台县"],"src_address":"新疆曼哈顿","src":"sw","other":{"name":"新疆维吾尔自治区","prov_city_dist":"新疆维吾尔自治区||","adcode":650000,"filter":0,"level":"GL_PROVINCE","score":1,"sflag":0,"dataSrc":1,"mainid":"31","id":"","splitResult":"新疆^11,曼哈顿^113;13","match_address":"新疆维吾尔自治区","standardization":"","standard_flag":"0","standard_word":"新疆","address":"新疆维吾尔自治区"},"addrSplitInfo":[{"match":1,"prop":1,"level":1,"text":"新疆"},{"match":0,"prop":1,"level":13,"text":"曼哈顿"}],"matchInfo":{"src":{"in_level":"GL_POI","in_index":13,"geo_type":"POI","geo_level":9},"match":{"in_level":"GL_PROVINCE","in_index":1,"geo_type":"省","geo_level":1},"is_whole_match":0}}}
+
+
+44	
+http://10.202.52.102:8080/geo?address=中国新疆&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '中国新疆', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":-1,"msg":"no return info!"}}
+
+
+45	
+http://10.202.52.102:8080/geo?address=非洲&opt=sw1&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'address': '非洲', 'opt': 'sw1', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":102,"msg":"return data.searchresult.status is fail!"}}
+
+

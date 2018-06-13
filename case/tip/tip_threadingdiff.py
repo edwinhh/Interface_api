@@ -18,8 +18,8 @@ import time
 # r=[]
 
 url1='http://10.202.95.116:9090/tip'
-url2='http://10.203.32.136:8888/tip/api'
-# url1='http://10.202.95.115:8899/geo'
+# url2='http://10.203.32.136:8888/tip/api'
+url2='http://10.202.95.115:9090/tip'
 # url2='http://10.202.95.115:9091/geo'
 name = os.path.basename(__file__).split('.')[0]
 p1=[]
@@ -29,7 +29,7 @@ r2=[]
 filelist=[]
 test=1
 
-file="e:/项目/输入提示/c++/new5.txt"
+file="e:/项目/输入提示/c++/tip6.csv"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -45,17 +45,20 @@ class geo_Mutest(TestAbstract):
     def readcsv(self,file):
         with open(file, 'r', encoding='utf_8')as f:
             for line in f.readlines():
+                if len(line) == 1 or line.startswith('#'):
+                    continue
                 self.num+=1
                 temp=line.strip().split(",")
 
 
-                data1 = {'q': temp[0], \
-                        'opt': "sf30", \
-                        'city': "", \
+                data1 = {'q': temp[1], \
+                        'city': temp[0], \
+                         'opt': "sf30", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                data2 = {'address': temp[0], \
-                        'opt': "sf30", \
-                        'city': "", \
+                
+                data2 = {'q': temp[1], \
+                         'city': temp[0], \
+                         'opt': "sf30", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 
                 # data1 = {'address': temp[0], \
@@ -196,7 +199,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
 
-    k=8
+    k=16
     x = geo_Mutest()
     x.readcsv(file)
     splist=x.splist(x.datas1,k)
@@ -229,7 +232,6 @@ if __name__ == "__main__":
     time.sleep(1)
     f2 = x.openfile()
     x.report(f2, url2, p2, r2)
-
     x.err(url2,r1,p2,r2)
     
 

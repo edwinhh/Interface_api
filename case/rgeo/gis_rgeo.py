@@ -6,7 +6,7 @@ from lib.wxls import *
 
 #url = 'http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api'
 #url='http://10.202.43.107:8080/rgeo'
-url='http://10.203.32.186:8080/rgeo/api'
+url=geturl('rgeo')
 name = os.path.basename(__file__).split('.')[0]
 p = []
 r = []

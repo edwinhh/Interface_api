@@ -1,0 +1,44 @@
+http://10.203.32.136:8888/tip/api
+
+1	
+http://10.203.32.136:8888/tip/api?q=呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆&opt=sf30&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'q': '呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆', 'opt': 'sf30', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"Query":{"q":"呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆","city":"150723","opt":"sw1","cc":"1"},"POITotal":1,"POIType":"POI","POISum":10,"POISrc":"sw-tcp","POISet":[{"uid":"s_0101071300J64GJ5V996J2PDAJV4OR","name":"第一照相馆","key_prefix":"育才街13号","adcode":"150723","regcode":"470","xcoord":"123.72828","ycoord":"50.59302","adname":["内蒙古自治区","呼伦贝尔市","鄂伦春自治旗",""],"detail_addr":"内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号"}],"src":"zh"}}
+
+
+2	
+http://10.203.32.136:8888/tip/api?q=育才街13号第一照相馆&opt=sf30&city=呼伦贝尔&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'q': '育才街13号第一照相馆', 'opt': 'sf30', 'city': '呼伦贝尔', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"Query":{"q":"育才街13号第一照相馆","city":"150700","opt":"sw1","cc":"1"},"POITotal":1,"POIType":"POI","POISum":10,"POISrc":"sw-tcp","POISet":[{"uid":"s_0101071300J64GJ5V996J2PDAJV4OR","name":"第一照相馆","key_prefix":"育才街13号","adcode":"150723","regcode":"470","xcoord":"123.72828","ycoord":"50.59302","adname":["内蒙古自治区","呼伦贝尔市","鄂伦春自治旗",""],"detail_addr":"内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号"}],"src":"zh"}}
+
+
+3	
+http://10.203.32.136:8888/tip/api?q=育才街13号第一照相馆&opt=sf30&city=150000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'q': '育才街13号第一照相馆', 'opt': 'sf30', 'city': '150000', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"Query":{"q":"育才街13号第一照相馆","city":"150000","opt":"sw1","cc":"1"},"POITotal":3,"POIType":"POI","POISum":10,"POISrc":"sw-tcp","POISet":[{"uid":"s_0101071300J64GJ5V996J2PDAJV4OR","name":"第一照相馆","key_prefix":"育才街13号","adcode":"150723","regcode":"470","xcoord":"123.72828","ycoord":"50.59302","adname":["内蒙古自治区","呼伦贝尔市","鄂伦春自治旗",""],"detail_addr":"内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号"},{"uid":"s_0101071300BV8O2P5P975DG5J7BMOQ","name":"第一照相馆","key_prefix":"巴林路26-10号","adcode":"150423","regcode":"476","xcoord":"118.68068","ycoord":"43.52456","adname":["内蒙古自治区","赤峰市","巴林右旗",""],"detail_addr":"内蒙古自治区赤峰市巴林右旗巴林路26-10号"}],"src":"zh"}}
+
+
+4	
+http://10.203.32.136:8888/tip/api?q=育才街13号第一照相馆&opt=sf30&city=内蒙古自治区呼伦贝尔市鄂伦春自治旗&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'q': '育才街13号第一照相馆', 'opt': 'sf30', 'city': '内蒙古自治区呼伦贝尔市鄂伦春自治旗', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":1,"result":{"err":1,"msg":"本地返回失败，错误码：3！"}}
+
+
+5	
+http://10.203.32.136:8888/tip/api?q=内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆&opt=sf30&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'q': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆', 'opt': 'sf30', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"Query":{"q":"内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆","city":"150723","opt":"sw1","cc":"1"},"POITotal":1,"POIType":"POI","POISum":10,"POISrc":"sw-tcp","POISet":[{"uid":"s_0101071300J64GJ5V996J2PDAJV4OR","name":"第一照相馆","key_prefix":"育才街13号","adcode":"150723","regcode":"470","xcoord":"123.72828","ycoord":"50.59302","adname":["内蒙古自治区","呼伦贝尔市","鄂伦春自治旗",""],"detail_addr":"内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号"}],"src":"zh"}}
+
+
+6	
+http://10.203.32.136:8888/tip/api?q=鄂伦春自治旗育才街13号第一照相馆&opt=sf30&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'q': '鄂伦春自治旗育才街13号第一照相馆', 'opt': 'sf30', 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+{"status":0,"result":{"Query":{"q":"鄂伦春自治旗育才街13号第一照相馆","city":"150723","opt":"sw1","cc":"1"},"POITotal":1,"POIType":"POI","POISum":10,"POISrc":"sw-tcp","POISet":[{"uid":"s_0101071300J64GJ5V996J2PDAJV4OR","name":"第一照相馆","key_prefix":"育才街13号","adcode":"150723","regcode":"470","xcoord":"123.72828","ycoord":"50.59302","adname":["内蒙古自治区","呼伦贝尔市","鄂伦春自治旗",""],"detail_addr":"内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号"}],"src":"zh"}}
+
+

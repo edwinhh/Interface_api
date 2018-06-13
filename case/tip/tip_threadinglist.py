@@ -14,7 +14,7 @@ import threading
 # p=[]
 # r=[]
 #url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url='http://10.202.52.103:8081/geo'
+url='http://10.203.32.136:8888/geo'
 name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]

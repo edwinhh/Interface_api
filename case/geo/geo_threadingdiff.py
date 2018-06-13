@@ -28,7 +28,7 @@ r2=[]
 filelist=[]
 test=1
 
-file="e:/项目/地理编码/数据/供应商地址清单2-2.csv"
+file="e:/项目/地理编码/数据/cxtest.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -50,14 +50,14 @@ class geo_Mutest(TestAbstract):
                 temp=line.strip().split(",")
 
 
-                data1 = {'address': temp[4], \
+                data1 = {'address': temp[0], \
                         'opt': "sf30", \
-                        'city': temp[2], \
+                        'city': temp[1], \
                          'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                data2 = {'address': temp[4], \
+                data2 = {'address': temp[0], \
                         'opt': "sf30", \
-                        'city': temp[2], \
+                        'city': temp[1], \
                          'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 
@@ -224,7 +224,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
 
-    k=8
+    k=16
     x = geo_Mutest()
     x.readcsv(file)
     splist=x.splist(x.datas1,k)
