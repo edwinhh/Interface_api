@@ -15,14 +15,14 @@ import json
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url='http://10.202.52.103:8080/geo'
+url='http://10.202.95.116:9090/tip'
 
 name = os.path.basename(__file__).split('.')[0]
 p1=[]
 r1=[]
 test=1
 
-file1="e:/项目/地理编码/数据/供应商地址清单2-2.csv"
+file1="e:/项目/输入提示/c++/new1.txt"
 errfile="e:/project/Interface_api-master/report/diff1.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
@@ -42,13 +42,12 @@ class geo_Mutest(TestAbstract):
                     continue
                 p1=line.strip().split("?")
                 temp=p1[1].split("&")
-                address=temp[0].split("=")
+                q=temp[0].split("=")
                 city=temp[2].split("=")
 
-                data = {'address': address[1], \
+                data = {'q': q[1], \
                         'opt': 'sf30', \
                         'city': city[1], \
-                         'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
 
                 
@@ -68,7 +67,7 @@ class geo_Mutest(TestAbstract):
 
     def openfile(self):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now + ".txt"
+        file2 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now + ".txt"
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         f=open(file2, 'a', encoding='utf_8')
@@ -76,7 +75,7 @@ class geo_Mutest(TestAbstract):
 
     def openerror(self):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file3 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" +"error_"+now+ ".txt"
+        file3 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" +"error_"+now+ ".txt"
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         err = open(file3, 'a', encoding='utf_8')
@@ -167,7 +166,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
 
-    k=1
+    k=8
     x = geo_Mutest()
     x.readcsv(errfile)
     splist=x.splist(x.datas1,k)

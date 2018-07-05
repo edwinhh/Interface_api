@@ -28,6 +28,8 @@ from case.geo.v1_8 import v1_8
 from case.geo.yy import yy
 from case.geo.geo_cx1 import geo_cx
 from case.geo.geo_core import geo_core
+from case.geo.v2_0 import v2_0
+from case.geo.v2_1 import v2_1
 
 
 if __name__ == '__main__':
@@ -47,6 +49,8 @@ if __name__ == '__main__':
     suite.addTest(unittest.makeSuite(geo_cx))
     suite.addTest(unittest.makeSuite(geo_core))
     suite.addTest(unittest.makeSuite(gis_geo))
+    suite.addTest(unittest.makeSuite(v2_0))
+    suite.addTest(unittest.makeSuite(v2_1))
 
 
 

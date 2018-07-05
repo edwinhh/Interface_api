@@ -14,7 +14,7 @@ import threading
 # p=[]
 # r=[]
 #url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url='http://10.202.52.103:8081/geo'
+url='http://10.202.95.116:9090/tip'
 name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
@@ -146,7 +146,7 @@ class geo_Mutest(TestAbstract):
                     city=city[:city.rindex("|")]
                 # address=line.strip().replace('\t', '').replace(',', '')
                 # city = line.strip().replace('\t', '').replace(',', '|')
-                data = {'address': address, \
+                data = {'q': address, \
                         'opt': 'sf30', \
                         'span': '1', \
                         'city': city, \
@@ -163,7 +163,7 @@ class geo_Mutest(TestAbstract):
 
     def openfile(self,file):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now+"_"+file+".txt"
+        file2 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now+"_"+file+".txt"
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         f=open(file2, 'a', encoding='utf_8')
@@ -171,7 +171,7 @@ class geo_Mutest(TestAbstract):
 
     def openerror(self,file):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file3 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now+"_Error_"+file
+        file3 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now+"_Error_"+file
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         err = open(file3, 'a', encoding='utf_8')
@@ -319,7 +319,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
     
-    k=6
+    k=8
     for root, dirs, files in os.walk(dir):
         filelist.append(files)
 

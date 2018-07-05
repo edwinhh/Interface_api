@@ -17,9 +17,9 @@ import time
 # p=[]
 # r=[]
 
-url1='http://10.202.95.116:9090/tip'
+url1='http://10.202.95.115:9090/tip'
 # url2='http://10.203.32.136:8888/tip/api'
-url2='http://10.202.95.115:9090/tip'
+url2='http://10.202.95.116:9090/tip'
 # url2='http://10.202.95.115:9091/geo'
 name = os.path.basename(__file__).split('.')[0]
 p1=[]
@@ -29,7 +29,7 @@ r2=[]
 filelist=[]
 test=1
 
-file="e:/项目/输入提示/c++/tip6.csv"
+file="e:/项目/输入提示/c++/tip61.csv"
 #file="e:/项目/地理编码/数据/test.csv"
 
 
@@ -77,7 +77,7 @@ class geo_Mutest(TestAbstract):
 
     def openfile(self):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now + ".txt"
+        file2 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now + ".txt"
         filelist.append(file2)
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f

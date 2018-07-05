@@ -13,9 +13,6 @@ import threading
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-#url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url='http://10.203.32.136:8888/geo'
-name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
 # test=1
@@ -23,17 +20,16 @@ name = os.path.basename(__file__).split('.')[0]
 # my=[]
 # myp=[]
 # myr=[]
+#url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
+url='http://10.202.52.103:8080/geo'
+name = os.path.basename(__file__).split('.')[0]
+
 test=1
 adcode="e:/项目/地理编码/数据/adcode.csv"
 dir="e:/项目/地理编码/数据/cx省市区调整/"
 filelist=[]
 
-#file="e:/项目/地理编码/数据/test.csv"
-
-
 class geo_Mutest(TestAbstract):
-
-
 
     def __init__(self):
         self.num=0
@@ -163,7 +159,7 @@ class geo_Mutest(TestAbstract):
 
     def openfile(self,file):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now+"_"+file+".txt"
+        file2 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now+"_"+file+".txt"
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         f=open(file2, 'a', encoding='utf_8')
@@ -171,7 +167,7 @@ class geo_Mutest(TestAbstract):
 
     def openerror(self,file):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file3 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now+"_Error_"+file
+        file3 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now+"_Error_"+file
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
         err = open(file3, 'a', encoding='utf_8')

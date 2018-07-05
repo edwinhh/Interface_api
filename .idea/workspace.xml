@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/tools/log_cost.py" line="75" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b0ea0b81-fc1d-45ba-8185-9ec6729b5410" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/geo/geo_threadingURL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/geo/geo_threadingdiff.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/rgeo/rgeo_threading3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/rgeo/rgeo_threadinglist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/tip/tip_threading3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/tip/tip_threadingURL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/tip/tip_threadinglist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run_rgeo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/geo/v2_0.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/case/geo/v2_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/test_demo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/test_job.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/test_userinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/test_view.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/case/wxls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log - 副本.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/report/926_2018-06-13-17_53_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/report/geo_sw_2018-06-13-17_56_07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/report/geo_yy_2018-06-13-17_52_02.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/report/gis_geo_2018-06-13-18_10_19.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/report/gis_rgeo_2018-06-13-18_09_57.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/report/tip_3_2018-06-13-18_10_39.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/geo/geo_threading3.py" afterPath="$PROJECT_DIR$/case/geo/geo_threading3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/geo/geo_threadinglist.py" afterPath="$PROJECT_DIR$/case/geo/geo_threadinglist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/rgeo/gis_rgeo.py" afterPath="$PROJECT_DIR$/case/rgeo/gis_rgeo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/rgeo/gis_rgeo2.py" afterPath="$PROJECT_DIR$/case/rgeo/gis_rgeo2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/rgeo/rgeo_21.py" afterPath="$PROJECT_DIR$/case/rgeo/rgeo_21.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/rgeo/slow.py" afterPath="$PROJECT_DIR$/case/rgeo/slow.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_geo.py" afterPath="$PROJECT_DIR$/log_geo.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/case/geo/geo_threading2.py" afterPath="$PROJECT_DIR$/case/tip/tip_threadingdiff.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/geo/geo_cx1.py" afterPath="$PROJECT_DIR$/case/geo/geo_cx1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case/geo/v1_8.py" afterPath="$PROJECT_DIR$/case/geo/v1_8.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/base.conf" afterPath="$PROJECT_DIR$/conf/base.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_geo.py" afterPath="$PROJECT_DIR$/run_geo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DB/geo_in.py" afterPath="$PROJECT_DIR$/tcp/geo_in.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DB/geo_tcp_domain-1215.py" afterPath="$PROJECT_DIR$/tcp/geo_tcp_domain-1215.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/geo/geo_threadingURL.py" afterPath="$PROJECT_DIR$/tools/geo_threadingURL.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/geo/geo_threadingdiff.py" afterPath="$PROJECT_DIR$/tools/geo_threadingdiffURL.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/geo/geo_threadingdiff2.py" afterPath="$PROJECT_DIR$/tools/geo_threadingdiff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/geo/geo_threadinglist.py" afterPath="$PROJECT_DIR$/tools/geo_threadinglist.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py" afterPath="$PROJECT_DIR$/tools/rgeo_threadingdiff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/rgeo/rgeo_threadinglist.py" afterPath="$PROJECT_DIR$/tools/rgeo_threadinglist.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/tip/tip_threadingURL.py" afterPath="$PROJECT_DIR$/tools/tip_threadingURL.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/tip/tip_threadingdiff.py" afterPath="$PROJECT_DIR$/tools/tip_threadingdiff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/case/tip/tip_threadinglist.py" afterPath="$PROJECT_DIR$/tools/tip_threadinglist.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/userinfo.py" afterPath="$PROJECT_DIR$/lib/mysql.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/log.py" afterPath="$PROJECT_DIR$/tools/log.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/log_cost.py" afterPath="$PROJECT_DIR$/tools/log_cost.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/log_geo.py" afterPath="$PROJECT_DIR$/tools/log_geo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pid.py" afterPath="$PROJECT_DIR$/tools/pid.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,65 +71,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rgeo_threadingdiff.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py">
+      <file leaf-file-name="base.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/base.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="121" column="25" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tip_threadingdiff.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/case/tip/tip_threadingdiff.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="179" column="25" lean-forward="true" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tip_threading3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/tip/tip_threading3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tip_threadinglist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/tip/tip_threadinglist.py">
+      <file leaf-file-name="v2_0.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/geo/v2_0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="396">
+              <caret line="199" column="41" lean-forward="false" selection-start-line="199" selection-start-column="41" selection-end-line="199" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v2_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/geo/v2_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tip_threadingURL.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/tip/tip_threadingURL.py">
+      <file leaf-file-name="geo_tcp_domain-1215.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tcp/geo_tcp_domain-1215.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="193">
+              <caret line="391" column="25" lean-forward="true" selection-start-line="391" selection-start-column="25" selection-end-line="391" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geo_tc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/geo/geo_tc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="geo_bd.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case/geo/geo_bd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-756">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="geo_threadingdiff.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/geo/geo_threadingdiff.py">
+        <entry file="file://$PROJECT_DIR$/tools/geo_threadingdiff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3861">
-              <caret line="158" column="31" lean-forward="true" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
+            <state relative-caret-position="297">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -113,41 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geo_threadingURL.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/geo/geo_threadingURL.py">
+      <file leaf-file-name="run_geo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_geo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geo_threading3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/geo/geo_threading3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geo_threadinglist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/geo/geo_threadinglist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geo_threading.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/geo/geo_threading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="97" column="24" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="24" />
+            <state relative-caret-position="315">
+              <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -168,10 +172,27 @@
       <find>横山区</find>
       <find>'opt': 'gd2'</find>
       <find>'span':&quot;1&quot;, \</find>
+      <find>http://10.202.95.116:9090/tip</find>
+      <find>http://GIS-RSS-PROXY.intsit.sfdc.com.cn:1080/tip</find>
+      <find>http://10.202.95.115:9090/tip</find>
+      <find>e86b691ba858330e8bbcc0dedcaddca8</find>
+      <find>url = 'http://10.203.32.136:8888/tip/api'</find>
+      <find>url=geturl(&quot;geo&quot;)</find>
+      <find>url='http://10.203.32.136:8888/tip/api'</find>
+      <find>opt': ''</find>
+      <find>a4fbd3a08ecc4f9e41bc9b06421ef3b5</find>
     </findStrings>
     <replaceStrings>
       <replace>'opt': ''</replace>
+      <replace>http://10.203.32.136:8888/tip/api</replace>
+      <replace>url=geturl(&quot;tip&quot;)</replace>
+      <replace>url=geturl(&quot;geo&quot;)</replace>
+      <replace>opt': 'sf60'</replace>
+      <replace>1b20896414c79752d47e27839b3f5f63</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>E:\project\Interface_api-master\case\tip</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -179,28 +200,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/case/3.py" />
-        <option value="$PROJECT_DIR$/case/2.py" />
-        <option value="$PROJECT_DIR$/case/tip/v1_25.py" />
-        <option value="$PROJECT_DIR$/lib/test_abstract.py" />
-        <option value="$PROJECT_DIR$/case/geo/geo_threading.py" />
-        <option value="$PROJECT_DIR$/case/geo/txt.py" />
-        <option value="$PROJECT_DIR$/case/geo/geo_threadinglist.py" />
-        <option value="$PROJECT_DIR$/log_geo.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/rgeo_threading3.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/slow.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/rgeo_threading2.py" />
-        <option value="$PROJECT_DIR$/run_rgeo.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/gis_rgeo2.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/gis_rgeo.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/rgeo_21.py" />
-        <option value="$PROJECT_DIR$/case/geo/geo_threadingURL.py" />
-        <option value="$PROJECT_DIR$/case/geo/geo_threading3.py" />
+        <option value="$PROJECT_DIR$/case/tip/tip_threadinglist.py" />
         <option value="$PROJECT_DIR$/case/tip/tip_threadingURL.py" />
-        <option value="$PROJECT_DIR$/case/geo/geo_threading2.py" />
-        <option value="$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py" />
-        <option value="$PROJECT_DIR$/case/geo/geo_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/case/tip/v1_18.py" />
         <option value="$PROJECT_DIR$/case/tip/tip_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/log_geo.py" />
+        <option value="$PROJECT_DIR$/log_cost.py" />
+        <option value="$PROJECT_DIR$/lib/wxls.py" />
+        <option value="$PROJECT_DIR$/case/geo/dump.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_yy.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_sw.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_opt.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_gf.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_gd.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_core.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_bd.py" />
+        <option value="$PROJECT_DIR$/case/geo/926.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_sz.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_tc.py" />
+        <option value="$PROJECT_DIR$/case/geo/gis_geo.py" />
+        <option value="$PROJECT_DIR$/case/geo/v1_22.py" />
+        <option value="$PROJECT_DIR$/case/geo/v1_23.py" />
+        <option value="$PROJECT_DIR$/case/geo/yy.py" />
+        <option value="$PROJECT_DIR$/case/tip/gis_tip.py" />
+        <option value="$PROJECT_DIR$/case/tip/gis_tip2.py" />
+        <option value="$PROJECT_DIR$/case/tip/tip_1.py" />
+        <option value="$PROJECT_DIR$/case/tip/tip_13341.py" />
+        <option value="$PROJECT_DIR$/case/rgeo/gis_rgeo.py" />
+        <option value="$PROJECT_DIR$/case/rgeo/gis_rgeo2.py" />
+        <option value="$PROJECT_DIR$/case/rgeo/rgeo_21.py" />
+        <option value="$PROJECT_DIR$/case/rgeo/slow.py" />
+        <option value="$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/case/geo/v1_8.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_threadingdiff2.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_threadingURL.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_threadingdiffURL.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/tools/geo_threadingdiffURL.py" />
+        <option value="$PROJECT_DIR$/tools/tip_threadingURL.py" />
+        <option value="$PROJECT_DIR$/tools/tip_threadinglist.py" />
+        <option value="$PROJECT_DIR$/tools/geo_threadinglist.py" />
+        <option value="$PROJECT_DIR$/tools/rgeo_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/lib/userinfo.py" />
+        <option value="$PROJECT_DIR$/case/geo/geo_cx1.py" />
+        <option value="$PROJECT_DIR$/tools/geo_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/tools/tip_threadingdiff.py" />
+        <option value="$PROJECT_DIR$/tools/geo_threadingURL.py" />
+        <option value="$PROJECT_DIR$/case/geo/v2.1.py" />
+        <option value="$PROJECT_DIR$/case/geo/v2.0.py" />
+        <option value="$PROJECT_DIR$/run_geo.py" />
+        <option value="$PROJECT_DIR$/conf/base.conf" />
+        <option value="$PROJECT_DIR$/case/geo/v2_1.py" />
       </list>
     </option>
   </component>
@@ -210,9 +260,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="210" />
-    <option name="y" value="56" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="282" />
+    <option name="y" value="217" />
     <option name="width" value="1678" />
     <option name="height" value="1008" />
   </component>
@@ -231,6 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,28 +310,38 @@
             <path>
               <item name="Interface_api-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interface_api-master" type="462c0819:PsiDirectoryNode" />
-              <item name="case" type="462c0819:PsiDirectoryNode" />
-              <item name="tip" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interface_api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interface_api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interface_api-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interface_api-master" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\Interface_api-master\tools" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\Interface_api-master\case\geo" />
       <recent name="E:\project\Interface_api-master\case\tip" />
       <recent name="E:\project\Interface_api-master" />
       <recent name="E:\project\Interface_api-master\case\rgeo" />
-      <recent name="E:\project\Interface_api-master\case\geo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -294,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rgeo_threadingdiff">
+  <component name="RunManager" selected="Python.geo_bd">
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -440,7 +502,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="geo_threading2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="geo_bd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -453,48 +515,30 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="test_api" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\project\Interface_api-master\case\geo\geo_threadingdiff.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/geo/geo_bd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="rgeo_threading2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="geo_tc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\python3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/rgeo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/geo" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="test_api" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\project\Interface_api-master\case\rgeo\rgeo_threadingdiff.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/geo/geo_tc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="rgeo_threadingdiff" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\python3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/rgeo" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="test_api" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="run_rgeo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run_geo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -507,43 +551,61 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="test_api" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_rgeo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_geo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tip_threadingdiff" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="v2.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\python3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/tip" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/geo" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="test_api" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/tip/tip_threadingdiff.py" />
+      <option name="SCRIPT_NAME" value="E:\project\Interface_api-master\case\geo\v2_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="v2_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\python3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case/geo" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="test_api" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/case/geo/v2_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.rgeo_threading2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.run_rgeo" />
-      <item index="2" class="java.lang.String" itemvalue="Python.rgeo_threadingdiff" />
-      <item index="3" class="java.lang.String" itemvalue="Python.geo_threading2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.tip_threadingdiff" />
+      <item index="0" class="java.lang.String" itemvalue="Python.v2.1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.run_geo" />
+      <item index="2" class="java.lang.String" itemvalue="Python.v2_1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.geo_tc" />
+      <item index="4" class="java.lang.String" itemvalue="Python.geo_bd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.rgeo_threadingdiff" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tip_threadingdiff" />
-        <item index="2" class="java.lang.String" itemvalue="Python.geo_threading2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.run_rgeo" />
-        <item index="4" class="java.lang.String" itemvalue="Python.rgeo_threading2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.geo_bd" />
+        <item index="1" class="java.lang.String" itemvalue="Python.geo_tc" />
+        <item index="2" class="java.lang.String" itemvalue="Python.v2_1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.run_geo" />
+        <item index="4" class="java.lang.String" itemvalue="Python.v2.1" />
       </list>
     </recent_temporary>
   </component>
@@ -570,26 +632,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19114584" sideWeight="0.4935275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26744187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3245243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3118393" sideWeight="0.4968017" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25586355" sideWeight="0.50647247" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0026041667" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -627,127 +689,150 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/userinfo.py">
+    <entry file="file://$PROJECT_DIR$/case/tip/tip_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_abstract.py" />
-    <entry file="file://$PROJECT_DIR$/conf/base.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/test_userinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/userinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21516">
-          <caret line="1014" column="0" lean-forward="false" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python3/Lib/http/cookiejar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="1780" column="28" lean-forward="true" selection-start-line="1780" selection-start-column="28" selection-end-line="1780" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="364">
+          <caret line="74" column="27" lean-forward="true" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/tip/v1_25.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="150" column="22" lean-forward="false" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
+        <state relative-caret-position="6075">
+          <caret line="227" column="32" lean-forward="false" selection-start-line="227" selection-start-column="32" selection-end-line="227" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_Mutest.py">
+    <entry file="file://$PROJECT_DIR$/case/geo/v1_22.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-729">
+        <state relative-caret-position="81">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/geo_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/gis_geo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/yy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/rgeo/gis_rgeo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/rgeo_threadinglist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/rgeo/rgeo_threading3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ftp/1/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test_abstract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_yy.py">
+    <entry file="file://$PROJECT_DIR$/case/geo/geo_threadingdiff_temp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ftp/1/send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/ass/ass_tip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/tip_threadingURL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log - 副本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/pid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -755,266 +840,293 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_tip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/tip/tip_6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8640">
-          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_test.py">
+    <entry file="file://$PROJECT_DIR$/case/test_view.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/wxls.py">
+    <entry file="file://$PROJECT_DIR$/case/test_userinfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-693">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/test_job.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/wxls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1698">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/tip/tip_test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4563">
-          <caret line="175" column="16" lean-forward="false" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_cost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_geo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_geo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_test1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1782">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_tc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8748">
-          <caret line="326" column="0" lean-forward="false" selection-start-line="326" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/rgeo/slow.py">
+    <entry file="file://$PROJECT_DIR$/case/2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-1683">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/rgeo/rgeo_threading3.py">
+    <entry file="file://$PROJECT_DIR$/case/3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/rgeo/rgeo_threadinglist.py">
+    <entry file="file://$PROJECT_DIR$/case/wxls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3060">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/rgeo/gis_rgeo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/tip_threadinglist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8505">
+          <caret line="321" column="7" lean-forward="false" selection-start-line="321" selection-start-column="7" selection-end-line="321" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/geo_threadinglist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7408">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/log_geo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/log_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/rgeo_threadingdiff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4968">
+          <caret line="199" column="9" lean-forward="false" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
+          <folding>
             <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/rgeo/gis_rgeo2.py">
+    <entry file="file://$PROJECT_DIR$/lib/test_abstract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3483">
-          <caret line="132" column="24" lean-forward="false" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_opt.py">
+    <entry file="file://$PROJECT_DIR$/lib/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4104">
-          <caret line="154" column="56" lean-forward="false" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="56" />
+        <state relative-caret-position="1161">
+          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/geo_cx1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="112" column="40" lean-forward="true" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
           <folding>
             <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/rgeo/gis_rgeo.py">
+    <entry file="file://$PROJECT_DIR$/run_tip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18819">
-          <caret line="700" column="36" lean-forward="false" selection-start-line="700" selection-start-column="36" selection-end-line="700" selection-end-column="36" />
+        <state relative-caret-position="286">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/tip_threadingdiff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/v1_23.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="172" column="22" lean-forward="false" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/rgeo/rgeo_21.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5778">
-          <caret line="217" column="26" lean-forward="false" selection-start-line="217" selection-start-column="26" selection-end-line="217" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-4621">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/rgeo/slow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_rgeo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        <state relative-caret-position="313">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_threadinglist.py">
+    <entry file="file://$PROJECT_DIR$/tools/geo_threadingURL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="324">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_threadingURL.py">
+    <entry file="file://$PROJECT_DIR$/tools/geo_threadingdiffURL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="5454">
+          <caret line="212" column="23" lean-forward="false" selection-start-line="212" selection-start-column="23" selection-end-line="212" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_threading3.py">
+    <entry file="file://$PROJECT_DIR$/case/geo/v1_8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="610">
+          <caret line="207" column="21" lean-forward="false" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_threading.py">
+    <entry file="file://$PROJECT_DIR$/tools/geo_threadingdiff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="97" column="24" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/tip/tip_threading3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/tip/tip_threadingURL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/tip/tip_threadinglist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/rgeo/rgeo_threadingdiff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="121" column="25" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        <state relative-caret-position="297">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/geo/geo_threadingdiff.py">
+    <entry file="file://$PROJECT_DIR$/case/geo/v2_0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3861">
-          <caret line="158" column="31" lean-forward="true" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
+        <state relative-caret-position="396">
+          <caret line="199" column="41" lean-forward="false" selection-start-line="199" selection-start-column="41" selection-end-line="199" selection-end-column="41" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/tip/tip_threadingdiff.py">
+    <entry file="file://$PROJECT_DIR$/run_geo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="179" column="25" lean-forward="true" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/v2_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcp/geo_tcp_domain-1215.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="391" column="25" lean-forward="true" selection-start-line="391" selection-start-column="25" selection-end-line="391" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/geo_tc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/base.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/geo/geo_bd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

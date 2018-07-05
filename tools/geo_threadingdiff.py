@@ -8,19 +8,7 @@ import threading
 import time
 
 
-#做新旧对比，并把对比新的无返回，旧的正常返回的结果输入出到diff，多线程执行
-
-
-#url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-# url='http://10.202.52.102:8080/geo'
-# name = os.path.basename(__file__).split('.')[0]
-# p=[]
-# r=[]
-url1='http://10.202.43.107:8080/rgeo'
-url2='http://10.203.32.186:8080/rgeo/api'
-# url1='http://10.202.95.115:8899/geo'
-# url2='http://10.202.95.115:9091/geo'
-name = os.path.basename(__file__).split('.')[0]
+#做新旧对比，将文档每行具体地址通过,拆分为参数，然后多线程执行
 p1=[]
 r1=[]
 p2=[]
@@ -28,13 +16,17 @@ r2=[]
 filelist=[]
 test=1
 
-file="e:/项目/逆地理编码/rgeo1.csv"
-#file="e:/项目/地理编码/数据/test.csv"
+# url1='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
+# url2='http://gis-int.intsit.sfdc.com.cn:1080/geo/api'
+url1='http://10.202.52.102:8080/geo'
+url2='http://10.202.52.103:8080/geo'
 
+name = os.path.basename(__file__).split('.')[0]
+
+file="e:/项目/地理编码/数据/new.txt"
+#file="e:/项目/地理编码/数据/cx2.csv"
 
 class geo_Mutest(TestAbstract):
-
-
 
     def __init__(self):
         self.num=0
@@ -44,20 +36,21 @@ class geo_Mutest(TestAbstract):
     def readcsv(self,file):
         with open(file, 'r', encoding='utf_8')as f:
             for line in f.readlines():
-                self.num+=1
                 if len(line)==1 or line.startswith('#'):
                     continue
-                p=line.strip().split(",")
+                self.num+=1
+                temp=line.strip().split(",")
 
 
-                data1 = {'x': p[0], \
-                        'y': p[1], \
-                         'opt': '', \
+                data1 = {'address': temp[0], \
+                        'opt': "sf30", \
+                        'city': temp[1], \
+                         'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
-                
-                data2 = {'x': p[0], \
-                        'y': p[1], \
-                         'opt': '', \
+                data2 = {'address': temp[0], \
+                        'opt': "sf30", \
+                        'city': temp[1], \
+                         'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 
                 # data1 = {'address': temp[0], \
@@ -76,7 +69,8 @@ class geo_Mutest(TestAbstract):
 
     def openfile(self):
         now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
-        file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now + ".txt"
+        #file2 = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/report' + '/' + name + "_" + now + ".txt"
+        file2 = os.path.dirname(os.path.dirname(__file__)) + '/report' + '/' + name + "_" + now + ".txt"
         filelist.append(file2)
         #os.mknod(rfile)
         #with open(file2, 'w+', encoding='utf_8')as f
@@ -99,10 +93,10 @@ class geo_Mutest(TestAbstract):
                 f.write('\n')
                 f.write(case)
                 f.write('\n\n')
-                # f.write(str(data[i]))
-                # f.write('\n')
                 f.write(str(res[i]))
-                f.write('\n\n')
+                f.write('\n')
+
+  
 
     def err(self, url, oldres, newreq, newres):
         reqnew = []
@@ -112,12 +106,29 @@ class geo_Mutest(TestAbstract):
         now = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
         diff = "e:/project/Interface_api-master/report/" + "diff_" + now + ".txt"
         p = open(diff, 'w', encoding='utf-8')
-        
+        # p.write("#address,node_adcode")
+        # p.write("\n")
+        # with open(old, 'r', encoding='utf-8') as f:
+        #     for line in f.readlines():
+        #         if '"status"' in line:
+        #             # r = line.split("?")[1].split("&")[0].split("=")[1]
+        #             resnew.append(line)
+        #         if "http://" in line:
+        #             reqnew.append(line)
+        #
+        # with open(new, 'r', encoding='utf-8') as f:
+        #     for line in f.readlines():
+        #         if '"status"' in line:
+        #             # r = line.split("?")[1].split("&")[0].split("=")[1]
+        #             resold.append(line)
+        # for i in range(min(len(resnew), len(resold))):
+        #     if json.loads(resnew[i])["status"] == 1 and json.loads(resold[i])["status"] == 0:
+        #         p.write(reqnew[i])
+        #         p.write('\n')
         for i in range(min(len(oldres), len(newres))):
-            #print (type(json.loads(newres[i])["status"]))
+            # print (json.loads(newres[i])["status"])
             # print ("&")
             # print (type(json.loads(oldres[i])["status"]))
-        
             if json.loads(newres[i])["status"] == 1 and json.loads(oldres[i])["status"] == 0:
                 temp = []
                 for key in newreq[i]:
@@ -197,7 +208,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
 
-    k=8
+    k=16
     x = geo_Mutest()
     x.readcsv(file)
     splist=x.splist(x.datas1,k)
@@ -230,8 +241,7 @@ if __name__ == "__main__":
     time.sleep(1)
     f2 = x.openfile()
     x.report(f2, url2, p2, r2)
-    x.err(url2, r1, p2, r2)
-
+    x.err(url2,r1,p2,r2)
 
 
 

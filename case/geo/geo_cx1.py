@@ -13,18 +13,17 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '广东省|深圳市|宝安区', \
                 'span' :'1',\
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
         print('1: ', res)
 
     def test_2(self):
-        data = {'address': '软件产业基地', \
+        data = {'address': '<scrpit>alert("深圳")</scrpit>', \
                 'opt': 'sf30', \
-                'city': '广东省|深圳市|宝安区', \
-                'span' :'1',\
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'span': '1', \
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -35,7 +34,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '广东省|深圳市|宝安区', \
                 'span' :'',\
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -45,7 +44,7 @@ class geo_cx(TestAbstract):
         data = {'address': '广州市中山大学', \
                 'opt': 'sf30', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -56,7 +55,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '广东省|深圳市|宝安区', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -67,7 +66,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '广东省|深圳市|宝安区', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -78,7 +77,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '深圳市|东莞市', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -89,7 +88,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '深圳市|', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -99,7 +98,7 @@ class geo_cx(TestAbstract):
         data = {'address': '中国新疆', \
                 'opt': 'sf30', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -110,7 +109,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '深圳市|', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -121,7 +120,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '深圳市', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -132,7 +131,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '深圳市|光明区', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -143,7 +142,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '深圳市|光明区', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -153,7 +152,7 @@ class geo_cx(TestAbstract):
         data = {
                 'opt': 'sf30', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -164,7 +163,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '河南省|驻马店市|新蔡县', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -174,7 +173,7 @@ class geo_cx(TestAbstract):
         data = {'address': '<scrpit>alert("深圳")</scrpit>', \
                 'opt': 'sf30', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -185,7 +184,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '%E6%B7%B1%E5%9C%B3&', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -195,7 +194,7 @@ class geo_cx(TestAbstract):
         data = {'address': '！@#￥%……：“', \
                 'opt': 'sf30', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -206,7 +205,7 @@ class geo_cx(TestAbstract):
                 'opt': 'tc1', \
                 'span': '1', \
                 'city': '<scrpit>alert(city)</scrpit>', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -217,7 +216,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '%E6%B7%B1%E5%9C%B3&', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -227,7 +226,7 @@ class geo_cx(TestAbstract):
         data = {'address': '潮白河孔雀城英国宫4期春晓园', \
                 'opt': 'sf30', \
                 'city': '131028', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -238,7 +237,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'span': '1', \
                 'city': '131028', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -249,7 +248,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '广州市', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -260,7 +259,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -271,7 +270,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -282,7 +281,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '厦门市', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -292,7 +291,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -302,7 +301,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -312,7 +311,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -322,7 +321,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -332,7 +331,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '755', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -343,7 +342,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '重庆市', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -353,7 +352,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '天津', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -363,7 +362,7 @@ class geo_cx(TestAbstract):
                 'opt': 'sf30', \
                 'city': '北京', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -373,7 +372,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '昆明', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -383,7 +382,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '440305', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -393,7 +392,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -403,7 +402,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '深圳', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -413,7 +412,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': ' 深圳 ', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -423,7 +422,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '深圳', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -435,7 +434,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '深圳', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -445,7 +444,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755aM001', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -455,7 +454,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755aM001', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -465,7 +464,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755aM001', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -475,7 +474,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755aM001', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -485,7 +484,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755aM001', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -495,7 +494,7 @@ class geo_cx(TestAbstract):
                'opt': 'sf30', \
                 'city': '755', \
                 'span': '1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak': '1b20896414c79752d47e27839b3f5f63'}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)

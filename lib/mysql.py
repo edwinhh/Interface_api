@@ -1,6 +1,6 @@
 import pymysql,time,datetime
 
-class UserInfo:
+class Mysql:
 
 	conn = None
 	cursor = None
