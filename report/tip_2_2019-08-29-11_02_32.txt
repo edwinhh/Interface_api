@@ -1,0 +1,38 @@
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api
+
+1	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=长治市襄垣县侯堡镇珂颐市场南晶楼对面一单元601室&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '长治市襄垣县侯堡镇珂颐市场南晶楼对面一单元601室', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 4, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBB0DC6762B03E05312F4520A5B18', 'name': '南晶楼', 'key_prefix': '和谐街与004乡道交叉口西北50米', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.981749, 'ycoord': 36.436609, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县和谐街与004乡道交叉口西北50米'}, {'uid': 's_711DB6B378322B03E05312F4520A5B18', 'name': '中国联通', 'key_prefix': '侯堡镇珂溢市场南晶楼', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.978634, 'ycoord': 36.436449, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县侯堡镇珂溢市场南晶楼'}], 'src': '', 'sn': '0009882019082911022647179039'}}
+
+
+2	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=侯堡镇珂颐市场南晶楼对面一单元601室&opt=&city=长治襄垣县&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '侯堡镇珂颐市场南晶楼对面一单元601室', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 4, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBB0DC6762B03E05312F4520A5B18', 'name': '南晶楼', 'key_prefix': '和谐街与004乡道交叉口西北50米', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.981749, 'ycoord': 36.436609, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县和谐街与004乡道交叉口西北50米'}, {'uid': 's_711DB6B378322B03E05312F4520A5B18', 'name': '中国联通', 'key_prefix': '侯堡镇珂溢市场南晶楼', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.978634, 'ycoord': 36.436449, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县侯堡镇珂溢市场南晶楼'}], 'src': '', 'sn': '0010432019082911022723178442'}}
+
+
+3	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=侯堡镇珂颐市场南晶楼对面一单元601室&opt=&city=140000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '侯堡镇珂颐市场南晶楼对面一单元601室', 'city': '140000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 22, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBB0DC6762B03E05312F4520A5B18', 'name': '南晶楼', 'key_prefix': '和谐街与004乡道交叉口西北50米', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.981749, 'ycoord': 36.436609, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县和谐街与004乡道交叉口西北50米'}, {'uid': 's_711DB6B378322B03E05312F4520A5B18', 'name': '中国联通', 'key_prefix': '侯堡镇珂溢市场南晶楼', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.978634, 'ycoord': 36.436449, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县侯堡镇珂溢市场南晶楼'}, {'uid': 's_3ed5d0ee5b4c42faaae6328291845806', 'name': '晶晶美容院', 'key_prefix': '桥西街34号', 'adcode': '140825', 'regcode': '359', 'xcoord': 111.22767, 'ycoord': 35.61044, 'adname': ['山西省', '运城市', '新绛县', ''], 'detail_addr': '山西省运城市新绛县桥西街34号'}], 'src': '', 'sn': '0010312019082911022823679847'}}
+
+
+4	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=侯堡镇珂颐市场南晶楼对面一单元601室&opt=&city=山西省长治市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '侯堡镇珂颐市场南晶楼对面一单元601室', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 4, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBB0DC6762B03E05312F4520A5B18', 'name': '南晶楼', 'key_prefix': '和谐街与004乡道交叉口西北50米', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.981749, 'ycoord': 36.436609, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县和谐街与004乡道交叉口西北50米'}, {'uid': 's_711DB6B378322B03E05312F4520A5B18', 'name': '中国联通', 'key_prefix': '侯堡镇珂溢市场南晶楼', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.978634, 'ycoord': 36.436449, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县侯堡镇珂溢市场南晶楼'}], 'src': '', 'sn': '0010222019082911022935080210'}}
+
+
+5	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=山西省长治市襄垣县侯堡镇珂颐市场南晶楼对面一单元601室&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '山西省长治市襄垣县侯堡镇珂颐市场南晶楼对面一单元601室', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 4, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBB0DC6762B03E05312F4520A5B18', 'name': '南晶楼', 'key_prefix': '和谐街与004乡道交叉口西北50米', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.981749, 'ycoord': 36.436609, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县和谐街与004乡道交叉口西北50米'}, {'uid': 's_711DB6B378322B03E05312F4520A5B18', 'name': '中国联通', 'key_prefix': '侯堡镇珂溢市场南晶楼', 'adcode': '140423', 'regcode': '355', 'xcoord': 112.978634, 'ycoord': 36.436449, 'adname': ['山西省', '长治市', '襄垣县', ''], 'detail_addr': '山西省长治市襄垣县侯堡镇珂溢市场南晶楼'}], 'src': '', 'sn': '0010322019082911023030980591'}}
+
+
+6	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=珂颐市场南晶楼对面一单元601室&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+

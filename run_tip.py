@@ -21,6 +21,8 @@ from case.tip.tip_13348 import tip_13348
 from case.tip.v1_23 import tip1_23
 from case.tip.v1_18 import tip1_18
 from case.tip.v1_25 import v_125
+from case.tip.v1_26 import v_126
+from case.tip.v1_26_post import v_128
 from case.tip.gis_tip import tip
 from case.tip.gis_tip2 import tip2
 from case.tip.tip_1 import tip_1
@@ -48,6 +50,8 @@ if __name__ == '__main__':
     suite.addTest(unittest.makeSuite(tip1_18))
     suite.addTest(unittest.makeSuite(tip1_23))
     suite.addTest(unittest.makeSuite(v_125))
+    suite.addTest(unittest.makeSuite(v_126))
+    suite.addTest(unittest.makeSuite(v_128))
     suite.addTest(unittest.makeSuite(tip_1))
     suite.addTest(unittest.makeSuite(tip_2))
     suite.addTest(unittest.makeSuite(tip_3))

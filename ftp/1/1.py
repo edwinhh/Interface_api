@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+ #-*- coding: utf-8 -*-
 from ftplib import FTP
 import sys,os
 
@@ -11,9 +11,9 @@ localdir="E:\\test\\"
 
 
 def ftpconnect():
-    ftp_server = '10.202.15.196'  # FTP server ip address
-    username = 'guigen'
-    password = 'hgg'
+    ftp_server = ''  # FTP server ip address
+    username = ''
+    password = ''
     timeout = 3000
     port = 21
     ftp = FTP()
@@ -74,7 +74,7 @@ def download_files(ftp,localdir, remotedir):
     try:
         ftp.cwd(remotedir)
     except:
-        print"目录%s不存在，继续...' %remotedir"
+        print ("目录%s不存在，继续...' %remotedir")
         return
     if not os.path.isdir(localdir):
         os.makedirs(localdir)

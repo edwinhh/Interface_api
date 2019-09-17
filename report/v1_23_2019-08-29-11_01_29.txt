@@ -1,0 +1,44 @@
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api
+
+1	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=章贡区迎宾大道74号&opt=&city=赣州&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '章贡区迎宾大道74号', 'city': '360700', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 17, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBABC07DC2B03E05312F4520A5B18', 'name': '赣州恒大金属制品有限公司', 'key_prefix': '赣州经济技术开发区迎宾大道74号(赣州西高速路收费站)', 'adcode': '360702', 'regcode': '797', 'xcoord': 114.846827, 'ycoord': 25.848656, 'adname': ['江西省', '赣州市', '章贡区', ''], 'detail_addr': '江西省赣州市章贡区赣州经济技术开发区迎宾大道74号(赣州西高速路收费站)'}, {'uid': 's_a72c4ec6ce60497d9c99c606fa2f2ecf', 'name': '老钟三鲜粉', 'key_prefix': '迎宾大道6号(水韵花都)22栋74号', 'adcode': '360702', 'regcode': '797', 'xcoord': 114.9108, 'ycoord': 25.84586, 'adname': ['江西省', '赣州市', '章贡区', ''], 'detail_addr': '江西省赣州市章贡区迎宾大道6号(水韵花都)22栋74号'}, {'uid': 's_711DB7F025312B03E05312F4520A5B18', 'name': '信丰信达招投标公司', 'key_prefix': '迎宾大道74号优速快递', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.924879, 'ycoord': 25.381222, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号优速快递'}, {'uid': 's_711DB86C69812B03E05312F4520A5B18', 'name': 'DL设计装饰有限公司', 'key_prefix': '迎宾大道74号', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.925179, 'ycoord': 25.380119, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号'}, {'uid': 's_711DBA4D389A2B03E05312F4520A5B18', 'name': '香村专卖店', 'key_prefix': '迎宾大道74号', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.927084, 'ycoord': 25.385809, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号'}, {'uid': 's_7E8AAE24B35C8836E0530EF4520A8236', 'name': '宇丰商行', 'key_prefix': '嘉定镇迎宾大道北74号金歌KTV105国道', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.92715, 'ycoord': 25.387514, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县嘉定镇迎宾大道北74号金歌KTV105国道'}, {'uid': 's_711DB710762C2B03E05312F4520A5B18', 'name': '欧惠浦', 'key_prefix': '迎宾大道74号', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.925079, 'ycoord': 25.380799, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号'}, {'uid': 's_711DB98D25EB2B03E05312F4520A5B18', 'name': '昌盛美食', 'key_prefix': '迎宾大道74号', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.92491, 'ycoord': 25.380442, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号'}, {'uid': 's_711DBAEB5E1C2B03E05312F4520A5B18', 'name': '依丽洁干洗连锁', 'key_prefix': '迎宾大道74号', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.927084, 'ycoord': 25.385809, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号'}, {'uid': 's_711DB8E360452B03E05312F4520A5B18', 'name': '福德茶庄', 'key_prefix': '迎宾大道74号', 'adcode': '360722', 'regcode': '797', 'xcoord': 114.92519, 'ycoord': 25.380115, 'adname': ['江西省', '赣州市', '信丰县', ''], 'detail_addr': '江西省赣州市信丰县迎宾大道74号'}], 'src': '', 'sn': '0010262019082911012502054350'}}
+
+
+2	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=深 圳 福 田 中 心 <script><a>alert(1)</a></script> 城&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '深 圳 福 田 中 心  城', 'city': '440304', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 13806, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB89A0A192B03E05312F4520A5B18', 'name': '中心城社区', 'key_prefix': '德政路与行政路交叉口东北100米', 'adcode': '440307', 'regcode': '755', 'xcoord': 114.246624, 'ycoord': 22.723471, 'adname': ['广东省', '深圳市', '龙岗区', ''], 'detail_addr': '广东省深圳市龙岗区德政路与行政路交叉口东北100米'}, {'uid': 's_711DB95D5C3E2B03E05312F4520A5B18', 'name': '观澜中心城', 'key_prefix': '樟阁路', 'adcode': '440309', 'regcode': '755', 'xcoord': 114.019058, 'ycoord': 22.743395, 'adname': ['广东省', '深圳市', '龙华区', ''], 'detail_addr': '广东省深圳市龙华区樟阁路'}, {'uid': 's_711DBADCF75A2B03E05312F4520A5B18', 'name': '国际商务中心城', 'key_prefix': '福强路与金地五路交叉口西南100米', 'adcode': '440304', 'regcode': '755', 'xcoord': 114.039324, 'ycoord': 22.521876, 'adname': ['广东省', '深圳市', '福田区', ''], 'detail_addr': '广东省深圳市福田区福强路与金地五路交叉口西南100米'}, {'uid': 's_711DB6B565962B03E05312F4520A5B18', 'name': '中心城广场', 'key_prefix': '沙井街道中心路', 'adcode': '440306', 'regcode': '755', 'xcoord': 113.830195, 'ycoord': 22.732951, 'adname': ['广东省', '深圳市', '宝安区', ''], 'detail_addr': '广东省深圳市宝安区沙井街道中心路'}, {'uid': 's_82EF3EA62D7A3267E0530EF4520A7F74', 'name': '章阁中心城5栋', 'key_prefix': '龙华新区福前路西', 'adcode': '440309', 'regcode': '755', 'xcoord': 114.018915, 'ycoord': 22.741512, 'adname': ['广东省', '深圳市', '龙华区', ''], 'detail_addr': '广东省深圳市龙华区龙华新区福前路西'}, {'uid': 's_82EF3EA5ABD13267E0530EF4520A7F74', 'name': '华策中心城一期1栋', 'key_prefix': '龙城3路', 'adcode': '440307', 'regcode': '755', 'xcoord': 114.244873, 'ycoord': 22.701275, 'adname': ['广东省', '深圳市', '龙岗区', ''], 'detail_addr': '广东省深圳市龙岗区龙城3路'}, {'uid': 's_82EF3EA5A2A03267E0530EF4520A7F74', 'name': '华策中心城一期2栋B座', 'key_prefix': '龙城3路', 'adcode': '440307', 'regcode': '755', 'xcoord': 114.2441, 'ycoord': 22.701751, 'adname': ['广东省', '深圳市', '龙岗区', ''], 'detail_addr': '广东省深圳市龙岗区龙城3路'}, {'uid': 's_82EF3EA5D54E3267E0530EF4520A7F74', 'name': '岗宏融湖中心城2栋', 'key_prefix': '平湖街道平龙路', 'adcode': '440307', 'regcode': '755', 'xcoord': 114.117855, 'ycoord': 22.693549, 'adname': ['广东省', '深圳市', '龙岗区', ''], 'detail_addr': '广东省深圳市龙岗区平湖街道平龙路'}, {'uid': 's_82EF3EA5AB8F3267E0530EF4520A7F74', 'name': '华策中心城一期2栋A座', 'key_prefix': '龙城3路', 'adcode': '440307', 'regcode': '755', 'xcoord': 114.244452, 'ycoord': 22.701578, 'adname': ['广东省', '深圳市', '龙岗区', ''], 'detail_addr': '广东省深圳市龙岗区龙城3路'}, {'uid': 's_82EF3EA5A0F33267E0530EF4520A7F74', 'name': '华策中心城一期3栋A座', 'key_prefix': '龙城3路', 'adcode': '440307', 'regcode': '755', 'xcoord': 114.243537, 'ycoord': 22.701348, 'adname': ['广东省', '深圳市', '龙岗区', ''], 'detail_addr': '广东省深圳市龙岗区龙城3路'}], 'src': '', 'sn': '0009432019082911012614253548'}}
+
+
+3	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=<a style = “TEST:e-xpression(alert(/深 圳 福 田 中 心/))”></a>&opt=&cb=jQuery19108708458041159374_150753396075545778<script>alert(1)</script>&_=1507533960756&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+jQuery19108708458041159374_150753396075545778&_=1507533960756({"status":1,"result":{"err":-105,"msg":"not found"}});
+
+
+4	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=<input type="text" value="深圳市" onclick="javascript:alert('handsome boy')">&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+
+5	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=<span><script><a>深 圳 福 田 中 心 </a></script></span>&opt=&cb=jQuery19108708458041159374_150753396075545778<script>alert(1)</script>&_=1507533960756&ak=94c9162319557b6e9102f0aeb4b3bf5d
+
+{'status': 1, 'result': {'err': 113, 'msg': '访问限制,ak未授权'}}
+
+
+6	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=<span>&lt;script&gt;alert(&#39;handsome boy&#39;)&lt;/script&gt</span>&opt=&cb=jQuery19108708458041159374_150753396075545778<script>alert(1)</script>&_=1507533960756&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+jQuery19108708458041159374_150753396075545778&_=1507533960756({"status":1,"result":{"err":-105,"msg":"not found"}});
+
+
+7	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?cb=jQuery19108708458041159374_150753396075545778<script>alert(1)</script>&_=1507533960756&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+jQuery19108708458041159374_150753396075545778&_=1507533960756({"status":1,"result":{"err":-105,"msg":"not found"}});
+
+

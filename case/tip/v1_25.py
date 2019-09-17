@@ -127,7 +127,7 @@ class v_125(TestAbstract):
 
     def test_11(self):
         data = {'q': "第一电台", \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city': '深圳', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
 
@@ -161,7 +161,7 @@ class v_125(TestAbstract):
     def test_14(self):
         data = {'q': '江苏省连云港市东海县白塔镇马小布村电话', \
                 'city':'',\
-                'opt': 'sf30', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
 
         res = self.requestGET(url, data)
@@ -219,7 +219,7 @@ class v_125(TestAbstract):
 
     @classmethod
     def tearDownClass(clz):
-        reporttxt(name,url, p, r,n)
+        reporttxt(name, url, p, r, "get")
 
 
 

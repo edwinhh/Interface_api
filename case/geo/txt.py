@@ -147,13 +147,13 @@ class geo_Mutest(TestAbstract):
                 data = {'address': address, \
                         'opt': 'sf30', \
                         'city': city, \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':ak}
                 my.append(data)
                 
                 mydata = {'address': address, \
                         'opt': 'my0', \
                         'city': city, \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':ak}
                 my.append(mydata)
                 self.datas.append(my)
 

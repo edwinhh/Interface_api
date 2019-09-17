@@ -20,13 +20,13 @@ import threading
 # my=[]
 # myp=[]
 # myr=[]
-#url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
-url='http://10.202.52.103:8080/geo'
+url='http://gis-rss.intsit.sfdc.com.cn:1080/geo'
+#url='http://10.203.33.36:8080/geo/api'
 name = os.path.basename(__file__).split('.')[0]
 
 test=1
 adcode="e:/项目/地理编码/数据/adcode.csv"
-dir="e:/项目/地理编码/数据/cx省市区调整/"
+dir="e:/项目/地理编码/数据/temp/"
 filelist=[]
 
 class geo_Mutest(TestAbstract):
@@ -315,7 +315,7 @@ class geo_Mutest(TestAbstract):
 
 if __name__ == "__main__":
     
-    k=6
+    k=16
     for root, dirs, files in os.walk(dir):
         filelist.append(files)
 

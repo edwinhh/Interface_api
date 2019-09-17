@@ -1,0 +1,218 @@
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api
+
+1	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=马鞍山路2-1号山东大厦9-11层国家开发银行山东省分行&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '马鞍山路2-1号山东大厦9-11层国家开发银行山东省分行', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 3481, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_b949afd8a9104732a1d5d233dcace467', 'name': '国家开发银行山东省分行', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.0231, 'ycoord': 36.6426, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_7E8AAE0742BB8836E0530EF4520A8236', 'name': '正和茶生活馆(山东大厦店)', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022669, 'ycoord': 36.642102, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_711DB747954C2B03E05312F4520A5B18', 'name': '国家开发银行(山东分行)', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022669, 'ycoord': 36.642102, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_84AA0114AF781D77E0530EF4520A9381', 'name': '山东大厦', 'key_prefix': '马鞍山路2-1号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.0223, 'ycoord': 36.64133, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号'}, {'uid': 's_711DB7ADAD5D2B03E05312F4520A5B18', 'name': '山东大厦一楼江圆厅', 'key_prefix': '马鞍山路2-1号一楼', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.021262, 'ycoord': 36.642471, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号一楼'}, {'uid': 's_94a0e3e392304b448c2811f168ed3631', 'name': '山东大厦天泽府', 'key_prefix': '马鞍山路2-1号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号'}, {'uid': 's_711DB6DD159B2B03E05312F4520A5B18', 'name': '山东大厦礼乐宴会大厅', 'key_prefix': '马鞍山路2-1号山东大厦1楼(泉城公园)', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022347, 'ycoord': 36.64162, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦1楼(泉城公园)'}, {'uid': 's_3ae58c2979b94fdeb1daa92302939f69', 'name': '山东大厦品齐香火锅城', 'key_prefix': '马鞍山路2-1号山东大厦2层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦2层'}, {'uid': 's_80de5cefadba4e48835b94982a46aff6', 'name': '山东大厦礼乐宴会厅', 'key_prefix': '马鞍山路2-1号山东大厦1层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦1层'}, {'uid': 's_324c1e04a42e499598f2e25f5640998b', 'name': '山东大厦文化茶苑', 'key_prefix': '马鞍山路2-1号山东大厦2层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦2层'}], 'src': '', 'sn': '0010572019082910574083663992'}}
+
+
+2	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=“河北”珈奥甘油化工“有限公司”&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '“河北”珈奥甘油化工“有限公司”', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB8B1CFCD2B03E05312F4520A5B18', 'name': '河北珈奥甘油化工有限公司', 'key_prefix': '隆尧镇县城工业园', 'adcode': '130525', 'regcode': '319', 'xcoord': 114.806546, 'ycoord': 37.385156, 'adname': ['河北省', '邢台市', '隆尧县', ''], 'detail_addr': '河北省邢台市隆尧县隆尧镇县城工业园'}], 'src': '', 'sn': '0009752019082910574151364344'}}
+
+
+3	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=深圳万安村&opt=&city=邢台市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+4	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+
+5	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+
+6	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?opt=&city=重庆市|江北区|大石坝&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+7	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=<scrpit>alert("重庆")</scrpit>&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+
+8	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0&opt=&city=%E6%B7%B1%E5%9C%B3&&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+9	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=！@#￥%……：“&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -104, 'msg': "unknown error,Conversion = ')'"}}
+
+
+10	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=重庆市江北区大石坝&opt=&city=<scrpit>alert(重庆)</scrpit>&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '重庆市江北区大石坝', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 3187, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_850BADFC91737097E0530EF4520A7FA0', 'name': '大石坝街道', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.493207, 'ycoord': 29.566403, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}, {'uid': 's_85255049EDE03F6AE0530EF4520A5102', 'name': '大石坝街', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.494304, 'ycoord': 29.564315, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}, {'uid': 's_85255049E9723F6AE0530EF4520A5102', 'name': '大石坝立交', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.487941, 'ycoord': 29.568852, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}, {'uid': 's_850BADFC89647097E0530EF4520A7FA0', 'name': '大石坝1村', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.50055, 'ycoord': 29.561016, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}, {'uid': 's_850BADFC893B7097E0530EF4520A7FA0', 'name': '大石坝大路村', 'key_prefix': '红石路', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.493179, 'ycoord': 29.570229, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区红石路'}, {'uid': 's_711DB96E3CA12B03E05312F4520A5B18', 'name': '大石坝四村', 'key_prefix': '红兴路与红石路交叉口西北200米', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.494169, 'ycoord': 29.572, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区红兴路与红石路交叉口西北200米'}, {'uid': 's_7E8AAE4036C18836E0530EF4520A8236', 'name': '大石坝六村', 'key_prefix': '红石路450号', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.489672, 'ycoord': 29.569574, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区红石路450号'}, {'uid': 's_72C043A07D0BAE3AE05312F4520A74AE', 'name': '大石坝街2号元佳花园3幢附23号', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.490438, 'ycoord': 29.568337, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}, {'uid': 's_72C043A07D0CAE3AE05312F4520A74AE', 'name': '大石坝街2号元佳花园3幢附39号', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.490493, 'ycoord': 29.568134, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}, {'uid': 's_72C043A07D0DAE3AE05312F4520A74AE', 'name': '大石坝街2号元佳花园3幢附41号', 'key_prefix': '', 'adcode': '500105', 'regcode': '023', 'xcoord': 106.490531, 'ycoord': 29.568173, 'adname': ['重庆市', '重庆市', '江北区', ''], 'detail_addr': '重庆市重庆市江北区'}], 'src': '', 'sn': '0004402019082910574954167511'}}
+
+
+11	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=马鞍山路2-1号山东大厦9-11层国家开发银行山东省分行&opt=&city=济南市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '马鞍山路2-1号山东大厦9-11层国家开发银行山东省分行', 'city': '370100', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 896, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_b949afd8a9104732a1d5d233dcace467', 'name': '国家开发银行山东省分行', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.0231, 'ycoord': 36.6426, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_7E8AAE0742BB8836E0530EF4520A8236', 'name': '正和茶生活馆(山东大厦店)', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022669, 'ycoord': 36.642102, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_711DB747954C2B03E05312F4520A5B18', 'name': '国家开发银行(山东分行)', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022669, 'ycoord': 36.642102, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_84AA0114AF781D77E0530EF4520A9381', 'name': '山东大厦', 'key_prefix': '马鞍山路2-1号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.0223, 'ycoord': 36.64133, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号'}, {'uid': 's_711DB7ADAD5D2B03E05312F4520A5B18', 'name': '山东大厦一楼江圆厅', 'key_prefix': '马鞍山路2-1号一楼', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.021262, 'ycoord': 36.642471, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号一楼'}, {'uid': 's_94a0e3e392304b448c2811f168ed3631', 'name': '山东大厦天泽府', 'key_prefix': '马鞍山路2-1号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号'}, {'uid': 's_711DB6DD159B2B03E05312F4520A5B18', 'name': '山东大厦礼乐宴会大厅', 'key_prefix': '马鞍山路2-1号山东大厦1楼(泉城公园)', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022347, 'ycoord': 36.64162, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦1楼(泉城公园)'}, {'uid': 's_3ae58c2979b94fdeb1daa92302939f69', 'name': '山东大厦品齐香火锅城', 'key_prefix': '马鞍山路2-1号山东大厦2层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦2层'}, {'uid': 's_80de5cefadba4e48835b94982a46aff6', 'name': '山东大厦礼乐宴会厅', 'key_prefix': '马鞍山路2-1号山东大厦1层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦1层'}, {'uid': 's_324c1e04a42e499598f2e25f5640998b', 'name': '山东大厦文化茶苑', 'key_prefix': '马鞍山路2-1号山东大厦2层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦2层'}], 'src': '', 'sn': '0009892019082910575073367480'}}
+
+
+12	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=重庆崇文路2号&opt=&city=重庆市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '重庆崇文路2号', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 343, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_847EF32629A22ACBE0530EF4520AD045', 'name': '重庆邮电大学', 'key_prefix': '崇文路2号', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.60734, 'ycoord': 29.53257, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号'}, {'uid': 's_889faf119c93427da166471f91fd2084', 'name': '重庆邮电大学信息科技大厦', 'key_prefix': '崇文路2号重庆邮电大学', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.60445, 'ycoord': 29.53117, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号重庆邮电大学'}, {'uid': 's_7E8AAE2EDBFB8836E0530EF4520A8236', 'name': '重庆邮电大学25号学生公寓', 'key_prefix': '崇文路2号', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.609366, 'ycoord': 29.530595, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号'}, {'uid': 's_7E8AAD5C720B8836E0530EF4520A8236', 'name': '重庆邮电大学35号学生公寓', 'key_prefix': '崇文路2号', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.608432, 'ycoord': 29.528238, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号'}, {'uid': 's_711DB7D65F8E2B03E05312F4520A5B18', 'name': '重庆邮电大学18号学生公寓', 'key_prefix': '崇文路2号', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.611155, 'ycoord': 29.532639, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号'}, {'uid': 's_711DB6B73BD32B03E05312F4520A5B18', 'name': '重庆邮电大学留学生楼', 'key_prefix': '崇文路2号重庆邮电大学', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.610188, 'ycoord': 29.534361, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号重庆邮电大学'}, {'uid': 's_711DB9B099532B03E05312F4520A5B18', 'name': '重庆邮电大学兴业苑食堂', 'key_prefix': '崇文路2号重庆邮电大学新区', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.610753, 'ycoord': 29.531587, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号重庆邮电大学新区'}, {'uid': 's_711DB8C97D532B03E05312F4520A5B18', 'name': '重庆邮电大学6号学生公寓', 'key_prefix': '崇文路2号', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.609058, 'ycoord': 29.53153, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号'}, {'uid': 's_e1d2ba91963c4d1083a974b82eabb582', 'name': '重庆邮电大学实验楼', 'key_prefix': '崇文路2号重庆邮电大学', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.60456, 'ycoord': 29.53133, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号重庆邮电大学'}, {'uid': 's_7b4fef39040c4378926e711e3392f305', 'name': '重庆邮电大学3教学楼', 'key_prefix': '崇文路2号重庆邮电大学', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.60878, 'ycoord': 29.53526, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区崇文路2号重庆邮电大学'}], 'src': '', 'sn': '0004382019082910575213367903'}}
+
+
+13	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=虎溪重庆大学城重庆城市管理职业学院大学城新校区图书馆&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '虎溪重庆大学城重庆城市管理职业学院大学城新校区图书馆', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 76, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_7E8AAD93CC7D8836E0530EF4520A8236', 'name': '三峡联合职业大学巴南新校区图书馆', 'key_prefix': '界石镇东城大道南段东450米', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.613474, 'ycoord': 29.353339, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区界石镇东城大道南段东450米'}, {'uid': 's_711DB882C41A2B03E05312F4520A5B18', 'name': '重庆工商大学融智学院巴南新校区', 'key_prefix': '', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.526339, 'ycoord': 29.345711, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区'}, {'uid': 's_85885C8766F136DBE0530EF4520AC7B1', 'name': '三峡联合职业大学巴南新校区', 'key_prefix': '东城大道588号', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.612778, 'ycoord': 29.352932, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区东城大道588号'}, {'uid': 's_7E8AAD75094E8836E0530EF4520A8236', 'name': '三峡联合职业大学巴南新校区教学楼', 'key_prefix': '界石镇东城大道南段东400米', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.612323, 'ycoord': 29.353789, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区界石镇东城大道南段东400米'}, {'uid': 's_850BADFACE0D7097E0530EF4520A7FA0', 'name': '重庆工商大学融智学院巴南新校区9栋', 'key_prefix': '', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.525119, 'ycoord': 29.34644, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区'}, {'uid': 's_85885C87B43636DBE0530EF4520AC7B1', 'name': '重庆资源与环境保护职业学院大足新校区', 'key_prefix': '二环南路68号', 'adcode': '500111', 'regcode': '023', 'xcoord': 105.702286, 'ycoord': 29.688107, 'adname': ['重庆市', '重庆市', '大足区', ''], 'detail_addr': '重庆市重庆市大足区二环南路68号'}, {'uid': 's_850BADFC8C8F7097E0530EF4520A7FA0', 'name': '永川十二中(新校区)', 'key_prefix': '432县道', 'adcode': '500118', 'regcode': '023', 'xcoord': 105.842247, 'ycoord': 29.004175, 'adname': ['重庆市', '重庆市', '永川区', ''], 'detail_addr': '重庆市重庆市永川区432县道'}, {'uid': 's_850BADFA5C357097E0530EF4520A7FA0', 'name': '四川外国语大学四川外国语大学新校区教学楼', 'key_prefix': '', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.434088, 'ycoord': 29.572155, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区'}, {'uid': 's_850BADFACF3F7097E0530EF4520A7FA0', 'name': '重庆工商大学融智学院巴南新校区第1教学楼', 'key_prefix': '', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.526885, 'ycoord': 29.342747, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区'}, {'uid': 's_7E8AAD3D84618836E0530EF4520A8236', 'name': '重庆三峡学院(新校区)', 'key_prefix': '天星路666号', 'adcode': '500101', 'regcode': '023', 'xcoord': 108.452283, 'ycoord': 30.751148, 'adname': ['重庆市', '重庆市', '万州区', ''], 'detail_addr': '重庆市重庆市万州区天星路666号'}], 'src': '', 'sn': '0009382019082910575340968362'}}
+
+
+14	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=人民医院&opt=&city=500001&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '人民医院', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2774, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB970F91A2B03E05312F4520A5B18', 'name': '人民医院', 'key_prefix': '二环南路东段', 'adcode': '500111', 'regcode': '023', 'xcoord': 105.737662, 'ycoord': 29.683853, 'adname': ['重庆市', '重庆市', '大足区', ''], 'detail_addr': '重庆市重庆市大足区二环南路东段'}, {'uid': 's_7E8AADBFBA428836E0530EF4520A8236', 'name': '人民医院', 'key_prefix': '龙岗路165号', 'adcode': '500111', 'regcode': '023', 'xcoord': 105.709565, 'ycoord': 29.697286, 'adname': ['重庆市', '重庆市', '大足区', ''], 'detail_addr': '重庆市重庆市大足区龙岗路165号'}, {'uid': 's_711DB6C35FBD2B03E05312F4520A5B18', 'name': '人民医院', 'key_prefix': '', 'adcode': '500235', 'regcode': '023', 'xcoord': 108.71644, 'ycoord': 30.927, 'adname': ['重庆市', '重庆市', '云阳县', ''], 'detail_addr': '重庆市重庆市云阳县'}, {'uid': 's_5b6634a94d0f4372a2f3acc1e3e63eed', 'name': '渝中区人民医院', 'key_prefix': '解放西路9号', 'adcode': '500103', 'regcode': '023', 'xcoord': 106.57697, 'ycoord': 29.5502, 'adname': ['重庆市', '重庆市', '渝中区', ''], 'detail_addr': '重庆市重庆市渝中区解放西路9号'}, {'uid': 's_711DB7B183872B03E05312F4520A5B18', 'name': '忠州镇人民医院', 'key_prefix': '新华支路1号附2号', 'adcode': '500233', 'regcode': '023', 'xcoord': 108.042933, 'ycoord': 30.301011, 'adname': ['重庆市', '重庆市', '忠县', ''], 'detail_addr': '重庆市重庆市忠县新华支路1号附2号'}, {'uid': 's_711DBA22758F2B03E05312F4520A5B18', 'name': '人民医院小区', 'key_prefix': '广场北路与广场路交叉口北50米', 'adcode': '500153', 'regcode': '023', 'xcoord': 105.59257, 'ycoord': 29.40724, 'adname': ['重庆市', '重庆市', '荣昌区', ''], 'detail_addr': '重庆市重庆市荣昌区广场北路与广场路交叉口北50米'}, {'uid': 's_04f8b84d4e71498198df2be2daeb3470', 'name': '涪陵区人民医院小区', 'key_prefix': '民康巷6号', 'adcode': '500102', 'regcode': '023', 'xcoord': 107.39156, 'ycoord': 29.70817, 'adname': ['重庆市', '重庆市', '涪陵区', ''], 'detail_addr': '重庆市重庆市涪陵区民康巷6号'}, {'uid': 's_711DB8FB86672B03E05312F4520A5B18', 'name': '渝北区人民医院家属楼', 'key_prefix': '渝湖路6号', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.626329, 'ycoord': 29.714346, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区渝湖路6号'}, {'uid': 's_847EF3262A6B2ACBE0530EF4520AD045', 'name': '重庆市第九人民医院', 'key_prefix': '嘉陵村69号', 'adcode': '500109', 'regcode': '023', 'xcoord': 106.44601, 'ycoord': 29.82254, 'adname': ['重庆市', '重庆市', '北碚区', ''], 'detail_addr': '重庆市重庆市北碚区嘉陵村69号'}, {'uid': 's_847EF32630DB2ACBE0530EF4520AD045', 'name': '开县人民医院', 'key_prefix': '安康街8号', 'adcode': '500154', 'regcode': '023', 'xcoord': 108.4043, 'ycoord': 31.16548, 'adname': ['重庆市', '重庆市', '开州区', ''], 'detail_addr': '重庆市重庆市开州区安康街8号'}], 'src': '', 'sn': '0009522019082910575439268763'}}
+
+
+15	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=重庆重开电气有限公司&opt=&city=广州市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+16	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=重庆重开电气有限公司&opt=&city=440300&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+17	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=重庆市  回兴街龙  石路25号  东衡爱地   社区&opt=&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '重庆市  回兴街龙  石路25号  东衡爱地   社区', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_4143d5228b6e4a7ba5d43cd2f6e7b7c9', 'name': '东衡爱地社区', 'key_prefix': '龙石路25号', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.61237, 'ycoord': 29.66003, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区龙石路25号'}], 'src': '', 'sn': '0010002019082910575518469289'}}
+
+
+18	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q= 重庆市  回兴街龙  石路25号  东衡爱地   社区 &opt=&city=chongqing&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '重庆市  回兴街龙  石路25号  东衡爱地   社区', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_4143d5228b6e4a7ba5d43cd2f6e7b7c9', 'name': '东衡爱地社区', 'key_prefix': '龙石路25号', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.61237, 'ycoord': 29.66003, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区龙石路25号'}], 'src': '', 'sn': '0009842019082910575616069938'}}
+
+
+19	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q="重庆市重庆回兴街龙石路25号石路25号衡爱地社区"&opt=&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '"重庆市重庆回兴街龙石路25号石路25号衡爱地社区"', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_4143d5228b6e4a7ba5d43cd2f6e7b7c9', 'name': '东衡爱地社区', 'key_prefix': '龙石路25号', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.61237, 'ycoord': 29.66003, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区龙石路25号'}], 'src': '', 'sn': '0009412019082910575717770014'}}
+
+
+20	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=重庆市^回兴街龙^石路25号^东衡爱地^社区&opt=&city=重庆&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '重庆市^回兴街龙^石路25号^东衡爱地^社区', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_4143d5228b6e4a7ba5d43cd2f6e7b7c9', 'name': '东衡爱地社区', 'key_prefix': '龙石路25号', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.61237, 'ycoord': 29.66003, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区龙石路25号'}], 'src': '', 'sn': '0010912019082910575827870625'}}
+
+
+21	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q= 重庆市|回兴街龙|石路25号||东衡爱地|社区 &opt=&city=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '重庆市|回兴街龙|石路25号||东衡爱地|社区', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_4143d5228b6e4a7ba5d43cd2f6e7b7c9', 'name': '东衡爱地社区', 'key_prefix': '龙石路25号', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.61237, 'ycoord': 29.66003, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区龙石路25号'}], 'src': '', 'sn': '0010192019082910575934870997'}}
+
+
+22	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=马鞍山路2-1号山东大厦9-11层国家开发银行山东省分行&opt=&city=370000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '马鞍山路2-1号山东大厦9-11层国家开发银行山东省分行', 'city': '370000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 3481, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_b949afd8a9104732a1d5d233dcace467', 'name': '国家开发银行山东省分行', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.0231, 'ycoord': 36.6426, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_7E8AAE0742BB8836E0530EF4520A8236', 'name': '正和茶生活馆(山东大厦店)', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022669, 'ycoord': 36.642102, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_711DB747954C2B03E05312F4520A5B18', 'name': '国家开发银行(山东分行)', 'key_prefix': '马鞍山路2-1号山东大厦9-11层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022669, 'ycoord': 36.642102, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦9-11层'}, {'uid': 's_84AA0114AF781D77E0530EF4520A9381', 'name': '山东大厦', 'key_prefix': '马鞍山路2-1号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.0223, 'ycoord': 36.64133, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号'}, {'uid': 's_711DB7ADAD5D2B03E05312F4520A5B18', 'name': '山东大厦一楼江圆厅', 'key_prefix': '马鞍山路2-1号一楼', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.021262, 'ycoord': 36.642471, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号一楼'}, {'uid': 's_94a0e3e392304b448c2811f168ed3631', 'name': '山东大厦天泽府', 'key_prefix': '马鞍山路2-1号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号'}, {'uid': 's_711DB6DD159B2B03E05312F4520A5B18', 'name': '山东大厦礼乐宴会大厅', 'key_prefix': '马鞍山路2-1号山东大厦1楼(泉城公园)', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.022347, 'ycoord': 36.64162, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦1楼(泉城公园)'}, {'uid': 's_3ae58c2979b94fdeb1daa92302939f69', 'name': '山东大厦品齐香火锅城', 'key_prefix': '马鞍山路2-1号山东大厦2层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦2层'}, {'uid': 's_80de5cefadba4e48835b94982a46aff6', 'name': '山东大厦礼乐宴会厅', 'key_prefix': '马鞍山路2-1号山东大厦1层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦1层'}, {'uid': 's_324c1e04a42e499598f2e25f5640998b', 'name': '山东大厦文化茶苑', 'key_prefix': '马鞍山路2-1号山东大厦2层', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.02217, 'ycoord': 36.64134, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区马鞍山路2-1号山东大厦2层'}], 'src': '', 'sn': '0009482019082910580046971017'}}
+
+
+23	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=\重庆大学 &opt=&city=500002&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '\\重庆大学', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2172, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_847EF32627382ACBE0530EF4520AD045', 'name': '重庆大学虎溪校区', 'key_prefix': '大学城南路55号', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.29935, 'ycoord': 29.59362, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区大学城南路55号'}, {'uid': 's_4e44240eab72426d990cdd0a108e8570', 'name': '重庆大学A区', 'key_prefix': '沙坪坝正街174号', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.46428, 'ycoord': 29.56742, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区沙坪坝正街174号'}, {'uid': 's_847EF32627262ACBE0530EF4520AD045', 'name': '重庆大学电气工程学院', 'key_prefix': '重庆大学A区第六教学大楼', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.46615, 'ycoord': 29.56469, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区重庆大学A区第六教学大楼'}, {'uid': 's_711DB808FCAC2B03E05312F4520A5B18', 'name': '重庆大学生家园', 'key_prefix': '北部新区(龙头寺)泰山大道东段28号新东湖路社区三栋', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.54544, 'ycoord': 29.602913, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区北部新区(龙头寺)泰山大道东段28号新东湖路社区三栋'}, {'uid': 's_beb7fa2cf6084787a1b3202eb39a9894', 'name': '重庆大学国家大学科技园', 'key_prefix': '沙中路117号', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.46836, 'ycoord': 29.56094, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区沙中路117号'}, {'uid': 's_b094a9f5babd4d34b6ae29ad0f9658ff', 'name': '重庆大学经济与工商管理学院', 'key_prefix': '重庆大学B区第一综合教学楼', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.46013, 'ycoord': 29.56577, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区重庆大学B区第一综合教学楼'}, {'uid': 's_0287905bf0424c0e946c20519286cdae', 'name': '重庆大学城人民小学', 'key_prefix': '景阳路54号', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.31341, 'ycoord': 29.60856, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区景阳路54号'}, {'uid': 's_4a8910210d11471f9aa8754b0511a3f0', 'name': '重庆大学法学院', 'key_prefix': '重庆大学B区', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.45974, 'ycoord': 29.56848, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区重庆大学B区'}, {'uid': 's_37c81689d9d740f68ec757fa181023ab', 'name': '重庆大学计算机学院', 'key_prefix': '重庆大学A区主教学楼15-18F', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.47093, 'ycoord': 29.56592, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区重庆大学A区主教学楼15-18F'}, {'uid': 's_0fe04c07615c4f56949113bd98f43790', 'name': '重庆大学外国语学院', 'key_prefix': '', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.29809, 'ycoord': 29.59631, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区'}], 'src': '', 'sn': '0010652019082910580138871676'}}
+
+
+24	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=\&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '\\', 'city': '', 'opt': '1', 'cc': ''}, 'POITotal': 0, 'POIType': 'poi', 'POISum': 0, 'POISrc': 'empty', 'POISet': []}}
+
+
+25	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=盛世传媒&opt=&city=500000aM001&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+26	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=&&&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+27	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q="1"="1"&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '"1"="1"', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 40142, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_85255049E7FA3F6AE0530EF4520A5102', 'name': 'XB11', 'key_prefix': '', 'adcode': '500241', 'regcode': '023', 'xcoord': 109.223977, 'ycoord': 28.739158, 'adname': ['重庆市', '重庆市', '秀山土家族苗族自治县', ''], 'detail_addr': '重庆市重庆市秀山土家族苗族自治县'}, {'uid': 's_f737a447a3e94505a3591fee8e68542d', 'name': '龙湖时代中心11', 'key_prefix': '', 'adcode': '500103', 'regcode': '023', 'xcoord': 106.5116, 'ycoord': 29.53384, 'adname': ['重庆市', '重庆市', '渝中区', ''], 'detail_addr': '重庆市重庆市渝中区'}, {'uid': 's_711DB74D2F5C2B03E05312F4520A5B18', 'name': '11中学校教师大厦', 'key_prefix': '华兰路东50米', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.597511, 'ycoord': 29.58153, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区华兰路东50米'}, {'uid': 's_85885C87B91E36DBE0530EF4520AC7B1', 'name': '银城云水间11栋', 'key_prefix': '江南大道499号', 'adcode': '500101', 'regcode': '023', 'xcoord': 108.412109, 'ycoord': 30.800673, 'adname': ['重庆市', '重庆市', '万州区', ''], 'detail_addr': '重庆市重庆市万州区江南大道499号'}, {'uid': 's_85885C87BFEE36DBE0530EF4520AC7B1', 'name': '长龙家园1区11栋', 'key_prefix': '上海大道688号', 'adcode': '500101', 'regcode': '023', 'xcoord': 108.460442, 'ycoord': 30.768501, 'adname': ['重庆市', '重庆市', '万州区', ''], 'detail_addr': '重庆市重庆市万州区上海大道688号'}, {'uid': 's_72C043D90654AE3AE05312F4520A74AE', 'name': '柏树村11', 'key_prefix': '', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.457922, 'ycoord': 29.563847, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区'}, {'uid': 's_72C043A008CAAE3AE05312F4520A74AE', 'name': '枝元村11', 'key_prefix': '嘉陵街', 'adcode': '500106', 'regcode': '023', 'xcoord': 106.452678, 'ycoord': 29.612794, 'adname': ['重庆市', '重庆市', '沙坪坝区', ''], 'detail_addr': '重庆市重庆市沙坪坝区嘉陵街'}, {'uid': 's_72C043A06F07AE3AE05312F4520A74AE', 'name': '图强村11', 'key_prefix': '', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.548152, 'ycoord': 29.534728, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区'}, {'uid': 's_72C043A1CF92AE3AE05312F4520A74AE', 'name': '黄溪口11', 'key_prefix': '新农街', 'adcode': '500113', 'regcode': '023', 'xcoord': 106.511972, 'ycoord': 29.388412, 'adname': ['重庆市', '重庆市', '巴南区', ''], 'detail_addr': '重庆市重庆市巴南区新农街'}, {'uid': 's_72C0439DF23CAE3AE05312F4520A74AE', 'name': '兴茂花园路11', 'key_prefix': '', 'adcode': '500101', 'regcode': '023', 'xcoord': 108.377377, 'ycoord': 30.826521, 'adname': ['重庆市', '重庆市', '万州区', ''], 'detail_addr': '重庆市重庆市万州区'}], 'src': '', 'sn': '0010312019082910580403972899'}}
+
+
+28	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=http://gis-rss.intsit.sfdc.com.cn:1080/geo&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': 'http://gis-rss.intsit.sfdc.com.cn:1080/geo', 'city': '500000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_7E8AAD65BA698836E0530EF4520A8236', 'name': '尚美个噢公司', 'key_prefix': '南坪南路西部美博城4楼', 'adcode': '500108', 'regcode': '023', 'xcoord': 106.575577, 'ycoord': 29.518553, 'adname': ['重庆市', '重庆市', '南岸区', ''], 'detail_addr': '重庆市重庆市南岸区南坪南路西部美博城4楼'}, {'uid': 's_711DB99A723A2B03E05312F4520A5B18', 'name': '死咯噢呜', 'key_prefix': '银桦路与龙山一路交叉口西北150米', 'adcode': '500112', 'regcode': '023', 'xcoord': 106.495582, 'ycoord': 29.599591, 'adname': ['重庆市', '重庆市', '渝北区', ''], 'detail_addr': '重庆市重庆市渝北区银桦路与龙山一路交叉口西北150米'}], 'src': '', 'sn': '0010852019082910580538773475'}}
+
+
+29	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=1080&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+30	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=%E6%B7%B1%E5%9C%B3%E5%B8%82%E7%BD%97%E6%B9%96%E5%8C%BA%E7%AC%8B%E5%B2%97%E8%A1%97%E9%81%93%E5%AE%9D%E5%B2%97%E8%B7%AF%E5%A4%A7%E5%8D%8E%E5%A4%A7%E5%8E%A6&&opt=&city=500000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+31	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=济南历山路146-2号山东天诚国土规划设计院有限公司&opt=&city=370002&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '济南历山路146-2号山东天诚国土规划设计院有限公司', 'city': '370000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_50b237f33fe14b219103fc827522a038', 'name': '山东天诚国土规划设计院有限公司', 'key_prefix': '历山路146-2号', 'adcode': '370102', 'regcode': '531', 'xcoord': 117.03705, 'ycoord': 36.6497, 'adname': ['山东省', '济南市', '历下区', ''], 'detail_addr': '山东省济南市历下区历山路146-2号'}], 'src': '', 'sn': '0009822019082910580790474131'}}
+
+
+32	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=山东省聊城市东昌府区道口铺街道邵屯村&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '山东省聊城市东昌府区道口铺街道邵屯村', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 8, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBAD15C692B03E05312F4520A5B18', 'name': '道口铺办事处闫邵屯村村委会', 'key_prefix': '聊城市东昌府区', 'adcode': '371502', 'regcode': '635', 'xcoord': 115.818169, 'ycoord': 36.459048, 'adname': ['山东省', '聊城市', '东昌府区', ''], 'detail_addr': '山东省聊城市东昌府区聊城市东昌府区'}, {'uid': 's_711DB79295722B03E05312F4520A5B18', 'name': '闫邵屯村文化娱乐中心', 'key_prefix': '聊城市东昌府区', 'adcode': '371502', 'regcode': '635', 'xcoord': 115.818169, 'ycoord': 36.459048, 'adname': ['山东省', '聊城市', '东昌府区', ''], 'detail_addr': '山东省聊城市东昌府区聊城市东昌府区'}, {'uid': 's_711DB9DD7E732B03E05312F4520A5B18', 'name': '光彩五金百货', 'key_prefix': '邵屯村', 'adcode': '371502', 'regcode': '635', 'xcoord': 115.89184, 'ycoord': 36.457226, 'adname': ['山东省', '聊城市', '东昌府区', ''], 'detail_addr': '山东省聊城市东昌府区邵屯村'}], 'src': '', 'sn': '0009492019082910580906374542'}}
+
+
+33	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=种子路2号河北旅游职业学院&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+
+34	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q="种子路2号河北旅游职业学院"&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '"种子路2号河北旅游职业学院"', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 53, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_84AA011265D41D77E0530EF4520A9381', 'name': '河北旅游职业学院', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94925, 'ycoord': 40.8997, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_d25b6a7684d54799bb5442180f7ba579', 'name': '河北旅游职业学院餐厅', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94943, 'ycoord': 40.90042, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_7E8AAE3811908836E0530EF4520A8236', 'name': '河北旅游职业学院机电系', 'key_prefix': '步行街与种子路交叉口南150米', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94871, 'ycoord': 40.898849, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区步行街与种子路交叉口南150米'}, {'uid': 's_c55dd146629b4acabd113b254ae56f25', 'name': '河北旅游职业学院教学楼', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.9498, 'ycoord': 40.89946, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_a4416073130146c79279b9625d2aac0e', 'name': '河北旅游职业学院启智楼', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94972, 'ycoord': 40.90051, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_711DBB1952D92B03E05312F4520A5B18', 'name': '河北旅游职业学院实验楼', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.949513, 'ycoord': 40.900113, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_e9be3f63af694f749928e2be5160a86f', 'name': '河北旅游职业学院尚知楼', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94975, 'ycoord': 40.89918, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_2d2ee2b63a21472e8632e3712d3ac06a', 'name': '河北旅游职业学院实验楼', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94986, 'ycoord': 40.89978, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_78170ec83a344a8ea74b4ba40ee6c86c', 'name': '河北旅游职业学院国际教育中心', 'key_prefix': '种子路2号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.94857, 'ycoord': 40.89861, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区种子路2号'}, {'uid': 's_7E8AADA18A648836E0530EF4520A8236', 'name': '河北旅游职业学院外教及留学生公寓', 'key_prefix': '步行街与种子路交叉口东北150米', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.949044, 'ycoord': 40.900534, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区步行街与种子路交叉口东北150米'}], 'src': '', 'sn': '0010702019082910581065075626'}}
+
+
+35	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=中国河北承德市&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '中国河北承德市', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 31, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DBAA60D682B03E05312F4520A5B18', 'name': '中国石油河北承德昆恒公司', 'key_prefix': '256省道东50米', 'adcode': '130803', 'regcode': '314', 'xcoord': 117.832542, 'ycoord': 40.991708, 'adname': ['河北省', '承德市', '双滦区', ''], 'detail_addr': '河北省承德市双滦区256省道东50米'}, {'uid': 's_711DB87DD5002B03E05312F4520A5B18', 'name': '河北省中国国际旅行社', 'key_prefix': '丽正门大街7-1号', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.946152, 'ycoord': 40.980757, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区丽正门大街7-1号'}, {'uid': 's_7E8AAD7D37CB8836E0530EF4520A8236', 'name': '中国神州易物集团(河北分公司)', 'key_prefix': '府前路与车站路交叉口西南150米', 'adcode': '130802', 'regcode': '314', 'xcoord': 117.967674, 'ycoord': 40.954454, 'adname': ['河北省', '承德市', '双桥区', ''], 'detail_addr': '河北省承德市双桥区府前路与车站路交叉口西南150米'}, {'uid': 's_711DB75758452B03E05312F4520A5B18', 'name': '中国石化河北承德石油分公司三岔口油库', 'key_prefix': '256省道', 'adcode': '130803', 'regcode': '314', 'xcoord': 117.830488, 'ycoord': 40.986288, 'adname': ['河北省', '承德市', '双滦区', ''], 'detail_addr': '河北省承德市双滦区256省道'}, {'uid': 's_7E8AAD82FC658836E0530EF4520A8236', 'name': '中国移动通信集团河北有限公司双滦分公司', 'key_prefix': '中心大街与茶棚路交叉口南50米', 'adcode': '130803', 'regcode': '314', 'xcoord': 117.798056, 'ycoord': 40.959398, 'adname': ['河北省', '承德市', '双滦区', ''], 'detail_addr': '河北省承德市双滦区中心大街与茶棚路交叉口南50米'}, {'uid': 's_f9481604b81a4fc69fe7bc0e93f22fc6', 'name': '中国石化河北承德鹰手营子石油分公司', 'key_prefix': '东马路13号', 'adcode': '130804', 'regcode': '314', 'xcoord': 117.66591, 'ycoord': 40.54928, 'adname': ['河北省', '承德市', '鹰手营子矿区', ''], 'detail_addr': '河北省承德市鹰手营子矿区东马路13号'}, {'uid': 's_1d1095fa0c6f4f1fbc91ec470f86e3fd', 'name': '中国石油化工股份有限公司河北滦平石油分公司', 'key_prefix': '工贸城76号', 'adcode': '130824', 'regcode': '314', 'xcoord': 117.35059, 'ycoord': 40.94393, 'adname': ['河北省', '承德市', '滦平县', ''], 'detail_addr': '河北省承德市滦平县工贸城76号'}, {'uid': 's_d8bad3fb83b04061b79c95aa823cfe42', 'name': '中国邮政集团公司河北省滦平县分公司', 'key_prefix': '鑫港东街112号', 'adcode': '130824', 'regcode': '314', 'xcoord': 117.33167, 'ycoord': 40.93278, 'adname': ['河北省', '承德市', '滦平县', ''], 'detail_addr': '河北省承德市滦平县鑫港东街112号'}, {'uid': 's_d532593266f041f9bb5b6a0b709c3633', 'name': '中国移动通信集团河北有限公司隆化分公司', 'key_prefix': '', 'adcode': '130825', 'regcode': '314', 'xcoord': 117.73605, 'ycoord': 41.31136, 'adname': ['河北省', '承德市', '隆化县', ''], 'detail_addr': '河北省承德市隆化县'}, {'uid': 's_711DB7B9F17C2B03E05312F4520A5B18', 'name': '中国石化销售有限公司河北承德隆化石油分公司', 'key_prefix': '隆化镇安洲北街23号', 'adcode': '130825', 'regcode': '314', 'xcoord': 117.738809, 'ycoord': 41.319284, 'adname': ['河北省', '承德市', '隆化县', ''], 'detail_addr': '河北省承德市隆化县隆化镇安洲北街23号'}], 'src': '', 'sn': '0009612019082910581149175589'}}
+
+
+36	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=河北珈奥甘油化工有限公司&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '河北珈奥甘油化工有限公司', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB8B1CFCD2B03E05312F4520A5B18', 'name': '河北珈奥甘油化工有限公司', 'key_prefix': '隆尧镇县城工业园', 'adcode': '130525', 'regcode': '319', 'xcoord': 114.806546, 'ycoord': 37.385156, 'adname': ['河北省', '邢台市', '隆尧县', ''], 'detail_addr': '河北省邢台市隆尧县隆尧镇县城工业园'}], 'src': '', 'sn': '0010212019082910581248375925'}}
+
+

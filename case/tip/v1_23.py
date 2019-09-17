@@ -15,7 +15,7 @@ class tip1_23(TestAbstract):
 
     def test_1(self):
         data = {'q': '章贡区迎宾大道74号', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city': '赣州', \
                 'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -102,7 +102,7 @@ class tip1_23(TestAbstract):
 
     @classmethod
     def tearDownClass(clz):
-        reporttxt(name, url, p, r)
+        reporttxt(name, url, p, r,"get")
 
 
 

@@ -53,12 +53,12 @@ class geo_Mutest(TestAbstract):
                 city=temp[2].split("=")
 
                 data1 = {'address': address[1], \
-                        'opt': 'sf30', \
+                        'opt': '', \
                         'city': city[1], \
                          'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 data2 = {'address': temp[0], \
-                        'opt': 'sf30', \
+                        'opt': '', \
                         'city': temp[1], \
                          'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}

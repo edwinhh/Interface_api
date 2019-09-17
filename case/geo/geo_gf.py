@@ -2,6 +2,7 @@ import os,sys,unittest,time
 from lib.test_abstract import TestAbstract
 from lib.wxls import *
 url=geturl("geo")
+ak=getak("ak")
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]
@@ -11,7 +12,7 @@ class geo_gf(TestAbstract):
     def test_1(self):
         data = {'address': '广东省深圳市龙岗区南湾街道樟树布新圹东六巷10号英子正骨推拿馆', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -21,7 +22,7 @@ class geo_gf(TestAbstract):
         data = {'address': '顺丰快递点自提', \
                'opt': 'gf1', \
                 'city': '河南省|驻马店市|新蔡县', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -30,7 +31,7 @@ class geo_gf(TestAbstract):
     def test_3(self):
         data = {'address': '广东省', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -39,7 +40,7 @@ class geo_gf(TestAbstract):
     def test_4(self):
         data = {'address': '广州市中山大学', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -48,7 +49,7 @@ class geo_gf(TestAbstract):
     def test_5(self):
         data = {'address': '杭州西湖', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -57,7 +58,7 @@ class geo_gf(TestAbstract):
     def test_12(self):
         data = {'address': '北京紫禁城', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -66,7 +67,7 @@ class geo_gf(TestAbstract):
     def test_6(self):
         data = {'address': '上海外滩', \
                 'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -75,7 +76,7 @@ class geo_gf(TestAbstract):
     def test_7(self):
         data = {'address': '新疆曼哈顿', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -84,7 +85,7 @@ class geo_gf(TestAbstract):
     def test_8(self):
         data = {'address': '中国新疆', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -93,7 +94,7 @@ class geo_gf(TestAbstract):
     def test_9(self):
         data = {'address': '非洲', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -102,7 +103,7 @@ class geo_gf(TestAbstract):
     def test_10(self):
         data = {'address': '深圳万里工业区“万”', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -111,7 +112,7 @@ class geo_gf(TestAbstract):
     def test_11(self):
         data = {'address': '深圳万安村', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -120,7 +121,7 @@ class geo_gf(TestAbstract):
     def test_13(self):
         data = {'address': '', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -129,7 +130,7 @@ class geo_gf(TestAbstract):
     def test_14(self):
         data = {
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -139,7 +140,7 @@ class geo_gf(TestAbstract):
         data = {
                'opt': 'gf1', \
                 'city': '河南省|驻马店市|新蔡县', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -148,7 +149,7 @@ class geo_gf(TestAbstract):
     def test_16(self):
         data = {'address': '<scrpit>alert("深圳")</scrpit>', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -158,7 +159,7 @@ class geo_gf(TestAbstract):
         data = {'address': '%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0', \
                'opt': 'gf1', \
                 'city': '%E6%B7%B1%E5%9C%B3&', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -167,7 +168,7 @@ class geo_gf(TestAbstract):
     def test_18(self):
         data = {'address': '！@#￥%……：“', \
                'opt': 'gf1', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -177,7 +178,7 @@ class geo_gf(TestAbstract):
         data = {'address': '深圳万安村', \
                 'opt': 'tc1', \
                 'city': '<scrpit>alert(city)</scrpit>', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -187,7 +188,7 @@ class geo_gf(TestAbstract):
         data = {'address': '广东省深圳市南山区a8音乐大厦', \
                'opt': 'gf1', \
                 'city': '深圳市', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -197,7 +198,7 @@ class geo_gf(TestAbstract):
         data = {'address': '潮白河孔雀城英国宫4期春晓园', \
                'opt': 'gf1', \
                 'city': '131028', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -207,7 +208,7 @@ class geo_gf(TestAbstract):
         data = {'address': '燕郊开发区神威北路与燕灵路交汇处鑫乐汇购物广场', \
                'opt': 'gf1', \
                 'city': '131028', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -217,7 +218,7 @@ class geo_gf(TestAbstract):
         data = {'address': '广东省深圳市南山区南园村新二坊18栋', \
                'opt': 'gf1', \
                 'city': '广州市', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -227,7 +228,7 @@ class geo_gf(TestAbstract):
         data = {'address': '四川省成都市武侯区濯锦路长城半岛城邦2期1栋3003', \
                'opt': 'gf1', \
                 'city': '', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -237,7 +238,7 @@ class geo_gf(TestAbstract):
         data = {'address': '深圳市南山区海德3道3号', \
                'opt': 'gf1', \
                 'city': '', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -247,7 +248,7 @@ class geo_gf(TestAbstract):
         data = {'address': '福建厦门海沧区厦门市路桥管理有限公司海沧大桥管理中心路桥管理有限公司', \
                'opt': 'gf1', \
                 'city': '厦门市', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -256,7 +257,7 @@ class geo_gf(TestAbstract):
         data = {'address': '广东省广东省广东省深圳市蛇口海上世界', \
                'opt': 'gf1', \
                 'city': '', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -265,7 +266,7 @@ class geo_gf(TestAbstract):
         data = {'address': '广东省深圳市深圳市蛇口蛇口海上世界', \
                'opt': 'gf1', \
                 'city': '', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -274,7 +275,7 @@ class geo_gf(TestAbstract):
         data = {'address': '深圳市^蛇口^海上世界^海上世界', \
                'opt': 'gf1', \
                 'city': '', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -283,7 +284,7 @@ class geo_gf(TestAbstract):
         data = {'address': ' 深圳市 蛇口 海上世界 海上世界 ', \
                'opt': 'gf1', \
                 'city': '', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -292,7 +293,7 @@ class geo_gf(TestAbstract):
         data = {'address': '海上世界 ', \
                'opt': 'gf1', \
                 'city': '755', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -301,7 +302,7 @@ class geo_gf(TestAbstract):
         data = {'address': '重庆市解放路', \
                'opt': 'gf1', \
                 'city': '重庆市', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -310,7 +311,7 @@ class geo_gf(TestAbstract):
         data = {'address': '天津市南开大学', \
                'opt': 'gf1', \
                 'city': '天津', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -319,7 +320,7 @@ class geo_gf(TestAbstract):
         data = {'address': '北京北京大学', \
                'opt': 'gf1', \
                 'city': '北京', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -328,7 +329,7 @@ class geo_gf(TestAbstract):
         data = {'address': '星都国际总部基地', \
               'opt': 'gf1', \
                 'city': '昆明', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -337,7 +338,7 @@ class geo_gf(TestAbstract):
         data = {'address': '盛世传媒', \
               'opt': 'gf1', \
                 'city': '440305', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -346,7 +347,7 @@ class geo_gf(TestAbstract):
         data = {'address': '盛世传媒', \
               'opt': 'gf1', \
                 'city': '755', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -355,7 +356,7 @@ class geo_gf(TestAbstract):
         data = {'address': '盛世传媒', \
               'opt': 'gf1', \
                 'city': '深圳', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -364,7 +365,7 @@ class geo_gf(TestAbstract):
         data = {'address': '盛世传媒', \
               'opt': 'gf1', \
                 'city': ' 深圳 ', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -373,7 +374,7 @@ class geo_gf(TestAbstract):
         data = {'address': '盛世传媒', \
               'opt': 'gf1', \
                 'city': '深圳', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -382,7 +383,7 @@ class geo_gf(TestAbstract):
         data = {'address': '', \
               'opt': 'gf1', \
                 'city': '深圳', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -391,7 +392,7 @@ class geo_gf(TestAbstract):
         data = {'address': '\\', \
               'opt': 'gf1', \
                 'city': '深圳', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -400,7 +401,7 @@ class geo_gf(TestAbstract):
         data = {'address': '盛世传媒', \
               'opt': 'gf1', \
                 'city': '755aM001', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -409,7 +410,7 @@ class geo_gf(TestAbstract):
         data = {'address': '&&', \
               'opt': 'gf1', \
                 'city': '755aM001', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -418,7 +419,7 @@ class geo_gf(TestAbstract):
         data = {'address': '"1"="1"', \
               'opt': 'gf1', \
                 'city': '755aM001', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -427,7 +428,7 @@ class geo_gf(TestAbstract):
         data = {'address': 'http://gis-rss.intsit.sfdc.com.cn:1080/geo', \
               'opt': 'gf1', \
                 'city': '755aM001', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -436,7 +437,7 @@ class geo_gf(TestAbstract):
         data = {'address': '1080', \
               'opt': 'gf1', \
                 'city': '755aM001', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -445,7 +446,7 @@ class geo_gf(TestAbstract):
         data = {'address': '%E6%B7%B1%E5%9C%B3%E5%B8%82%E7%BD%97%E6%B9%96%E5%8C%BA%E7%AC%8B%E5%B2%97%E8%A1%97%E9%81%93%E5%AE%9D%E5%B2%97%E8%B7%AF%E5%A4%A7%E5%8D%8E%E5%A4%A7%E5%8E%A6&', \
               'opt': 'gf1', \
                 'city': '755', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -456,7 +457,7 @@ class geo_gf(TestAbstract):
 
     @classmethod
     def tearDownClass(clz):
-        reporttxt(name, url, p, r)
+        reporttxt(name, url, p, r,"get")
 
 
 if __name__ == "__main__":

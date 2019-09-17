@@ -6,6 +6,7 @@ from lib.wxls import *
 
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 url=geturl("geo")
+ak=getak("ak")
 
 name = os.path.basename(__file__).split('.')[0]
 p=[]
@@ -16,16 +17,18 @@ class gis_geo(TestAbstract):
 	def test_1(self):
 		data = {'address': '深圳市南山区海德3道3号', \
 				'city':'755', \
-				'ak':'4ea33864266e85cc4ce0dd2c9aa3e79f'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
 		print('1: ',res)
-		#self.assertEqual(1,res['status'])
+		print (type(res))
+		self.assertEqual(0,res['status'])
+		self.assertEqual('yy', res['result']['src'])
 
 	def test_2(self):
 		data = {'address': '北京', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -34,7 +37,7 @@ class gis_geo(TestAbstract):
 
 	def test_3(self):
 		data = {'address': '', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -42,7 +45,7 @@ class gis_geo(TestAbstract):
 
 	def test_4(self):
 		data = {'address': '美国', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 
 		p.append(data)
@@ -51,7 +54,7 @@ class gis_geo(TestAbstract):
 
 	def test_5(self):
 		data = {'address': '<scrpit>alert()</scrpit>', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -59,14 +62,14 @@ class gis_geo(TestAbstract):
 
 	def test_6(self):
 		data = {'address': '中国广东省深圳市南山区海德3道3号', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
 		print('6: ',res)
 
 	def test_7(self):
-		data = {'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+		data = {'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -74,7 +77,7 @@ class gis_geo(TestAbstract):
 
 	def test_8(self):
 		data = {'address': '  !@#$%^&*:":"', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -83,7 +86,7 @@ class gis_geo(TestAbstract):
 	def test_9(self):
 		data = {'address': '  深圳市南山区海德3道3号', \
 				'opt': 'gd2', \
-				'ak': '14e9ee810854c40f5ae9414f2a62c8cc'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -94,12 +97,12 @@ class gis_geo(TestAbstract):
 		data = {'address': '  深圳市南山区海德3道3号', \
 				'city': '420100', \
 				'city': '北京', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak': ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
 		print('10: ',res)
-		self.assertEqual(1,json.loads(res)['status'])
+		self.assertEqual(1,res['status'])
 
 	def test_11(self):
 		data = {'address': '四川省内江市市中区城西街道六段锦英伦别恋B幢2单元随和家宴堂', \
@@ -107,7 +110,7 @@ class gis_geo(TestAbstract):
 				'cc': '1', \
 				'city':'四川', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -117,7 +120,7 @@ class gis_geo(TestAbstract):
 		data = {'address': '四川省内江市市中区城西街道六段锦英伦别恋B幢2单元随和家宴堂', \
 				'city':'四川', \
 				'normal':'0', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -129,7 +132,7 @@ class gis_geo(TestAbstract):
 				'cc': 'a', \
 				'city':'511002', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -141,7 +144,7 @@ class gis_geo(TestAbstract):
 				'cc': '', \
 				'city':'四川', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -153,14 +156,14 @@ class gis_geo(TestAbstract):
 				'cc': '1', \
 				'city':'四川', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
 		print('15: ',res)
 
 	def test_16(self):
-		data = {'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+		data = {'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -169,7 +172,7 @@ class gis_geo(TestAbstract):
 	def test_17(self):
 		data = {'address':'北京北京市西城区新街口北大街59号万丰珠宝交易中心5010蔡晶收18612256180 \
 					北京北京市西城区新街口北大街59号万丰珠宝交易中心5010蔡晶收18612256180', \
-				'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'
+				'ak': ak
 				}
 		res = self.requestGET(url, data)
 		p.append(data)
@@ -183,7 +186,7 @@ class gis_geo(TestAbstract):
 				'cc': '1', \
 				'city':'<scrpit>alert</scrpit>', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -195,7 +198,7 @@ class gis_geo(TestAbstract):
 				'cc': '1', \
 				'city':'四川省内江市市中区城西街道六段锦英伦别恋B幢2单元随和家宴堂', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -207,7 +210,7 @@ class gis_geo(TestAbstract):
 				'cc': '1', \
 				'city':'@#$%^YJKM<>?\n""', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -218,7 +221,7 @@ class gis_geo(TestAbstract):
 				'opt': 'sw2', \
 				'cc': '1', \
 				'normal':'1', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -227,7 +230,7 @@ class gis_geo(TestAbstract):
 	def test_20(self):
 		data = {'address': '广东省中山市小榄镇民安北路', \
 				'opt': 'sw2', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -236,7 +239,7 @@ class gis_geo(TestAbstract):
 
 	def test_21(self):
 		data = {'address': '江苏省苏州市张家港市人民中路近市政府民服务中心', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -245,7 +248,7 @@ class gis_geo(TestAbstract):
 	def test_22(self):
 		data = {'address': '四川省成都市双流县天府新区剑南大道南段牧华路三段中信城左岸二栋二单元1506', \
 				'city':'',\
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -255,7 +258,7 @@ class gis_geo(TestAbstract):
 		data = {'address': '赣州市经济技术开发区迎宾大道74号', \
 				'city':'赣州市', \
 				'opt': '', \
-				'ak':'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+				'ak':ak}
 		res = self.requestGET(url, data)
 		p.append(data)
 		r.append(res)
@@ -265,7 +268,7 @@ class gis_geo(TestAbstract):
 
 	@classmethod
 	def tearDownClass(clz):
-		reporttxt(name,url, p, r)
+		reporttxt(name,url, p, r,"get")
 
 
 

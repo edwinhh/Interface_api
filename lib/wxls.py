@@ -10,8 +10,11 @@ from datetime import timedelta
 from openpyxl import Workbook
 from openpyxl import load_workbook
 import time,os
-
-conf_txt="e:/project/Interface_api-master/conf/base.conf"
+from lib.test_abstract import TestAbstract
+conf_url="e:/project/Interface_api-master/conf/base.conf"
+conf_ak="e:/project/Interface_api-master/conf/ak.conf"
+conf_db="e:/project/Interface_api-master/conf/db.conf"
+conf_sql="e:/project/Interface_api-master/conf/db.conf"
 
 
 # thread=[]
@@ -77,35 +80,89 @@ conf_txt="e:/project/Interface_api-master/conf/base.conf"
 #     wt.save(now + ".xlsx")
 
 #从excel读取tile和每行数据，然后将title和每行数据组成字典形式，存入list，形成传参
-def get_data(filename,sheet_name):
+
+tile=[]
+data = []
+exfile="e:/GPS测试(zhcs).xlsx"
+def get_data(filename,sheet_name,line):
     url_=[]
     url=[]#申明list
     tile=[]
-    data=[]
+    
     workbook_ = openpyxl.load_workbook(filename) #导入工作表
     sheetnames =workbook_.get_sheet_names() #获得表单名字
     # sheet = workbook_.get_sheet_by_name(sheetnames[sheet_name]) #从工作表中提取某一表单
     sheet = workbook_.get_sheet_by_name(sheet_name)
     print ("Work Sheet Rows:", sheet.max_row)
+    print(sheet.max_column)
 
-    for rowNum in range(1,sheet.max_row+1):
-        if rowNum==1:
+    for rowNum in range(line,sheet.max_row+1):
+
+        if rowNum==line:
             for colNum in range(1, sheet.max_column + 1):
-                tile.append(sheet.cell(row=1, column=colNum).value)
+                tile.append(sheet.cell(row=rowNum,column=colNum).value)
+
         else:
             url_ = []
             for colNum in range(1, sheet.max_column + 1):
-
                 url_.append(sheet.cell(row=rowNum,column=colNum).value)
-            url.append(url_)
+            data.append(url_)
         #print(url_)#获得数据
     # print(tile)
     # print(url)
-    for i in range(len(url)):
-        data.append(dict(zip(tile,url[i-1])))
+    # for i in range(len(url)):
+    #     data.append(dict(zip(tile,url[i-1])))
+    
     return data
 
-#v=get_data("1.xlsx",'dic')
+def rgeo(url,data):
+
+    for i in data:
+        x=i[1]
+        y=i[2]
+
+        kk = {'x': x, \
+              'y': y, \
+              'opt': '', \
+              'ak': '42204f2dcbf94db4aabf977e4535708c'}
+
+        testAbstract = TestAbstract()
+        res = testAbstract.requestsget(url,kk)
+        if 'result' in res.keys():
+            if 'name' in res["result"].keys():
+                name = res["result"]["name"]
+
+        else:
+            name="查询不到"
+            
+        print(name)
+        i.append(name)
+
+    return name
+
+def wexcel (name):
+    wb = Workbook()
+    
+    #sheet = wb.create('广深大80店明细_'+name, index=0)
+    sheet = wb.active
+    print(tile)
+    sheet.append(tile)
+    for i in data:
+        sheet.append(i)  # 这一步就可以做到将12345插入到一行中。
+    wb.save('GPS测试(zhcs)__'+'.xlsx')  # 保存文件，注意以xlsx为文件扩展名
+
+#----------------------------------------------------------------------------------------------------------
+# url="http://gis-int.intsit.sfdc.com.cn:1080/rgeo/api"
+# line=1
+# city=["Sheet1"]
+# for i in city:
+#     tile=[]
+#     data = []
+#     v=get_data(exfile,i,line)
+#     k=rgeo(url,data)
+#     wexcel(i)
+
+#----------------------------------------------------------------------------------------------------------
 
 # if __name__ == '__main__':
 
@@ -148,11 +205,13 @@ def report(name,url, p, r):
         ws1.cell(row=rowNum, column=3).value = str(r[rowNum - 1])
     wb.save(name+ now + ".xlsx")
 
-def reporttxt(name,url, p, r,n='test'):
+def reporttxt(name,url, p, r,type="get",n='test'):
     now = time.strftime('%Y-%m-%d-%H_%M_%S', time.localtime(time.time()))
 
 
     file=os.path.dirname(os.path.dirname(__file__))+ '/report'+'/'+name+"_"+now+".txt"
+    #file=dir+ '/report'+'/'+name+"_"+now+".txt"
+
     with open(file,'w+',encoding='utf_8')as f:
         f.write(url)
         f.write('\n\n')
@@ -162,22 +221,46 @@ def reporttxt(name,url, p, r,n='test'):
             f.write('\t')
             # f.write(n[i])
             f.write('\n')
-            for key in p[i]:
-                temp.append(key+"="+p[i][key])
-            parameters="&".join(temp)
-            case=url+"?"+parameters
-            f.write(case)
-            f.write('\n\n')
-            f.write(str(p[i]))
-            f.write('\n')
-            f.write(str(r[i]))
-            f.write('\n\n\n')
+
+            if type=="get":
+                for key in p[i]:
+                    # print (key,type(key))
+                    # print (p[i],type(p[i]))
+                    # print (p[i][key],type(p[i][key]))
+                    temp.append(key+"="+p[i][key])
+                parameters="&".join(temp)
+                case=url+"?"+parameters
+                f.write(case)
+                f.write('\n\n')
+                # f.write(str(p[i]))
+                # f.write('\n')
+                f.write(str(r[i]))
+                f.write('\n\n\n')
+            if type == "post":
+                # print(p[i])
+                # for key in p[i]:
+                #     # print (key,type(key))
+                #     # print (p[i],type(p[i]))
+                #     # print (p[i][key],type(p[i][key]))
+                #     temp.append(key + "=" + p[i][key])
+                # parameters = "&".join(temp)
+                # case = url + "?" + parameters
+                f.write(url)
+                f.write('\n')
+                f.write("post:")
+                f.write('\n\n')
+                f.write(str(p[i]))
+                f.write('\n\n')
+                f.write("result:")
+                f.write('\n\n')
+                f.write(str(r[i]))
+                f.write('\n\n\n')
 
 def geturl(config):
     config=config
     #print (config)
     conf = configparser.ConfigParser()
-    conf.read(conf_txt,encoding="utf-8-sig")
+    conf.read(conf_url,encoding="utf-8-sig")
     # lists_header = conf.sections()
     # print(lists_header)
     boolean = conf.has_section(config)
@@ -186,5 +269,52 @@ def geturl(config):
         url=conf[config]['url']
         return url
 
+def getak(config):
+    config = config
+        # print (config)
+    conf = configparser.ConfigParser()
+    conf.read(conf_ak, encoding="utf-8-sig")
+        # lists_header = conf.sections()
+        # print(lists_header)
+    boolean = conf.has_section(config)
+        # print(config,"is",boolean)
+    if boolean:
+        ak = conf[config]['ak']
+        return ak
 #print (geturl("geo"))
 
+def getdb(config):
+    db=[]
+    #print (config)
+    conf = configparser.ConfigParser()
+    conf.read(conf_db,encoding="utf-8-sig")
+    boolean = conf.has_section(config)
+    if boolean:
+        host=conf[config]['host']
+        username = conf[config]['username']
+        password = conf[config]['password']
+        port = conf[config]['port']
+        database = conf[config]['database']
+        db.append(host)
+        db.append(username)
+        db.append(password)
+        db.append(port)
+        db.append(database)
+    return db
+
+def getsql(config):
+        config = config
+        # print (config)
+        conf = configparser.ConfigParser()
+        conf.read(conf_ak, encoding="utf-8-sig")
+        # lists_header = conf.sections()
+        # print(lists_header)
+        boolean = conf.has_section(config)
+        # print(config,"is",boolean)
+        if boolean:
+            ak = conf[config]['ak']
+            return ak
+
+    # lists_header = conf.sections()
+    # print(lists_header)
+    #return jira

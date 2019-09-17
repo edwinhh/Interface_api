@@ -1,0 +1,66 @@
+表相互之间的关系：
+jiraissue：问题表，该表记录的是没过bug的情况和详细信息
+changeitem：该表记录是bug的转态值的改变记录
+changegroup：该表统计的是bug状态值改变后的时间
+priority：bug的严重等级
+project（项目表，目前一个部门是一条记录）
+projectversion（项目版本表）
+component（项目模块表，目前存储的是项目记录）
+nodeassociation（项目版本/项目模块和问题关联）
+issuetype（问题类型表）
+priority（问题优先级/严重程度表）1、阻塞；2、严重；3、重要；4、普通；5、小问题，建议；
+resolution（解决方案）
+issuestatus（问题状态表）
+
+
+changegroup （该表统计的是bug状态值改变后的时间）  
+     
+changeitem  （该表存储的是录入需求编号，时间和其他信息。）
+SELECT * FROM dm_sdeis_jira.changeitem where newvalue like "GIS_RSS_GEO%"
+
+customfield  （存储系统定义的一些规范，解释，比如问题级别，问题编号）
+customfieldoption （问题各种状态，优先级/严重程度表）customfieldoption*customfield
+
+customfieldvalue  （一些customfile关联，具体不清楚）
+
+cwd_user
+
+dm_rpt_base_git_detail
+issuestatus （问题状态表）
+itdd_it149（猜测是产品经理个人资料，对应负责项目，对应研发等信息）
+jiraissue  （问题表，该表记录的是没过bug的情况和详细信息）
+nodeassociation （项目版本/项目模块和问题关联）
+project  （项目表，目前一个部门是一条记录）
+projectversion （项目版本表）
+workflowscheme
+
+
+
+对应的关联关系：
+jiraissue.PRIORITY=priority.ID
+changegroup.issueid = jiraissue.ID
+changeitem.groupid = changegroup.ID
+
+测试A提的bug各种信息：
+SELECT * FROM dm_sdeis_jira.jiraissue as jiraissue,dm_sdeis_jira.project as project where jiraissue.project=project.id and reporter=1371178
+
+SELECT * FROM dm_sdeis_jira.jiraissue as jiraissue,dm_sdeis_jira.project as project1,dm_sdeis_jira.projectversion as projectversion,dm_sdeis_jira.issuestatus as issuestatus1， dm_sdeis_jira.nodeassociation as nodeassociation where jiraissue.project=project1.id and projectversion.project=jiraissue.project and  issuestatus1.sequence=jiraissue.issuestatus and nodeassociation.source_node_id=jiraissue.id and  jiraissue.reporter=1371178  and project1.id=14204
+
+指定版本和项目，关联报告人，bug状态，时间
+SELECT * FROM dm_sdeis_jira.jiraissue as jiraissue,dm_sdeis_jira.project as project1,dm_sdeis_jira.projectversion as projectversion,dm_sdeis_jira.nodeassociation as nodeassociation,
+dm_sdeis_jira.issuestatus as issuestatus1,
+dm_sdeis_jira.cwd_user as cwd_user
+where
+jiraissue.project=project1.id
+and cwd_user.user_name =jiraissue.reporter
+and issuestatus1.id=jiraissue.issuestatus
+and projectversion.project=jiraissue.project 
+and nodeassociation.source_node_id=jiraissue.id
+and projectversion.id=nodeassociation.sink_node_id
+and project1.id=14204
+and projectversion.vname='V3.5'
+
+
+
+版本号和bug对应表
+SELECT * FROM dm_sdeis_jira.nodeassociation where source_node_id=302762

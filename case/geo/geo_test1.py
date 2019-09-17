@@ -40,7 +40,7 @@ class geo_test(TestAbstract):
                         'opt': 'sf30', \
                         'city': "香港", \
                         'span': '1', \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':ak}
                 self.datas.append(data)
 
         for i in range(self.num):

@@ -13,7 +13,7 @@ r=[]
 class tip_2(TestAbstract):
     def test_1(self):
         data = {'q': '长治市襄垣县侯堡镇珂颐市场南晶楼对面一单元601室', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -22,7 +22,7 @@ class tip_2(TestAbstract):
 
     def test_2(self):
         data = {'q': '侯堡镇珂颐市场南晶楼对面一单元601室', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city': '长治襄垣县', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -32,7 +32,7 @@ class tip_2(TestAbstract):
 
     def test_3(self):
         data = {'q': '侯堡镇珂颐市场南晶楼对面一单元601室', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city': '140000', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -42,7 +42,7 @@ class tip_2(TestAbstract):
 
     def test_4(self):
         data = {'q': '侯堡镇珂颐市场南晶楼对面一单元601室', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city':'山西省长治市',\
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -52,7 +52,7 @@ class tip_2(TestAbstract):
 
     def test_5(self):
         data = {'q': '山西省长治市襄垣县侯堡镇珂颐市场南晶楼对面一单元601室', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -63,7 +63,7 @@ class tip_2(TestAbstract):
 
     def test_6(self):
         data = {'q': '珂颐市场南晶楼对面一单元601室', \
-                 'opt': 'sf30', \
+                 'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -73,7 +73,7 @@ class tip_2(TestAbstract):
 
     @classmethod
     def tearDownClass(clz):
-        reporttxt(name, url, p, r)
+        reporttxt(name,url, p, r,"get")
 
 
 if __name__ == "__main__":

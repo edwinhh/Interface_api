@@ -1,0 +1,3 @@
+address|norm_address|地址|,R
+city|adcode|城市|city_code|cityCode|,B
+id,A

@@ -13,7 +13,7 @@ r=[]
 class tip_6(TestAbstract):
     def test_1(self):
         data = {'q': '湖北省武汉市武昌区解放路457号附3号', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -22,7 +22,7 @@ class tip_6(TestAbstract):
 
     def test_2(self):
         data = {'q': '解放路457号附3号', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city': '武汉', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -32,7 +32,7 @@ class tip_6(TestAbstract):
 
     def test_3(self):
         data = {'q': '解放路457号附3号', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city': '湖北省', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -42,7 +42,7 @@ class tip_6(TestAbstract):
 
     def test_4(self):
         data = {'q': '解放路457号附3号', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'city':'湖北省武汉市',\
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
@@ -52,7 +52,7 @@ class tip_6(TestAbstract):
 
     def test_5(self):
         data = {'q': '湖北省解放路457号附3号', \
-                'opt': 'sf30', \
+                'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -63,7 +63,7 @@ class tip_6(TestAbstract):
 
     def test_6(self):
         data = {'q': '解放路457号附3号', \
-                 'opt': 'sf30', \
+                 'opt': '', \
                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
         res = self.requestGET(url, data)
         p.append(data)
@@ -76,7 +76,7 @@ class tip_6(TestAbstract):
 
     @classmethod
     def tearDownClass(clz):
-        reporttxt(name, url, p, r)
+        reporttxt(name,url, p, r,"get")
 
 
 if __name__ == "__main__":

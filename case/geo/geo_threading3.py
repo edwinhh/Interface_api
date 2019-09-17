@@ -58,23 +58,23 @@ class geo_Mutest(TestAbstract):
                         'opt': 'sf30', \
                         'city': city[1], \
                          'span':"1", \
-                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                         'ak':ak}
                 data2 = {'address': temp[0], \
                         'opt': 'sf30', \
                         'city': temp[1], \
                          'span':"1", \
-                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                         'ak':ak}
                 
                 # data1 = {'address': temp[0], \
                 #         'opt': '', \
                 #         'city': "香港", \
                 #          'span':"1", \
-                #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                #          'ak':ak}
                 # data2 = {'address': temp[0], \
                 #         'opt': '', \
                 #         'city': "香港", \
                 #          'span':"1", \
-                #          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                #          'ak':ak}
                 self.datas1.append(data1)
                 self.datas2.append(data2)
         f.close()

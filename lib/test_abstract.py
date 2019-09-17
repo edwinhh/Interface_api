@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 #python3
+
+
 import unittest
 import urllib
 import urllib.request,urllib.parse, urllib.error
@@ -16,6 +18,7 @@ import configparser
 from openpyxl import Workbook
 import openpyxl
 import urllib3
+from urllib import parse
 
 
 p=[]
@@ -26,7 +29,7 @@ dic={}
 class TestAbstract(unittest.TestCase):
 	user_agent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
 
-	headers = {'User-Agent': user_agent, 'Connection': 'keep-alive','Accept - Language': 'zh - CN, zh;q = 0.8'}
+	headers = {'User-Agent': user_agent, 'Connection': 'keep-alive','Content-Type':'application/json;charset=UTF-8'}
 
 	config_file=os.path.dirname(os.path.dirname(__file__)) + '/conf/base.conf'
 
@@ -52,53 +55,93 @@ class TestAbstract(unittest.TestCase):
 	def requestGET(self,url,data={},auth=None):
 
 
-		if None != data and len(data)>0:
-			req = urllib.request.Request(url + "?" + urllib.parse.urlencode(data),headers=self.headers)
-		else:
-			req = urllib.request.Request(url,headers=self.headers)
+		# if None != data and len(data)>0:
+		# 	req = urllib.request.Request(url + "?" + urllib.parse.urlencode(data),headers=self.headers)
+		#
+		# else:
+		# 	req = urllib.request.Request(url,headers=self.headers)
 
 		timeout = 30
 		socket.setdefaulttimeout(timeout)
 
 		if None != data and len(data)>0:
-			req = urllib.request.Request(url + "?" + urllib.parse.urlencode(data),headers=self.headers)
+			
+			#p=urllib.parse.urlencode(data).replace('%23','#')
+			p = urllib.parse.urlencode(data)
 
+
+			#req = urllib.request.Request(url + "?" +p ,headers=self.headers)
+			req = urllib.request.Request(url + "?" + p)
+			
+			
 		else:
-			req = urllib.request.Request(url,headers=self.headers)
-			#req = urllib.request.Request(url)
-
-			# print(req.headers)
+			#req = urllib.request.Request(url,headers=self.headers)
+			req = urllib.request.Request(url)
+			
 		if None != auth:
 			req.add_header('Authorization',self.getAuthHeader(auth))
-			# print(req.headers)            查看添加auth之后heads字段对比
-
+		   # 查看添加auth之后heads字段对比
+		
 		res = urllib.request.urlopen(req).read().decode('utf-8')
-		return res
+		#return res
 
-		start=time.time()
-		res = urllib.request.urlopen(req)
-		p.append(data)
-		r.append(res)
-		content=res.read().decode('utf-8')
-		end=time.time()
-		#print(end-start)
-		res.close()
+		# start=time.time()
+		# res = urllib.request.urlopen(req)
+		# p.append(data)
+		# r.append(res)
+		# content=res.read().decode('utf-8')
+		# end=time.time()
+		# #print(end-start)
+		# res.close()
 		#print(self.formatResult(content))
-		return self.formatResult(content)
+		return self.formatResult(res)
 
 	#return self.content
 
 
-	def requestPOST(self,url,data={},auth=None,type='html'):
+	def requestPOST(self,url,data={},type=''):
 
-		if type=='xml':
-			req = urllib.request.Request(url,data,{'Content-Type':'text/xml'},headers=self.headers)
+		# if type=='xml':
+		# 	req = urllib.request.Request(url,data,{'Content-Type':'text/xml'},headers=self.headers)
+		# else:
+		#
+		# 	req = urllib.request.Request(url,urllib.parse.urlencode(data).encode(encoding='UTF8'),headers=self.headers)
+		# if None != auth:
+		# 	req.add_header('Authorization',self.getAuthHeader(auth))
+		# res = urllib.request.urlopen(req).read()
+		# return self.formatResult(res)
+		print(type)
+		if type=='':
+			req = urllib.request.Request(url,data,{'Content-Type':'text/xml'})
+			print("1")
+			print(req)
 		else:
-			req = urllib.request.Request(url,urllib.parse.urlencode(data).encode(encoding='UTF8'),headers=self.headers)
-		if None != auth:
-			req.add_header('Authorization',self.getAuthHeader(auth))
-		res = urllib.request.urlopen(req).read()
+			if type=="json" :
+				p=urllib.parse.urlencode(data).encode(encoding='UTF8')
+				print("2")
+				print(p)
+			# print (urllib.parse.urlencode(data).replace('%23','#'))
+			# print (urllib.parse.urlencode(data).replace('%23','#').encode(encoding='UTF8'))
+			#c='address=##%E6%B7%B1%E5%9C%B3%E5%B8%82%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5&opt='
+			#print (p)
+				print(self.headers)
+				req = urllib.request.Request(url,p,headers=self.headers)
+				print("3")
+
+		# if None != auth:
+		# 	req.add_header('Authorization',self.getAuthHeader(auth))
+		try:
+			res = urllib.request.urlopen(req).read()
+			print(res)
+			
+		except urllib.error.HTTPError as e:
+			
+			print(e.code)
+			
+			print(e.read().decode("utf8"))
+		
 		return self.formatResult(res)
+	
 
 	def formatResult(self,res):
 		try:
@@ -179,11 +222,19 @@ class TestAbstract(unittest.TestCase):
 
 	def requestsget(self,url,data={}):
 		urllib3.disable_warnings()
-		start=time.time()
-		res = requests.get(url, params=data, verify=False)
-		end = time.time()
-		print(self.formatResult(res.text))
-		print(end-start)
+		# start=time.time()
+		# session = requests.Session()
+		# session.keep_alive = False
+		res = requests.get(url, params=data,verify=False)
+		# end = time.time()
+		# print(self.formatResult(res.text))
+		# print(end-start)
+		return self.formatResult(res.text)
+	    #return res.text
+	
+	def requestspost(self,url,data={}):
+		res = requests.post(url, data=json.dumps(data), verify=False,headers=self.headers)
+		
 		return self.formatResult(res.text)
 
 

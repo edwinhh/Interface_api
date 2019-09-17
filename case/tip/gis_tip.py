@@ -373,7 +373,7 @@ class tip(TestAbstract):
 
 	@classmethod
 	def tearDownClass(clz):
-		reporttxt(name,url, p, r)
+		reporttxt(name,url, p, r,"get")
 
 
 

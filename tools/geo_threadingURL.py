@@ -19,13 +19,13 @@ p1=[]
 r1=[]
 filelist=[]
 test=1
-url1='http://10.202.52.103:8080/geo'
-#url='http://gis-int.intsit.sfdc.com.cn:1080/geo/api'
+#url1='http://10.202.52.103:8080/geo'
+url='http://gis-int.intsit.sfdc.com.cn:1080/geo/api'
 
 name = os.path.basename(__file__).split('.')[0]
 
 
-file1="e:/项目/地理编码/数据/供应商地址清单2-2.csv"
+file1="e:/项目/地理编码/数据/HK1.txt"
 errfile="e:/project/Interface_api-master/report/diff_2018-07-02-17-55-40.txt"
 #file="e:/项目/地理编码/数据/test.csv"
 
@@ -49,8 +49,8 @@ class geo_Mutest(TestAbstract):
                 city=temp[2].split("=")
 
                 data = {'address': address[1], \
-                        'opt': 'sf30', \
-                        'city': city[1], \
+                        'opt': '', \
+                        'city': "香港", \
                          'span':"1", \
                          'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
 
@@ -176,7 +176,7 @@ if __name__ == "__main__":
 
     k=8
     x = geo_Mutest()
-    x.readcsv(errfile)
+    x.readcsv(file1)
     splist=x.splist(x.datas,k)
 
     e1 = time.time()

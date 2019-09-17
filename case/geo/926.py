@@ -3,6 +3,7 @@ from lib.test_abstract import TestAbstract
 from lib.wxls import *
 
 url=geturl("geo")
+ak=getak("ak")
 
 name = os.path.basename(__file__).split('.')[0]
 p=[]
@@ -14,7 +15,7 @@ class test(TestAbstract):
         data = {'address': '水利局', \
                 'opt': 'gd1', \
                 'city': '431225', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -24,7 +25,7 @@ class test(TestAbstract):
         data = {'address': '顺丰快递点自提', \
                 'opt': 'bd1', \
                 'city': '河南省|驻马店市|新蔡县', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)

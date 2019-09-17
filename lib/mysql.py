@@ -7,7 +7,7 @@ class Mysql:
 
 	def __init__(self):
 		if self.conn ==None:
-			self.conn = pymysql.connect(host="127.0.0.1",port=8090,user='write',passwd='123456',db='test',charset='utf8')
+			self.conn = pymysql.connect(host="gisgeo-m.dbsit.sfdc.com.cn",port=3306,user='gisgeo',passwd='Onywij3NM5',db='gisgeo',charset='utf8')
 			self.cursor = self.conn.cursor(pymysql.cursors.DictCursor)
 
 
@@ -19,9 +19,9 @@ class Mysql:
 
 
 	def get(self,uid=0):
-		sql='select * from user_info where uid=%s' % uid
+		sql='select * from tb_geo_white_address where uid=%s' % uid
 		n = self.cursor.execute(sql)
-		data = self.cursor.fetchall()
+		data = self.cursor.fetchall(sql)
 		userinfo = []
 		for info in data:
 			if info['addtime']:

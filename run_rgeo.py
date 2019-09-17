@@ -40,7 +40,7 @@ if __name__ == '__main__':
 		title=u'测试报告',
 		description=u'用例执行情况：',
 		verbosity = 1)
-    runner1 = unittest.TextTestRunner(verbosity = 1)
+    #runner1 = unittest.TextTestRunner(verbosity = 1)
     runner.run(suite)
     fp.close()
 

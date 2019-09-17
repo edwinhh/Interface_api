@@ -39,14 +39,14 @@ class geo_test(TestAbstract):
                         'opt': 'sf30', \
                         'city': "", \
                         'span': '1', \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':ak}
                 self.datas.append(data)
                 
                 data2 = {'address': temp[0], \
                         'opt': 'sf30', \
                         'city':"", \
                         'span': '1', \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':ak}
                 self.datas2.append(data2)
 
         for i in range(self.num):

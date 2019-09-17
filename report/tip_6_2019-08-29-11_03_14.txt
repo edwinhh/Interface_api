@@ -1,0 +1,38 @@
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api
+
+1	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=湖北省武汉市武昌区解放路457号附3号&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '湖北省武汉市武昌区解放路457号附3号', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB864FB882B03E05312F4520A5B18', 'name': 'OBEG(司门口店)', 'key_prefix': '解放路457号附3号', 'adcode': '420106', 'regcode': '027', 'xcoord': 114.29952, 'ycoord': 30.547934, 'adname': ['湖北省', '武汉市', '武昌区', ''], 'detail_addr': '湖北省武汉市武昌区解放路457号附3号'}], 'src': '', 'sn': '0010682019082911030985495813'}}
+
+
+2	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=解放路457号附3号&opt=&city=武汉&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '解放路457号附3号', 'city': '420100', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB864FB882B03E05312F4520A5B18', 'name': 'OBEG(司门口店)', 'key_prefix': '解放路457号附3号', 'adcode': '420106', 'regcode': '027', 'xcoord': 114.29952, 'ycoord': 30.547934, 'adname': ['湖北省', '武汉市', '武昌区', ''], 'detail_addr': '湖北省武汉市武昌区解放路457号附3号'}], 'src': '', 'sn': '0010132019082911031059896179'}}
+
+
+3	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=解放路457号附3号&opt=&city=湖北省&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '解放路457号附3号', 'city': '420000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB864FB882B03E05312F4520A5B18', 'name': 'OBEG(司门口店)', 'key_prefix': '解放路457号附3号', 'adcode': '420106', 'regcode': '027', 'xcoord': 114.29952, 'ycoord': 30.547934, 'adname': ['湖北省', '武汉市', '武昌区', ''], 'detail_addr': '湖北省武汉市武昌区解放路457号附3号'}], 'src': '', 'sn': '0010112019082911031149695329'}}
+
+
+4	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=解放路457号附3号&opt=&city=湖北省武汉市&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+5	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=湖北省解放路457号附3号&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '湖北省解放路457号附3号', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 2, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_711DB864FB882B03E05312F4520A5B18', 'name': 'OBEG(司门口店)', 'key_prefix': '解放路457号附3号', 'adcode': '420106', 'regcode': '027', 'xcoord': 114.29952, 'ycoord': 30.547934, 'adname': ['湖北省', '武汉市', '武昌区', ''], 'detail_addr': '湖北省武汉市武昌区解放路457号附3号'}], 'src': '', 'sn': '0010172019082911031326996028'}}
+
+
+6	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=解放路457号附3号&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': -105, 'msg': 'not found'}}
+
+

@@ -13,7 +13,7 @@ import threading
 # name = os.path.basename(__file__).split('.')[0]
 # p=[]
 # r=[]
-url='http://10.202.52.103:8080/geo'
+url='http://gis-int.intsit.sfdc.com.cn:1080/geo/api'
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]
@@ -22,8 +22,8 @@ dic={}
 my=[]
 myp=[]
 myr=[]
-dir="e:/项目/地理编码/数据/cx省市区调整/"
-file="县区撤销.txt"
+dir="e:/项目/地理编码/数据/数据对比/"
+file="香港派件-20190225.csv"
 adcode="e:/项目/地理编码/数据/adcode.csv"
 #file="e:/项目/地理编码/数据/test.csv"
 
@@ -131,19 +131,19 @@ class geo_Mutest(TestAbstract):
                 # city = line.replace('\n', '').replace('\t', '|')
                 if len(line)==1 or line.startswith('#'):
                     continue
-                address=line.strip().replace('\t', '').replace(',', '')
-                city = line.strip().replace('\t', '').replace(',', '|')
+                address=line.strip().split(",")[1]
+                city = line.strip().split(",")[2]
             
                 data = {'address': address, \
-                        'opt': 'sf30', \
+                        'opt': '', \
                         'city': city, \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':"bba16126b28f4d54b922cd45ea739efb"}
                 my.append(data)
                 
                 mydata = {'address': address, \
-                        'opt': 'my0', \
+                        'opt': '', \
                         'city': city, \
-                        'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                        'ak':"bba16126b28f4d54b922cd45ea739efb"}
                 my.append(mydata)
                 self.datas.append(my)
 
@@ -175,49 +175,49 @@ class geo_Mutest(TestAbstract):
                 # f.write('\n')
                 f.write(str(res[i]))
                 f.write('\n')
-                my=self.geocoder(myr[i])
-                if my:
-                    f.write("geocoder返回city:")
-                    f.write(my[0])
-                    f.write('\n')
-                    f.write("geocoder返回district:")
-                    f.write(my[1])
-                    f.write('\n')
-                    if self.reportgeocder(res[i],data[i]['city']):
-                        f.write("city与adname对比:相同\n")
-                    else:
-                        f.write("city与adname对比:不相同\n")
-                    adname=self.reportadname(my,res[i])
-                    if adname:
-                        f.write("geocoder与adname对比:相同\n")
-                    else:
-                        f.write("geocoder与adname对比:不相同\n")
-                f.write('\n')
-                adcode2 = self.reportadcode(res[i])
-                # if adcode2:
-                #     adcode1 = self.adcode(data[i]['city'])[1]
-                #     f.write("adcode:")
-                #     f.write(adcode1)
+                # my=self.geocoder(myr[i])
+                # if my:
+                #     f.write("geocoder返回city:")
+                #     f.write(my[0])
                 #     f.write('\n')
-                #     f.write("adcode对比:")
-                #     if adcode1==adcode2:
-                #         f.write("一致")
+                #     f.write("geocoder返回district:")
+                #     f.write(my[1])
+                #     f.write('\n')
+                #     if self.reportgeocder(res[i],data[i]['city']):
+                #         f.write("city与adname对比:相同\n")
                 #     else:
-                #         f.write("不相同")
-                
-                f.write('\n\n')
+                #         f.write("city与adname对比:不相同\n")
+                #     adname=self.reportadname(my,res[i])
+                #     if adname:
+                #         f.write("geocoder与adname对比:相同\n")
+                #     else:
+                #         f.write("geocoder与adname对比:不相同\n")
+                # f.write('\n')
+                # adcode2 = self.reportadcode(res[i])
+                # # if adcode2:
+                # #     adcode1 = self.adcode(data[i]['city'])[1]
+                # #     f.write("adcode:")
+                # #     f.write(adcode1)
+                # #     f.write('\n')
+                # #     f.write("adcode对比:")
+                # #     if adcode1==adcode2:
+                # #         f.write("一致")
+                # #     else:
+                # #         f.write("不相同")
+                #
+                # f.write('\n\n')
 
 
     def geo(self,data,url):
-        res = self.requestGET(url, data)
-        self.p1.append(data)
-        self.r1.append(res)
-        p.append(data)
-        r.append(res)
-        
-        #print(res)
-        #kl.append(data)
-        return res
+        global test
+        for i in data:
+            res1 = self.requestGET(url, i[0])
+            #res2 = self.requestGET(url, i[1])
+            p.append(i[0])
+            r.append(res1)
+           # myr.append(res2)
+            print(test)
+            test=test+1
         #self.report(self,f, url, data, res)
 
         # try:
@@ -287,7 +287,7 @@ if __name__ == "__main__":
     e1 = time.time()
     thread_list = []  # 线程存放列表
     for i in range(k):
-        t = threading.Thread(target=x.geo2, args=(splist1[i],url))
+        t = threading.Thread(target=x.geo, args=(splist1[i],url))
         t.setDaemon(True)
         thread_list.append(t)
 

@@ -4,6 +4,7 @@ from lib.wxls import *
 
 #url = 'http://gis-rss.intsit.sfdc.com.cn:1080/geo'
 url=geturl("geo")
+ak=getak("ak")
 name = os.path.basename(__file__).split('.')[0]
 p=[]
 r=[]
@@ -15,7 +16,7 @@ class v2_1(TestAbstract):
                 'city':'',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -26,7 +27,7 @@ class v2_1(TestAbstract):
                 'city':'',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -37,7 +38,7 @@ class v2_1(TestAbstract):
                 'city':'',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -48,7 +49,7 @@ class v2_1(TestAbstract):
                 'city':'西安市/咸阳市',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         start=time.time()
         res = self.requestGET(url, data)
         end=time.time()
@@ -62,7 +63,7 @@ class v2_1(TestAbstract):
                 'city':'028',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -73,7 +74,7 @@ class v2_1(TestAbstract):
                 'city':'028',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -86,7 +87,7 @@ class v2_1(TestAbstract):
                 'city':'成都市',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -97,7 +98,7 @@ class v2_1(TestAbstract):
                 'city':'成都市/资阳市/眉山市',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -108,7 +109,7 @@ class v2_1(TestAbstract):
                 'city': '510131/510100/510183', \
                 'span': '1', \
                  'opt': 'sf30', \
-                 'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                 'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -119,7 +120,7 @@ class v2_1(TestAbstract):
                 'city':'成都市/资阳市/眉山市',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -131,7 +132,7 @@ class v2_1(TestAbstract):
                 'exact':'1', \
                 'cb':'__cx1',\
                 'opt': 'gd2', \
-                'ak': '1b20896414c79752d47e27839b3f5f63'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -142,7 +143,7 @@ class v2_1(TestAbstract):
                 'city':'/咸阳市/西安市',\
                 'span':'1',\
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -153,7 +154,7 @@ class v2_1(TestAbstract):
                 'city': '', \
                 'span': '1', \
                 'opt': 'sf30', \
-                'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -163,7 +164,7 @@ class v2_1(TestAbstract):
         data = {
                 'opt': 'gd2', \
                 'city': '河南省|驻马店市|新蔡县', \
-                'ak': '1b20896414c79752d47e27839b3f5f63'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -172,7 +173,7 @@ class v2_1(TestAbstract):
     def test_16(self):
         data = {'address': '<scrpit>alert("深圳")</scrpit>', \
                 'opt': 'gd2', \
-                'ak': '1b20896414c79752d47e27839b3f5f63'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -182,7 +183,7 @@ class v2_1(TestAbstract):
         data = {'address': '%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0', \
                 'opt': 'gd2', \
                 'city': '%E6%B7%B1%E5%9C%B3&', \
-                'ak': '1b20896414c79752d47e27839b3f5f63'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -191,7 +192,7 @@ class v2_1(TestAbstract):
     def test_18(self):
         data = {'address': '！@#￥%……：“', \
                 'opt': 'gd2', \
-                'ak': '1b20896414c79752d47e27839b3f5f63'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)
@@ -201,7 +202,7 @@ class v2_1(TestAbstract):
         data = {'address': '深圳万安村', \
                 'opt': 'gd2', \
                 'city': '<scrpit>alert(city)</scrpit>', \
-                'ak': '1b20896414c79752d47e27839b3f5f63'}
+                'ak':ak}
         res = self.requestGET(url, data)
         p.append(data)
         r.append(res)

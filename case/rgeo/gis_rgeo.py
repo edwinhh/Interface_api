@@ -22,8 +22,7 @@ class gis_rgeo(TestAbstract):
         p.append(data)
         r.append(res)
         print('1: ', res)
-
-    # self.assertEqual(0,res['status'])
+        self.assertEqual(1,res['status'])
 
     def test_2(self):
         data = {'x': '120.568292', \
@@ -672,7 +671,7 @@ class gis_rgeo(TestAbstract):
         p.append(data)
         r.append(res)
         print('59: ', res)
-#
+    
     def test_60(self):
         data = {'x': '0', \
                 'y': '0', \
@@ -681,6 +680,77 @@ class gis_rgeo(TestAbstract):
         p.append(data)
         r.append(res)
         print('60: ', res)
+#
+    def test_61(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '100',\
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('61: ', res)
+        
+    def test_62(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '0', \
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('62: ', res)
+
+    def test_63(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '', \
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('63: ', res)
+        
+    def test_64(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '%^&*', \
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('64: ', res)
+        
+    def test_65(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '你好aab', \
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('65: ', res)
+        
+    def test_66(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '1', \
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('66: ', res)
+        
+    def test_67(self):
+        data = {'x': '114.036919', \
+                'y': '22.604069', \
+                'poinum': '10', \
+                'ak': 'f3ac165ec3410fff5d2601448134b1b6'}
+        res = self.requestGET(url, data)
+        p.append(data)
+        r.append(res)
+        print('67: ', res)
+
 
     @classmethod
     def tearDownClass(clz):

@@ -1,0 +1,38 @@
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api
+
+1	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_e25d8ebe98db41be8d544d9b3e832d60', 'name': '第一照相馆', 'key_prefix': '育才街13号', 'adcode': '150723', 'regcode': '470', 'xcoord': 123.72825, 'ycoord': 50.59274, 'adname': ['内蒙古自治区', '呼伦贝尔市', '鄂伦春自治旗', ''], 'detail_addr': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号'}], 'src': '', 'sn': '0010012019082911023225480248'}}
+
+
+2	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=育才街13号第一照相馆&opt=&city=呼伦贝尔&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '育才街13号第一照相馆', 'city': '150700', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_e25d8ebe98db41be8d544d9b3e832d60', 'name': '第一照相馆', 'key_prefix': '育才街13号', 'adcode': '150723', 'regcode': '470', 'xcoord': 123.72825, 'ycoord': 50.59274, 'adname': ['内蒙古自治区', '呼伦贝尔市', '鄂伦春自治旗', ''], 'detail_addr': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号'}], 'src': '', 'sn': '0010102019082911023316681779'}}
+
+
+3	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=育才街13号第一照相馆&opt=&city=150000&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '育才街13号第一照相馆', 'city': '150000', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 5, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_e25d8ebe98db41be8d544d9b3e832d60', 'name': '第一照相馆', 'key_prefix': '育才街13号', 'adcode': '150723', 'regcode': '470', 'xcoord': 123.72825, 'ycoord': 50.59274, 'adname': ['内蒙古自治区', '呼伦贝尔市', '鄂伦春自治旗', ''], 'detail_addr': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号'}, {'uid': 's_3637888586404b269733c45092c6475b', 'name': '第一照相馆', 'key_prefix': '巴林路26-10号', 'adcode': '150423', 'regcode': '476', 'xcoord': 118.6805, 'ycoord': 43.52451, 'adname': ['内蒙古自治区', '赤峰市', '巴林右旗', ''], 'detail_addr': '内蒙古自治区赤峰市巴林右旗巴林路26-10号'}, {'uid': 's_711DB8ED2F3A2B03E05312F4520A5B18', 'name': '红炎照相馆', 'key_prefix': '昆都伦大街铁路第一小学西面200米', 'adcode': '150502', 'regcode': '475', 'xcoord': 122.271781, 'ycoord': 43.602284, 'adname': ['内蒙古自治区', '通辽市', '科尔沁区', ''], 'detail_addr': '内蒙古自治区通辽市科尔沁区昆都伦大街铁路第一小学西面200米'}, {'uid': 's_9e0b2dcc1c5f485f99e9b23a21e1f110', 'name': '第二照相馆', 'key_prefix': '巴林路40号', 'adcode': '150423', 'regcode': '476', 'xcoord': 118.67903, 'ycoord': 43.52914, 'adname': ['内蒙古自治区', '赤峰市', '巴林右旗', ''], 'detail_addr': '内蒙古自治区赤峰市巴林右旗巴林路40号'}], 'src': '', 'sn': '0010352019082911023394081055'}}
+
+
+4	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=育才街13号第一照相馆&opt=&city=内蒙古自治区呼伦贝尔市鄂伦春自治旗&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 1, 'result': {'err': 182, 'msg': '外部数据源授权超限'}}
+
+
+5	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号第一照相馆', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_e25d8ebe98db41be8d544d9b3e832d60', 'name': '第一照相馆', 'key_prefix': '育才街13号', 'adcode': '150723', 'regcode': '470', 'xcoord': 123.72825, 'ycoord': 50.59274, 'adname': ['内蒙古自治区', '呼伦贝尔市', '鄂伦春自治旗', ''], 'detail_addr': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号'}], 'src': '', 'sn': '0010392019082911023576681841'}}
+
+
+6	
+http://gis-int.intsit.sfdc.com.cn:1080/tip/api?q=鄂伦春自治旗育才街13号第一照相馆&opt=&ak=a4fbd3a08ecc4f9e41bc9b06421ef3b5
+
+{'status': 0, 'result': {'Query': {'q': '鄂伦春自治旗育才街13号第一照相馆', 'city': '', 'opt': 'sw1', 'cc': '1'}, 'POITotal': 1, 'POIType': 'POI', 'POISum': 10, 'POISrc': 'sw-tcp', 'POISet': [{'uid': 's_e25d8ebe98db41be8d544d9b3e832d60', 'name': '第一照相馆', 'key_prefix': '育才街13号', 'adcode': '150723', 'regcode': '470', 'xcoord': 123.72825, 'ycoord': 50.59274, 'adname': ['内蒙古自治区', '呼伦贝尔市', '鄂伦春自治旗', ''], 'detail_addr': '内蒙古自治区呼伦贝尔市鄂伦春自治旗育才街13号'}], 'src': '', 'sn': '0010452019082911023674882210'}}
+
+

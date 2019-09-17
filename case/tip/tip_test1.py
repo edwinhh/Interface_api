@@ -36,7 +36,7 @@ class tip_test(TestAbstract):
                 temp=line.strip().split(",")
 
                 data1 = {'q': temp[0], \
-                        'opt': 'sf30', \
+                        'opt': '', \
                         'city': "香港", \
                         'ak': 'a4fbd3a08ecc4f9e41bc9b06421ef3b5'}
                 self.datas1.append(data1)
@@ -77,7 +77,7 @@ class tip_test(TestAbstract):
 
     # @classmethod
     # def tearDownClass(clz):
-    #     reporttxt(name, url, p, r)
+    #     reporttxt(name,url, p, r,"get")
 
 
 if __name__ == "__main__":
